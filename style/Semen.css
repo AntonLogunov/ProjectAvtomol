@@ -1,0 +1,45 @@
+.sec2{ 
+    margin-top: 190px;
+    max-width: 1275px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 413px;
+    border-radius: 20px;
+    background: url('../img/sec 2 car.png')no-repeat;
+}
+.sec2_p{
+    width: 543px;
+    margin-left:95px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.sec2_btn{
+    width: 335px;
+    height: 90px;
+    border-radius: 20px;
+    border: none;
+    margin-left: auto;
+    margin-right: 155px;
+    background: rgba(243, 147, 13, 0.671);
+    
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+.sec2_btn:hover{
+    background: rgba(243, 147, 13, 0.81);
+}
+.sec2_btn:active{
+    transform: translateY(1px);
+}
+.link_list{
+    position: relative;
+    bottom: 125px;
+}

@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+body{
+    width: 100%;
+}
+header, main, footer{
+    width: 100%;
+    height: auto;
+}
+footer{
+    width: 100%;
+    background-color: #6E6E6E;
+}
+.wrapper {
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.section{
+    max-width: 1275px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+a {
+    text-decoration: none;
+}

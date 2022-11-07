@@ -1,0 +1,72 @@
+.container-map {
+    margin-bottom: 60px;
+}
+
+.map-text h1{
+    font-size: 32px;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    color: #6E6E6E;
+    margin-bottom: 60px;
+}
+
+.map-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.address-map {
+    margin-left: 80px;
+}
+
+.address-map p {
+    font-size: 28px;
+    font-family: 'Montserrat';
+    color: #6E6E6E;
+    margin-bottom: 35px;
+}
+
+.address-map a {
+    font-size: 28px;
+    font-family: 'Montserrat';
+    color: #6E6E6E;
+    margin-bottom: 35px;
+}
+
+.address-map ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.map-li {
+    margin-bottom: 30px;
+}
+
+.map {
+    margin: 0px;
+}
+
+.map-img {
+    width: 628px;
+    height: 482px;
+}
+
+.map-link {
+    text-decoration: none;
+    font-size: 28px;
+    font-family: 'Montserrat';
+    color: #6E6E6E;
+}
+
+.telephone-map {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 56px;
+}
+
+.telephone-map a {
+    margin: 0px;
+    margin-left: 26px;
+}
