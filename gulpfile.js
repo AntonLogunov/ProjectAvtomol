@@ -24,8 +24,6 @@ const watchFile = () => {
 }
 
 watch('src/style/**/*.css',styles);
-watch('stc/js/**/*.js',scripts);
-watch('src/resources/**',resources);
 
 exports.styles = styles;
 exports.clean = clean;
