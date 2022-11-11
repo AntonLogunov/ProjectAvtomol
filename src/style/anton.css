@@ -17,3 +17,97 @@
     text-transform: capitalize;
     color: #F3930D;
 }
+/* секция 1 записи*/
+.section__request{
+    margin-top: 200px
+}
+.wrapper__request{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.request{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #F3930D;
+    border-radius: 27px;
+    width: 623px;
+}
+.request__text{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #6E6E6E;
+    margin-bottom: 78px;
+}
+.request__form{
+    max-width: 623px;
+}
+.request__textdata{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #6E6E6E;
+    margin-bottom: 32px;
+    text-align: center;
+}
+.data{
+    width: 524px;
+    border: none;
+    border-bottom: 2px solid #F3930D;
+    padding: 0 0 22px 0;
+    margin-top: 60px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #A8A8A8;
+}
+.radio{
+    display: flex;
+    margin-top: 45px;
+}
+.radio__button{
+    width: 31px;
+    height: 30px;
+}
+.radio__text{
+    color:#6E6E6E;
+    align-self:center;
+    margin-left: 10px;
+}
+.button{
+    border: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #6E6E6E;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+.button:hover{
+    color: #F3930D;
+}
+
+.request__form2--text{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #6E6E6E;
+    margin-bottom: 27px;
+    text-align: center;
+}
+.request__form2--button{
+    width: 480px;
+    height: 92px;
+    background: #F3930D;
+    border-radius: 17px;
+    border: none;
+    margin-bottom: 85px;
+
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}

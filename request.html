@@ -11,6 +11,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="src/icons/favicon-16x16.png">
     <link rel="manifest" href="src/icons/site.webmanifest">
     <link rel="stylesheet" href="dist/style/style.css">
+    <link rel="stylesheet" href="src/style/anton.css">
     <link defer rel="stylesheet" href="js/main.js">
     <script defer src="js/vitaly.js"></script>
 </head>
@@ -46,8 +47,38 @@
     </header>
     <a class="link_list" name="top_link"></a>
     <main>
-        <section class="section">
+        <section class="section section__request">
             <div class="wrapper">
+                <p class="request__text">ЗАПИСЬ НА СТО</p>
+                <div class="wrapper__request">
+                    <div class="request__form1">
+                        <p class="request__textdata">Контактные данные</p>
+                        <form class="request" action="">
+                            <input class="data" type="text" value="ФИО">
+                            <input class="data" type="text" value="Контактный телефон">
+                            <input class="data" type="text" value="Марка а/м">
+                            <div class="radio">
+                                <input class="radio__button" type="radio" name="user_type" id="r1" value="admin">
+                                <label class="radio__text" for="r1">Я согласен(а) на обработку персональных данных</label>
+                            </div>
+                            <input class="button" type="submit" value="Записаться">
+                        </form>
+                    </div>
+                    <div class="request__form2">
+                        <div>
+                            <p class="request__form2--text">Выберите адрес</p>
+                            <input class="request__form2--button" type="submit">
+                        </div>
+                        <div>
+                            <p class="request__form2--text">Выберите дату</p>
+                            <input class="request__form2--button" type="submit">
+                        </div>
+                        <div>
+                            <p class="request__form2--text">Выберите время</p>
+                            <input class="request__form2--button" type="submit">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="section">
