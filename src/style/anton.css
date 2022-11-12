@@ -41,8 +41,11 @@
     color: #6E6E6E;
     margin-bottom: 78px;
 }
-.request__form{
+.request__form1{
     max-width: 623px;
+}
+.request__form2{
+    max-width: 485px;
 }
 .request__textdata{
     font-weight: 500;
@@ -63,6 +66,10 @@
     font-size: 20px;
     line-height: 24px;
     color: #A8A8A8;
+}
+.data:focus{
+    outline: none;
+    color: #F3930D;
 }
 .radio{
     display: flex;
@@ -96,16 +103,15 @@
     line-height: 29px;
     color: #6E6E6E;
     margin-bottom: 27px;
-    text-align: center;
 }
-.request__form2--button{
+.select__adress{
     width: 480px;
     height: 92px;
     background: #F3930D;
     border-radius: 17px;
     border: none;
     margin-bottom: 85px;
-
+    text-align: center;
     color: #FFFFFF;
     font-weight: 500;
     font-size: 24px;

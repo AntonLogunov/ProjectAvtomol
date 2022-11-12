@@ -54,29 +54,31 @@
                     <div class="request__form1">
                         <p class="request__textdata">Контактные данные</p>
                         <form class="request" action="">
-                            <input class="data" type="text" value="ФИО">
-                            <input class="data" type="text" value="Контактный телефон">
-                            <input class="data" type="text" value="Марка а/м">
+                            <input class="data" type="text" placeholder="ФИО">
+                            <input class="data" type="text" placeholder="Контактный телефон">
+                            <input class="data" type="text" placeholder="Марка а/м">
+                            <!-- ??????????????????????????????????????????????????? -->
                             <div class="radio">
                                 <input class="radio__button" type="radio" name="user_type" id="r1" value="admin">
                                 <label class="radio__text" for="r1">Я согласен(а) на обработку персональных данных</label>
                             </div>
+                            <!-- ??????????????????????????????????????????????????? -->
                             <input class="button" type="submit" value="Записаться">
                         </form>
                     </div>
                     <div class="request__form2">
-                        <div>
-                            <p class="request__form2--text">Выберите адрес</p>
-                            <input class="request__form2--button" type="submit">
-                        </div>
-                        <div>
-                            <p class="request__form2--text">Выберите дату</p>
-                            <input class="request__form2--button" type="submit">
-                        </div>
-                        <div>
-                            <p class="request__form2--text">Выберите время</p>
-                            <input class="request__form2--button" type="submit">
-                        </div>
+                        <div class="select">
+                            <!-- ??????????????????????????????????????????????????? -->
+                            <span class="request__form2--text">Выберите адрес</span>
+                            <select class="select__adress" name="" id="">
+                                <div class="adress__list">
+                                    <option value="beivel">ул. Бейвеля 116/3</option>
+                                    <option value="beivel">ул. Бейвеля 116/3</option>
+                                    <option value="beivel">ул. Бейвеля 116/3</option>
+                                    <option value="beivel">ул. Бейвеля 116/3</option>
+                                </div>
+                            </select>
+                            <!-- ??????????????????????????????????????????????????? -->
                     </div>
                 </div>
             </div>
