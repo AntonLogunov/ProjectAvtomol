@@ -12,6 +12,7 @@ html, body{
 }
 body{
     width: 100%;
+    font-family: "MontserratMedium", "Arial", sans-serif;
 }
 header, main, footer{
     width: 100%;
@@ -23,11 +24,9 @@ footer{
 }
 .wrapper {
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 .section{
-    max-width: 1275px;
+    max-width: 1226.53px;
     margin: 0 auto;
     margin-top: 100px;
 }
