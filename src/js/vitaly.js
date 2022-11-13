@@ -7,7 +7,7 @@ let currentRadioNumber = 1;
 let nextRadioNumber = 2;
 let prevRadioNumber = 0;
 let current = 0;
-const widthSLide = 1275;
+const widthSLide = 1233;
 
 btnNext.addEventListener("click",function(){
     if(nextRadioNumber > 4){
