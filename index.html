@@ -12,7 +12,7 @@
     <link rel="manifest" href="src/icons/site.webmanifest">
     <link rel="stylesheet" href="dist/style/style.css">
     <link defer rel="stylesheet" href="js/main.js">
-    <script defer src="js/vitaly.js"></script>
+    <script defer src="src/js/vitaly.js"></script>
 </head>
 
 <body>
@@ -104,32 +104,44 @@
             <!-- <a class="link_list" name="slider_link"></a> -->
             <div class="wrapper section-slider__wrapper">
                 <div class="section-slider__slider">
-                    <div class="section-slider__list">
-                        <div class="section-slider__slider-item slide1">
-                            <p class="text-in-slider">акции <span class="bigFont">1+1</span></p>
-                        </div>
-                        <div class="section-slider__slider-item slide2">
-                            <p class="text-in-slider">акции <span class="bigFont">1+2</span></p>
-                        </div>
-                        <div class="section-slider__slider-item slide3">
-                            <p class="text-in-slider">акции <span class="bigFont">1+3</span></p>
-                        </div>
-                        <div class="section-slider__slider-item slide4">
-                            <p class="text-in-slider">акции <span class="bigFont">1+4</span></p>
+                    <div class="section-slider__wrapper-for-slider">
+                        <div  class="section-slider__list">
+                            <div class="section-slider__slider-item slide1">
+                                <p class="text-in-slider">акции <span class="bigFont">1+1</span></p>
+                            </div>
+                            <div class="section-slider__slider-item slide2">
+                                <p class="text-in-slider">акции <span class="bigFont">1+2</span></p>
+                            </div>
+                            <div class="section-slider__slider-item slide3">
+                                <p class="text-in-slider">акции <span class="bigFont">1+3</span></p>
+                            </div>
+                            <div class="section-slider__slider-item slide4">
+                                <p class="text-in-slider">акции <span class="bigFont">1+4</span></p>
+                            </div>
                         </div>
                     </div>
-                    <input checked type="radio" class="slider-radio slider-radio--1" id="slider-radio1">
-                    <input type="radio" class="slider-radio slider-radio--2" id="slider-radio2">
-                    <input type="radio" class="slider-radio slider-radio--3" id="slider-radio3">
-                    <input type="radio" class="slider-radio slider-radio--4" id="slider-radio4">
                     <label for="slider-radio2" class="slider-label slider-label-next">
-                        <button class="slider-buton buton-next"><img src="img/slider-buton-right.svg" alt=""></button>
+                        <button class="slider-buton buton-next">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.22392e-06 14C1.89987e-06 6.26801 6.26802 -1.89987e-06 14 -1.22392e-06C21.732 -5.47967e-07 28 6.26801 28 14C28 21.732 21.732 28 14 28C6.26801 28 5.47967e-07 21.732 1.22392e-06 14Z" fill="#8E8E8E" fill-opacity="0.47"/>
+                                <path d="M11 9.41L15.3266 14L11 18.59L12.332 20L18 14L12.332 8L11 9.41Z" fill="white"/>
+                                </svg>
+                        </button>
                     </label>
                     <label for="slider-radio3" class="slider-label slider-label-prev">
-                        <button class="slider-buton buton-prev"><img src="img/slider-button-left.svg" alt=""></button> 
+                        <button class="slider-buton buton-prev">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M28 14C28 21.732 21.732 28 14 28C6.26801 28 0 21.732 0 14C0 6.26801 6.26801 0 14 0C21.732 0 28 6.26801 28 14Z" fill="#8E8E8E" fill-opacity="0.47"/>
+                            <path d="M17 18.59L12.6734 14L17 9.41L15.668 8L10 14L15.668 20L17 18.59Z" fill="white"/>
+                            </svg>
+                        </button> 
                     </label>
+                    <input checked disabled type="radio" class="slider-radio slider-radio--1" id="slider-radio1">
+                    <input disabled type="radio" class="slider-radio slider-radio--2" id="slider-radio2">
+                    <input disabled type="radio" class="slider-radio slider-radio--3" id="slider-radio3">
+                    <input disabled type="radio" class="slider-radio slider-radio--4" id="slider-radio4">
                 </div>
-                </div>
+            </div>
         </section>
         <section id="about_company_link" class="section section_about-company">
             <div class="wrapper">
@@ -137,11 +149,13 @@
                     <!-- <a class="link_list" name="about_company_link"></a> -->
                     <div class="section_about-company__discription">
                         <h3>о компании</h3>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem voluptate optio perferendis dicta enim quia nostrum ad non architecto aspernatur temporibus eos aliquid suscipit in quae iste nihil, qui ea.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem voluptate optio perferendis dicta enim quia nostrum ad non architecto aspernatur temporibus eos aliquid suscipit in quae iste nihil, qui ea.Lorem ipsum dolor sit amet, consectetur
+                        Добро пожаловать в АВТОМОЛЛ — сеть автомагазинов и СТО в одном месте!
+                        <br>
+                        Автомагазин и Автосервис под одной крышей; запчасти на иномарки и ваз – в наличии; Комфортная зона ожидания: Wi- Fi, детская зона, бесплатный чай, кофе; Накапливайте бонусы от покупок в размере 10% и оплачивайте ими новые покупки.
                     </div>
                     <div class="section_about-company__slider">
-                        <button class="slider-buton buton-next"><img src="img/slider-buton-right.svg" alt=""></button>
-                        <button class="slider-buton buton-prev"><img src="img/slider-button-left.svg" alt=""></button>
+                        <button class="slider-buton buton-next"><img src="src/img/slider-buton-right.svg" alt=""></button>
+                        <button class="slider-buton buton-prev"><img src="src/img/slider-button-left.svg" alt=""></button>
                     </div>
                 </div>
             </div>

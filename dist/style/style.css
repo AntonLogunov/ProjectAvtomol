@@ -399,10 +399,35 @@ a {
 }
 .section-slider__slider{
     position: relative;
-    width: 1275px;
-    overflow-x: hidden;
     text-align: center;
+    width: 1233px;
 }
+.section-slider__wrapper-for-slider{
+    display: flex;
+    overflow-x: hidden;
+}
+.section-slider input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+  
+    transition: 0.2s all linear;
+    outline: none;
+    /* margin-right: 11px;
+    margin-top: 21px; */
+    margin: 21px 6px 0 6px;
+  
+    position: relative;
+    background: #E7E7E7;
+  }
+  
+.section-slider input:checked {
+    background: #F3930D;
+  }
 
 .section-slider__list{
     display: flex;
@@ -410,19 +435,17 @@ a {
 }
 .section-slider__slider-item{
     display: flex;
-    align-items: center;
     height: 415px;
     font-size: 100px;
-    background-color: #A5A5A5;
+    background-color: #F3930D;
     text-align: center;
     border-radius: 20px;
+    margin: 0 5px;
+    justify-content: center;
 
-    
-    padding: 5px;
-    margin: 5px;
 
     flex-shrink: 0;
-    width: 1230px;
+    width: 1223px;
 }
 .text-in-slider{
     display: flex;
@@ -440,7 +463,16 @@ a {
 .section_about-company__discription{
     width: 520px;
     height: 415px;
-    font-size: 30px;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: justify;
+    text-transform: uppercase;
+    
+    color: #6E6E6E;
 }
 .section_about-company__slider{
     display: flex;
@@ -452,19 +484,28 @@ a {
     border-radius: 20px;
 }
 .slider-buton{
-    position: absolute;
+    /* width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     display: block;
     border-radius: 50%;
-    border: none;
     padding: 0;
-    margin: 0;
+    margin: 0; */
+    
+    position: absolute;
+    border: none;
     top: 45%;
+    background-color: transparent;
 }
 .buton-next{
-    right: 0px;
+    right: -9px;
+    overflow-x: visible;
 }
 
 .buton-prev{
-    left: 0px;
+    left: -9px;
     display: none;
+    overflow-x:inherit;
 }
