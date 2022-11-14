@@ -59,7 +59,7 @@
                             <input class="data" type="text" placeholder="Марка а/м">
                             <!-- ??????????????????????????????????????????????????? -->
                             <div class="radio">
-                                <input class="radio__button" type="radio" name="user_type" id="r1" value="admin">
+                                <input class="radio__button" type="checkbox" name="user_type" id="r1" value="admin">
                                 <label class="radio__text" for="r1">Я согласен(а) на обработку персональных данных</label>
                             </div>
                             <!-- ??????????????????????????????????????????????????? -->
@@ -68,17 +68,28 @@
                     </div>
                     <div class="request__form2">
                         <div class="select">
-                            <!-- ??????????????????????????????????????????????????? -->
-                            <span class="request__form2--text">Выберите адрес</span>
-                            <select class="select__adress" name="" id="">
-                                <div class="adress__list">
-                                    <option value="beivel">ул. Бейвеля 116/3</option>
-                                    <option value="beivel">ул. Бейвеля 116/3</option>
-                                    <option value="beivel">ул. Бейвеля 116/3</option>
-                                    <option value="beivel">ул. Бейвеля 116/3</option>
-                                </div>
-                            </select>
-                            <!-- ??????????????????????????????????????????????????? -->
+                            <div class="select__addres">
+                                <!-- ??????????????????????????????????????????????????? -->
+                                <label class="request__form2--text">Выберите адрес</label>
+                                <select class="select__input" name="" id="">
+                                    <div class="adress__list">
+                                        <option value="beivel">ул. Бейвеля 116/3</option>
+                                        <option value="beivel">ул. Бейвеля 116/3</option>
+                                        <option value="beivel">ул. Бейвеля 116/3</option>
+                                        <option value="beivel">ул. Бейвеля 116/3</option>
+                                    </div>
+                                </select>
+                                <!-- ??????????????????????????????????????????????????? -->
+                            </div>
+                            <div>
+                                <label class="request__form2--text" for="meeting-time">Выберите дату</label>
+                                <input class="select__input" type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                            </div>
+                            <div>
+                                <label class="request__form2--text" for="meeting-time">Выберите время</label>
+                                <input class="select__input" type="time"  value="09:00"/>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
