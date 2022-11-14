@@ -11,22 +11,17 @@
 }
 
 .map-container {
-    display: flex;
-    flex-direction: row;
+  margin-bottom: 300px;
 }
 
 .address-map {
-    margin-left: 80px;
+    width: 776px;
+    margin: 62px auto 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 .address-map p {
-    font-size: 28px;
-    font-family: 'Montserrat';
-    color: #6E6E6E;
-    margin-bottom: 35px;
-}
-
-.address-map a {
     font-size: 28px;
     font-family: 'Montserrat';
     color: #6E6E6E;
@@ -39,8 +34,14 @@
     padding: 0px;
 }
 
-.map-li {
-    margin-bottom: 30px;
+.map-address-margin01 {
+    margin-left: 32px;
+    margin-right: 38px;
+}
+
+.map-address-margin02 {
+    margin-left: 38px;
+    margin-right: 32px;
 }
 
 .map {
@@ -57,6 +58,7 @@
     font-size: 28px;
     font-family: 'Montserrat';
     color: #6E6E6E;
+    margin: auto 0;
 }
 
 .telephone-map {
