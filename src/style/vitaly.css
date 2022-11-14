@@ -1,8 +1,11 @@
 .section-slider__slider{
     position: relative;
-    overflow-x: hidden;
     text-align: center;
     width: 1233px;
+}
+.section-slider__wrapper-for-slider{
+    display: flex;
+    overflow-x: hidden;
 }
 .section-slider input {
     -webkit-appearance: none;
