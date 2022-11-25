@@ -13,10 +13,12 @@
     <link rel="stylesheet" href="dist/style/style.css">
     <link defer rel="stylesheet" href="js/main.js">
     <script defer src="src/js/vitaly.js"></script>
+    <link rel="stylesheet" href="src/style/anton.css">
 </head>
 
 <body>
     <header class="header">
+        <!-- шапка (1 секция) -->
         <section class="section header-menu">
             <div class="wrapper section_header-menu">
                 <div class="logo">
@@ -49,59 +51,50 @@
     </header>
     <a class="link_list" name="top_link"></a>
     <main>
+        <!-- 2 секция -->
         <section class="section">
             <div class="wrapper sec2">
                 <p class="sec2_p">Добро пожаловать в АВТОМОЛЛ — сеть автомагазинов и СТО в одном месте!</p>
                 <button class="sec2_btn" onclick="window.location.href = 'request.html'">Запись on-line</button>
             </div>
         </section>
+        <!-- 3 секция -->
         <section id="servises_link" class="section">
-            <!-- <a class="link_list" name="servises_link"></a> -->
+            <p class="servises__text">НАШИ ПРЕИМУЩЕСТВА</p>
             <div class="wrapper section__company">
                 <div class="company">
-                    <svg width="147" height="145" viewBox="0 0 147 145" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M146 72.5C146 111.975 113.554 144 73.5 144C33.4464 144 1 111.975 1 72.5C1 33.0245 33.4464 1 73.5 1C113.554 1 146 33.0245 146 72.5Z" stroke="#F3930D" stroke-width="2"/>
-                        <path d="M101.365 107H46.6355C42.4236 107 39 103.587 39 99.3874V78.6126C39 74.4134 42.4236 71 46.6355 71H101.365C105.576 71 109 74.4134 109 78.6126V99.3874C109 103.611 105.576 107 101.365 107Z" stroke="#F3930D" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M103.532 71H44.468C41.4631 71 39 68.5915 39 65.5992V57.4008C39 54.4328 41.4384 52 44.468 52H103.532C106.537 52 109 54.4085 109 57.4008V65.5992C109 68.5672 106.562 71 103.532 71Z" stroke="#F3930D" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M73 107V52" stroke="#F3930D" stroke-width="4" stroke-miterlimit="10" stroke-linejoin="round"/>
-                        <path d="M73 50C80.9138 40.4235 89.6736 35.2444 95.1237 37.5408C95.5467 37.7118 99.3543 39.3975 99.9267 42.9886C100.549 46.8241 97.015 49.7557 96.7164 50C88.8275 50 80.9138 50 73 50Z" stroke="#F3930D" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M73 50C65.3793 40.4235 56.9199 35.2444 51.6957 37.5408C51.2883 37.7118 47.6218 39.3975 47.0706 42.9886C46.4715 46.8241 49.8744 49.7557 50.162 50C57.7826 50 65.3793 50 73 50Z" stroke="#F3930D" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    <p class="company__text">Бонусы</p>
+                    <div class="advantages__svg"></div>
+                    <p class="advantages__text__h2">ОПЫТ</p>
+                    <p class="advantages__text">Опыт работы более 10 лет</p>
                 </div>
                 <div class="company">
-                    <svg width="147" height="145" viewBox="0 0 147 145" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M146 72.5C146 111.975 113.554 144 73.5 144C33.4464 144 1 111.975 1 72.5C1 33.0245 33.4464 1 73.5 1C113.554 1 146 33.0245 146 72.5Z" stroke="#F3930D" stroke-width="2"/>
-                        <path d="M42.759 95.1922V106.831H54.3974V95.1922H93.1922V106.831H104.831V83.5537H42.759V95.1922ZM100.951 64.1563H112.59V75.7948H100.951V64.1563ZM35 64.1563H46.6384V75.7948H35V64.1563ZM93.1922 75.7948H54.3974V44.759C54.3974 40.4915 57.8889 37 62.1563 37H85.4332C89.7006 37 93.1922 40.4915 93.1922 44.759V75.7948Z" stroke="#F3930D" stroke-width="3" stroke-linejoin="round"/>
-                        </svg>
-                    <p class="company__text">Комфорт</p>
+                    <div class="advantages__svg"></div>
+                    <p class="advantages__text__h2">ПЕРСОНАЛ</p>
+                    <p class="advantages__text">Профессиональные автомеханники с подтвержденной квалификацией</p>
                 </div>
                 <div class="company">
-                    <svg width="146" height="145" viewBox="0 0 146 145" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M145 72.5C145 111.982 112.771 144 73 144C33.229 144 1 111.982 1 72.5C1 33.0181 33.229 1 73 1C112.771 1 145 33.0181 145 72.5Z" stroke="#F3930D" stroke-width="2"/>
-                        <path d="M40 41.1359V109H99.1082C99.5989 108.24 100.292 107.113 100.984 105.705C104.419 98.8626 104.13 93.9347 104.621 81.967C104.765 78.0528 105.689 56.9615 103.986 48.7953C103.928 48.5418 103.87 48.3165 103.87 48.2602C103.466 46.458 102.023 41.0796 98.5021 38.2073C96.3087 36.4051 93.7689 35.6448 93.7689 35.6448C92.2969 35.1943 91.0847 35.1098 90.3055 35.0535C81.6471 34.6592 73.7679 36.5741 73.7679 36.5741C69.2078 37.6723 62.916 39.6435 55.7583 43.3042V41.0514L40 41.1359Z" stroke="#F3930D" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M54.2125 37H41.7875C40.7912 37 40 37.7826 40 38.7681V41H56V38.7681C56 37.8116 55.1795 37 54.2125 37Z" fill="#F3930D" stroke="#F3930D" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M73.6338 42.7937C77.7025 41.735 81.2452 40.991 84.0407 40.4759C86.3102 40.0467 88.3307 39.732 90.794 40.3329C92.0395 40.6476 94.5305 41.3058 95.5269 43.3946C95.9421 44.2531 95.9974 45.1687 95.9974 45.4549C96.0251 46.3419 95.8314 46.5136 95.2225 49.0603C94.8903 50.4624 94.835 50.8344 94.4475 51.235C94.2261 51.4639 93.7279 51.8932 92.6761 51.979C90.1851 52.2365 87.8602 50.0618 84.4558 48.9172C82.3246 48.2019 78.4221 47.4007 75.4606 47.3434C74.9347 47.3434 73.2187 47.3148 72.416 46.1702C72.2776 45.9699 72.0008 45.5407 72.0008 44.9684C71.9732 44.11 72.6374 43.2515 73.6338 42.7937Z" stroke="#F3930D" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
-                        </svg>
-                    <p class="company__text">Продукция</p>
+                    <div class="advantages__svg"></div>
+                    <p class="advantages__text__h2">ОБОРУДОВАНИЕ</p>
+                    <p class="advantages__text">Специализированное современное оборудование</p>
                 </div>
                 <div class="company">
-                    <svg width="147" height="145" viewBox="0 0 147 145" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M146 72.5C146 111.975 113.554 144 73.5 144C33.4464 144 1 111.975 1 72.5C1 33.0245 33.4464 1 73.5 1C113.554 1 146 33.0245 146 72.5Z" stroke="#F3930D" stroke-width="2"/>
-                        <path d="M74 72C83.6688 72 91.5 64.1688 91.5 54.5C91.5 44.8312 83.6688 37 74 37C64.3312 37 56.5 44.8312 56.5 54.5C56.5 64.1688 64.3312 72 74 72ZM74 80.75C62.3187 80.75 39 86.6125 39 98.25V107H109V98.25C109 86.6125 85.6813 80.75 74 80.75Z" stroke="#F3930D" stroke-width="3" stroke-linejoin="round"/>
-                        </svg>                        
-                    <p class="company__text">Сервис</p>
+                    <div class="advantages__svg"></div>
+                    <p class="advantages__text__h2">КЛИЕНТСКАЯ ЗОНА</p>
+                    <p class="advantages__text">Комформная зона ожидания с ТВ и напитками</p>
                 </div>
                 <div class="company">
-                    <svg width="147" height="145" viewBox="0 0 147 145" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M146 72.5C146 111.975 113.554 144 73.5 144C33.4464 144 1 111.975 1 72.5C1 33.0245 33.4464 1 73.5 1C113.554 1 146 33.0245 146 72.5Z" stroke="#F3930D" stroke-width="2"/>
-                        <path d="M98.5082 105.979L108.031 96.4546C109.323 95.162 109.323 92.9848 108.031 91.6922L84.8365 68.4923C87.7613 60.1921 85.9928 50.5312 79.3271 43.8638C71.777 36.3119 60.418 35.0193 51.4396 39.8497L67.4239 55.7699L57.8333 65.3627L41.849 49.3746C37.0197 58.2871 38.3121 69.717 45.8621 77.2688C52.5279 83.9362 62.1865 85.7051 70.4847 82.7796L93.6789 105.979C95.0393 107.34 97.1478 107.34 98.5082 105.979Z" stroke="#F3930D" stroke-width="3" stroke-linejoin="round"/>
-                        </svg>
-                        
-                    <p class="company__text">Качество</p>
+                    <div class="advantages__svg"></div>
+                    <p class="advantages__text__h2">ЦЕНЫ</p>
+                    <p class="advantages__text">Демократичные цены на ремонт и обслуживание автомобилей</p>
+                </div>
+                <div class="company">
+                    <div class="advantages__svg"></div>
+                    <p class="advantages__text__h2">ЗАПЧАСТИ В НАЛИЧИИ</p>
+                    <p class="advantages__text">Новые и Б/У запчасти всегда в наличии на нашем складе</p>
                 </div>
             </div>
         </section>
+        <!-- 4 секция -->
         <section id="slider_link" class="section section-slider">
             <!-- <a class="link_list" name="slider_link"></a> -->
             <div class="wrapper section-slider__wrapper">
@@ -145,6 +138,7 @@
                 </div>
             </div>
         </section>
+        <!-- 5 секция -->
         <section id="about_company_link" class="section section_about-company">
             <div class="wrapper">
                 <div class="discription-slider">
@@ -162,6 +156,56 @@
                 </div>
             </div>
         </section>
+        <!-- 6 секция -->
+        <section class="section">
+            <div class="wrapper section__6">
+                <div class="o__nas">
+                    <p class="avtomol">О АВТОМОЛЛ</p>
+                    <div class="info">
+                        <div class="info__div">
+                            <p class="info__text1">10+</p>
+                            <p class="info__text">Более 10 лет на рынке</p>
+                        </div>
+                        <div class="info__div">
+                            <p class="info__text1">900+</p>
+                            <p class="info__text">Более 900 клиентов</p>
+                        </div>
+                        <div class="info__div">
+                            <p class="info__text1">17+</p>
+                            <p class="info__text">Более 17 партнеров</p>
+                        </div>
+                    </div>
+                    <div class="info__grid">
+                        <div class="info__grid__block">
+                            <div class="info__grid__block__img"></div>
+                            <p class="info__grid__block__text1">1 МЕСТО</p>
+                            <p class="info__grid__block__text2">«Лучшие автосервисы Челябинска»</p>
+                            <p class="info__grid__block__text3">2022</p>
+                        </div>
+                        <div class="info__grid__block">
+                            <div class="info__grid__block__img"></div>
+                            <p class="info__grid__block__text1">2 МЕСТО</p>
+                            <p class="info__grid__block__text2">«Лучшие автосервисы Южного Урала»</p>
+                            <p class="info__grid__block__text3">2019</p>
+                        </div>
+                        <div class="info__grid__block">
+                            <div class="info__grid__block__img"></div>
+                            <p class="info__grid__block__text1">3 МЕСТО</p>
+                            <p class="info__grid__block__text2">«Выставка автосервис КТ»</p>
+                            <p class="info__grid__block__text3">2017</p>
+                        </div>
+                        <div class="info__grid__block">
+                            <div class="info__grid__block__img"></div>
+                            <p class="info__grid__block__text1">ТОП СТО</p>
+                            <p class="info__grid__block__text2">«Лучшие автосервисы Челябинска»</p>
+                            <p class="info__grid__block__text3">2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 7 секция -->
+        <!-- 8 секция -->
         <section id="contacts_link" class="section section section-map">
             <!-- <a class="link_list" name="adress_link"></a> -->
             <div class="wrapper container-map">
@@ -183,6 +227,7 @@
             </div>
         </section>
     </main>
+    <!-- подвал 9 секция -->
     <footer class="footer">
         <section id="adress_link" class="section footer-menu">
             <div class="wrapper section__footer-menu">
@@ -254,5 +299,4 @@
         </section>
     </footer>
 </body>
-
 </html>
