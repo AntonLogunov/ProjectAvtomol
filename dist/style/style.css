@@ -314,7 +314,6 @@ a {
 .services-grid-elements {
     display: grid;
     grid-template-columns:  repeat(5, 205px);
-    grid-template-rows: repeat(3, 203px);   
     gap: 65px 51px;
 }
 
@@ -505,42 +504,115 @@ a {
     flex-shrink: 0;
     width: 1223px;
 }
-.text-in-slider{
+.section-slider__text-in-slider{
     display: flex;
     align-items: center;
 
     color: #FFFFFF;
 
 }
-.bigFont{
+.section-slider__bigFont{
     font-size: 200px;
 }
-.discription-slider{
+/*======================================================================================================*/
+/*.section_clients_reviews*/
+.section_clients_reviews__wrapper{
     display: flex;
+    align-items: center;
+    flex-direction: column;
 }
-.section_about-company__discription{
-    width: 520px;
-    height: 415px;
-    
+.section_clients_reviews__header{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: #8E8E8E;
+    text-align: center;
+    margin-bottom: 87px;
+}
+.section_clients_reviews__button{
+    border-radius: 43px;
+    width: 390px;
+    height: 81px;
+}
+
+.section_clients_reviews__slider{
+    position: relative;
+    text-align: center;
+    width: 1233px;
+}
+.section_clients_reviews__wrapper-for-slider{
+    display: flex;
+    overflow-x: hidden;
+}
+.section_clients_reviews input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+  
+    transition: 0.2s all linear;
+    outline: none;
+    /* margin-right: 11px;
+    margin-top: 21px; */
+    margin: 21px 6px 0 6px;
+  
+    position: relative;
+    background: #E7E7E7;
+  }
+  
+  .section_clients_reviews input:checked {
+    background: #F3930D;
+  }
+
+  .section_clients_reviews__list{
+    display: flex;
+    transition: transform 1s;
+}
+.section_clients_reviews__slider-item{
+    display: flex;
+    width: 385px;
+    height: 460px;
+    background: #FFFFFF;
+    box-shadow: -20px -20px 20px rgba(0, 0, 0, 0.05), 20px 20px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 5px;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.section_clients_reviews__item-content{
+    text-align: left;
+    padding: 40px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: justify;
-    text-transform: uppercase;
-    
-    color: #6E6E6E;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #8E8E8E;
 }
-.section_about-company__slider{
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 650px;
-    height: 415px;
-    background-color: #6E6E6E;
-    border-radius: 20px;
+.review-date{
+    color: #F3930D;
+    margin-bottom: 20px;
 }
+.reviewer-name{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 5px;
+}
+.client_car{
+    margin-bottom: 15px;
+}
+.client-review{
+    margin-bottom: 20px;
+}
+/*======================================================================================================*/
 .slider-buton{
     /* width: 28px;
     height: 28px;
