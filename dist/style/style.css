@@ -74,24 +74,154 @@
 }
 /* секция 3 */
 .section__company{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    row-gap: 67px;
     padding: 0;
+    max-width: 1000px;
 }
-.company{
+.servises__text{
     text-align: center;
-    margin: 0;
+    color: #8E8E8E;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 87px;
 }
-.company__text{
-    margin-top: 12px;
-    font-weight: 500;
+.advantages{
+    display: grid;
+    grid-template-columns: repeat(3, 310px);
+    column-gap: 74px;
+    max-width: 1078px;
+    margin: 0 auto;
+}
+.advantages__block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 67px;
+}
+.img__block{
+    width: 149px;
+    height: 149px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+}
+.text1__block{
+    font-weight: 700;
     font-size: 24px;
     line-height: 29px;
     text-transform: capitalize;
+    color: #8E8E8E;
+    margin-top: 17px;
+    margin-bottom: 12px;
+}
+.text2__block{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #8E8E8E;
+    text-align: center;
+}
+/* секция 6 */
+.section__6{
+    max-width: 1190px;
+}
+.avtomol{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #8E8E8E;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.info{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 59px;
+}
+.info__div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.info__text1{
+    font-weight: 700;
+    font-size: 84px;
+    line-height: 102px;
     color: #F3930D;
 }
+.info__text2{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #8E8E8E;
+}
+.info__grid{
+    display: grid;
+    grid-template-columns: repeat(4, 290px);
+    column-gap: 10px;
+}
+.info__grid__block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 290px;
+    max-height: 280px;
+    background: #F3930D;
+}
+.info__grid__block__img{
+    width: 90px;
+    height: 90px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    margin-top: 46px;
+    margin-bottom: 17px;
+}
+.info__grid__block__text1{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+.info__grid__block__text2,
+.info__grid__block__text3{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.info__grid__block__text3{
+    margin-top: 17px;
+    margin-bottom: 15px;
+}
+
+.button{
+    width: 524px;
+    height: 92px;
+    background-color:#F3930D;
+    border: none;
+    border-radius: 17px;
+    opacity: 0.8;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+
+
+<<<<<<< HEAD
+=======
+
+>>>>>>> copyanton
 /* секция 1 записи*/
-.section__request{
+/* .section__request{
     margin-top: 200px
 }
 .wrapper__request{
@@ -193,7 +323,11 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
-}
+<<<<<<< HEAD
+} */
+=======
+} */
+>>>>>>> copyanton
 
 /* name for Montserrat 500 from Figma: font-family: 'MontserratMedium'; */
 /* name for Montserrat 700 from Figma: font-family: 'MontserratBold'; */
