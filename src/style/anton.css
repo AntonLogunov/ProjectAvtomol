@@ -14,33 +14,41 @@
     line-height: 44px;
     margin-bottom: 87px;
 }
-.company{
+.advantages{
+    display: grid;
+    grid-template-columns: repeat(3, 310px);
+    column-gap: 74px;
+    max-width: 1078px;
+    margin: 0 auto;
+}
+.advantages__block{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 310px;
-    margin: 0;
+    align-items: center;
+    margin-bottom: 67px;
 }
-.advantages__svg{
-    margin: 0 auto;
+.img__block{
     width: 149px;
     height: 149px;
     background-color: #D9D9D9;
     border-radius: 50%;
 }
-.advantages__text__h2{
+.text1__block{
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
+    text-transform: capitalize;
     color: #8E8E8E;
     margin-top: 17px;
     margin-bottom: 12px;
 }
-.advantages__text{
+.text2__block{
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
     color: #8E8E8E;
+    text-align: center;
 }
 /* секция 6 */
 .section__6{
