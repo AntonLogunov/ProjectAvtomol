@@ -51,7 +51,48 @@
     transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
-/* секция 7 */
+/* секция 6 */
+.section__services-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.services-heading {
+    text-align: center;
+    margin-bottom: 87px;
+}
+
+.services-par {  
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-transform: capitalize;
+    color: #8E8E8E;
+}
+
+.services-grid-elements {
+    display: grid;
+    grid-template-columns:  repeat(5, 205px);
+    gap: 65px 51px;
+}
+
+.grid-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grid-paragraph {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #8E8E8E;
+}
+/* секция 9 */
 .footer {
     background: #F3930D;
     min-height: 270px;

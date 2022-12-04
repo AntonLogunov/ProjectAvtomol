@@ -114,8 +114,11 @@
     color: #6E6E6E;
     margin-bottom: 78px;
 }
-.request__form{
+.request__form1{
     max-width: 623px;
+}
+.request__form2{
+    max-width: 485px;
 }
 .request__textdata{
     font-weight: 500;
@@ -137,13 +140,17 @@
     line-height: 24px;
     color: #A8A8A8;
 }
+.data:focus{
+    outline: none;
+    color: #F3930D;
+}
 .radio{
     display: flex;
     margin-top: 45px;
 }
 .radio__button{
     width: 31px;
-    height: 30px;
+    height: 31px;
 }
 .radio__text{
     color:#6E6E6E;
@@ -151,39 +158,46 @@
     margin-left: 10px;
 }
 .button{
+    width: 524px;
+    height: 92px;
+    background-color:#F3930D;
     border: none;
+    border-radius: 17px;
+    opacity: 0.8;
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
-    color: #6E6E6E;
+    color: rgba(255, 255, 255, 1);
     margin-top: 64px;
     margin-bottom: 64px;
 }
 .button:hover{
-    color: #F3930D;
+    opacity: 1;
 }
-
 .request__form2--text{
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
     color: #6E6E6E;
     margin-bottom: 27px;
-    text-align: center;
 }
-.request__form2--button{
+.select__input{
     width: 480px;
     height: 92px;
     background: #F3930D;
     border-radius: 17px;
     border: none;
     margin-bottom: 85px;
-
+    text-align: center;
     color: #FFFFFF;
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
 }
+
+/* name for Montserrat 500 from Figma: font-family: 'MontserratMedium'; */
+/* name for Montserrat 700 from Figma: font-family: 'MontserratBold'; */
+
 *,
 *::before,
 *::after {
@@ -276,7 +290,49 @@ a {
     transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
-/* секция 7 */
+/* секция 6 */
+.section__services-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.services-heading {
+    text-align: center;
+    margin-bottom: 87px;
+}
+
+.services-par {  
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-transform: capitalize;
+    color: #8E8E8E;
+}
+
+.services-grid-elements {
+    display: grid;
+    grid-template-columns:  repeat(5, 205px);
+    grid-template-rows: repeat(3, 203px);   
+    gap: 65px 51px;
+}
+
+.grid-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grid-paragraph {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #8E8E8E;
+}
+/* секция 9 */
 .footer {
     background: #F3930D;
     min-height: 270px;
@@ -337,7 +393,7 @@ a {
     align-items: center;
     height: 413px;
     border-radius: 20px;
-    background: url('../img/sec 2 car.png')no-repeat;
+    background: url('../img/sec-2-car.png')no-repeat;
 }
 .sec2_p{
     width: 543px;
