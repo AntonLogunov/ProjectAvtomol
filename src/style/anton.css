@@ -157,7 +157,7 @@
 
 
 /* секция 1 записи*/
-/* .section__request{
+.section__request{
     margin-top: 200px
 }
 .wrapper__request{
@@ -241,22 +241,72 @@
     opacity: 1;
 }
 .request__form2--text{
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    color: #6E6E6E;
-    margin-bottom: 27px;
+    font-weight: 700;
+    font-size: 31.6572px;
+    line-height: 39px;
+    color: #8E8E8E;
 }
 .select__input{
-    width: 480px;
+    margin-top: 42px;
+}
+/* ================выбор времени(кастомный блок)=========================== */
+.castom.castom-is-active .castom__box{
+    display: none;
+}
+.castom__header{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 92px;
-    background: #F3930D;
-    border-radius: 17px;
-    border: none;
-    margin-bottom: 85px;
-    text-align: center;
-    color: #FFFFFF;
+    width: 480px;
+    color: #F3930D;
+    border: 1.5px solid #F3930D;
+    border-radius: 15px;
+}
+.castom__current{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 26px;
+    color: #F3930D;
+}
+.castom__icon{
+    width: 30px;
+}
+.castom__box{
+    display: block;
+    box-shadow: 10px 10px 15px 0px rgba(34, 60, 80, 0.2);
+    margin-top: 7px;
+    border-radius: 15px;
+    padding: 36px 0px 46px 49px;
+}
+.castom__body{
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    column-gap: 47px;
+    row-gap: 26px;
+    width: 337px;
+    margin: 0;
+}
+.costom__linear{
+    width: 385px;
+    padding: 36px 50px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.castom__time{
+    width: 84px;
+    height: 35px;
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
-} */
+    color: #8E8E8E;
+    flex: none;
+    text-align: center;
+    cursor: pointer;
+}
+.castom__time:hover{
+    color: #F3930D;
+
+}
+/* ========================================================== */
