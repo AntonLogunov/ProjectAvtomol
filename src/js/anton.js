@@ -19,6 +19,5 @@ let castom = function () {
         currentText.innerText = text;
         castom.classList.remove('castom-is-active');
     }
-
 }
 castom();

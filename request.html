@@ -64,8 +64,14 @@
                                 <!-- ================= кастомный блок ======================= -->
                                 <div class="castom castom-is-active">
                                     <div class="castom__header">
-                                        <span class="castom__current"> 9:00-20:00</span>
-                                        <div class="castom__icon">&#8964;</div>
+                                        <div class="castom__form__time">
+                                            <span class="castom__current"> 9:00-20:00</span>
+                                            <div class="castom__icon">
+                                                <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M23.149 1.77586L12.5783 12.3466L2.00756 1.77586" stroke="#F3930D" stroke-width="3.51747" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>  
+                                            </div>
+                                        </div>
                                     </div>
                                         <div class="castom__box">
                                             <div class="castom__body">
@@ -105,8 +111,8 @@
                             <input class="data" type="text" placeholder="Марка а/м">
                             <!-- ??????????????????????????????????????????????????? -->
                             <div class="radio">
-                                <input class="radio__button" type="checkbox" name="user_type" id="r1" value="admin">
-                                <label class="radio__text" for="r1">Я согласен(а) на обработку персональных данных</label>
+                                <input class="radio__input" type="radio" name="user_type" id="r1" value="admin">
+                                <label class="radio__label" for="r1">Я согласен(а) на обработку персональных данных</label>
                             </div>
                             <!-- ??????????????????????????????????????????????????? -->
                             <input class="button" type="submit" value="Записаться">
