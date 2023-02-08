@@ -203,7 +203,6 @@
 
 
 
-
 /* секция 1 записи*/
 /* .section__request{
     margin-top: 200px
@@ -308,6 +307,7 @@
     font-size: 24px;
     line-height: 29px;
 } */
+
 /* name for Montserrat 500 from Figma: font-family: 'MontserratMedium'; */
 /* name for Montserrat 700 from Figma: font-family: 'MontserratBold'; */
 
@@ -658,24 +658,21 @@ a {
     display: flex;
     overflow-x: hidden;
 }
-.section_clients_reviews input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-  
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-  
-    transition: 0.2s all linear;
-    outline: none;
-    /* margin-right: 11px;
-    margin-top: 21px; */
-    margin: 21px 6px 0 6px;
-  
-    position: relative;
-    background: #E7E7E7;
-  }
+
+  .section_clients_reviews__button {
+    width: 524px;
+    height: 92px;
+    background-color: #F3930D;
+    border: none;
+    border-radius: 17px;
+    opacity: 0.8;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
   
   .section_clients_reviews input:checked {
     background: #F3930D;

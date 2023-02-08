@@ -3,12 +3,16 @@ function createSlider(
     sliderList,
     slideWidth,
     btnNext,
-    btnPrev
+    btnPrev,
+    isRadio
     ) {
         let currentRadioNumber = 1;
         let nextRadioNumber = 2;
         let prevRadioNumber = 0;
         let current = 0;
+        if(isRadio == false){
+            btnPrev.style.display = "block"
+        }
         btnNext.addEventListener("click",function(){
             if(nextRadioNumber > 4){
                 nextRadioNumber = 4;
@@ -25,10 +29,10 @@ function createSlider(
             currentRadioNext.setAttribute("checked","checked")
             nextRadioNumber++;
             prevRadioNumber++;
-            if(current == 3){
+            if(current == 3 & isRadio == true){
                 btnNext.style.display = "none"
             }
-            if(current != 0){
+            if(current != 0 & isRadio == true){
                 btnPrev.style.display = "block"
             }
         });
@@ -48,10 +52,10 @@ function createSlider(
             currentRadioPrev.setAttribute("checked","checked")
             prevRadioNumber--;
             nextRadioNumber--;
-            if(current == 0){
+            if(current == 0 & isRadio == true){
                 btnPrev.style.display = "none"
             }
-            if(current != 3){
+            if(current != 3 & isRadio == true){
                 btnNext.style.display = "block"
             }
         });
@@ -61,16 +65,19 @@ const list = slider.querySelector(".section-slider__list")
 const widthSLide = 1233;
 const btnNext = slider.querySelector(".section-slider__slider-buton-next")
 const btnPrev = slider.querySelector(".section-slider__slider-buton-prev")
+const btnRadio = true
 
 const reviewsSlider = document.querySelector(".section_clients_reviews__slider")
 const reviewsList = reviewsSlider.querySelector(".section_clients_reviews__list")
-const reviewsWidthSLide = 1233;
+//const reviewsWidthSLide = 1233;
+const reviewsWidthSLide = 395;
 const reviewsBtnNext = reviewsSlider.querySelector(".section_clients_reviews__slider-buton-next")
 const reviewsBtnPrev = reviewsSlider.querySelector(".section_clients_reviews__slider-buton-prev")
+const reviewsRadio = false
 
-createSlider(slider,list,widthSLide,btnNext,btnPrev);
+createSlider(slider,list,widthSLide,btnNext,btnPrev,btnRadio);
 
-createSlider(reviewsSlider,reviewsList,reviewsWidthSLide,reviewsBtnNext,reviewsBtnPrev);
+createSlider(reviewsSlider,reviewsList,reviewsWidthSLide,reviewsBtnNext,reviewsBtnPrev,reviewsRadio);
 
 // btnNext.addEventListener("click",function(){
 //     if(nextRadioNumber > 4){
