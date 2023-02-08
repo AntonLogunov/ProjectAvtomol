@@ -7,12 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Avtomol</title>
     <link rel="stylesheet" href="dist/style/style.css">
-    <!-- <link rel="stylesheet" href="style/vitaly.css">
-    <link rel="stylesheet" href="style/baseStyles.css">
-    <link rel="stylesheet" href="style/anton.css">
-    <link rel="stylesheet" href="style/anderystyle.css">
-    <link rel="stylesheet" href="style/Semen.css">
-    <link rel="stylesheet" href="style/danilStyle.css"> -->
+    <link rel="stylesheet" href="src/style/danilStyle.css">
     <link defer rel="stylesheet" href="js/main.js">
     <script defer src="js/vitaly.js"></script>
 </head>
@@ -33,19 +28,17 @@
                 </div>
                 <div class="menu">
                     <ul class="mainmenu__list">
-                        <li class="mainmenu__item"><a href="#slider_link" class="menu__link"><p>Акции</p></a></li>
-                        <li class="mainmenu__item"><a href="#servises_link" class="menu__link"><p>Услуги</p></a></li>
-                        <li class="mainmenu__item"><a href="#about_company_link" class="menu__link"><p>О компании</p></a></li>
-                        <li class="mainmenu__item"><a href="#contacts_link" class="menu__link"><p>Контакты</p></a></li>
-                        <li class="mainmenu__item"><a href="#adress_link" class="menu__link"><p>Адреса</p></a></li>
-                        <li class="mainmenu__item__orange"><a href="#profile_link" class="menu__link__orange"><p>Профиль</p></a></li>
+                        <li class="mainmenu__item"><a href="#slider_link" class="menu__link">Акции</a></li>
+                        <li class="mainmenu__item"><a href="#servises_link" class="menu__link">Услуги</a></li>
+                        <li class="mainmenu__item"><a href="#about_company_link" class="menu__link">О компании</a></li>
+                        <li class="mainmenu__item"><a href="#contacts_link" class="menu__link">Контакты</a></li>
+                        <li class="mainmenu__item"><a href="#adress_link" class="menu__link">Адреса</a></li>
+                        <li class="mainmenu__item__orange"><a href="#profile_link" class="menu__link__orange">Профиль</a></li>
                     </ul>
                 </div>
             </div>
         </section>
-        <div class="orange__row">
-
-        </div>
+        <div class="orange__row"></div>
     </header>
     <a class="link_list" name="top_link"></a>
     <main>
@@ -57,141 +50,152 @@
                     </p>
                 </div>
                 <div class="services-grid-elements">
+                    <!-- <a href="#" class="grid-link">
+                        <div class="grid-element">
+                            <svg class="grid-svg" width="137" height="121" viewBox="0 0 137 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M75.063 22.8768H97.1697C103.43 22.8768 108.511 27.9577 108.511 34.2184V53.9388C108.511 55.9765 110.16 57.6389 112.211 57.6389H114.102C116.139 57.6389 117.802 55.9899 117.802 53.9388V48.6702C117.802 45.6672 120.228 43.2407 123.231 43.2407H126.301C129.304 43.2407 131.731 45.6672 131.731 48.6702V92.0792C131.731 95.0821 129.304 97.5086 126.301 97.5086H123.499C120.496 97.5086 118.07 95.0821 118.07 92.0792V86.7838C118.07 84.746 116.421 83.0837 114.37 83.0837H112.922C110.884 83.0837 109.222 84.7326 109.222 86.7838V92.2535C109.222 95.5916 107.761 98.7554 105.213 100.914L97.2099 107.684C92.2497 111.88 85.9488 114.186 79.4468 114.186H67.6629C61.5229 114.186 55.5571 112.068 50.798 108.167L44.6714 103.153C41.3065 100.404 37.0969 98.8627 32.7534 98.7822C29.7906 98.7286 27.4177 96.3155 27.4177 93.3528V46.0828C27.4177 41.9805 30.7693 38.6558 34.8715 38.7094C41.6416 38.7899 48.2374 36.6315 53.6535 32.5829L59.9007 27.9175C64.2845 24.6464 69.5934 22.8768 75.063 22.8768Z" stroke="#8E8E8E" stroke-width="4.25577" stroke-miterlimit="10"/>
+                                <path d="M13.2474 100.123H12.4565C10.526 100.123 8.93066 98.5409 8.93066 96.597V41.7392C8.93066 39.8087 10.5126 38.2134 12.4565 38.2134H13.2474C15.1779 38.2134 16.7732 39.7953 16.7732 41.7392V96.597C16.7732 98.5409 15.1779 100.123 13.2474 100.123Z" stroke="#8E8E8E" stroke-width="4.25577" stroke-miterlimit="10"/>
+                                <path d="M105.629 14.7125H68.789C66.6977 14.7125 64.9951 13.0099 64.9951 10.9186V10.0606C64.9951 7.96924 66.6977 6.26666 68.789 6.26666H105.616C107.707 6.26666 109.41 7.96924 109.41 10.0606V10.9186C109.423 12.9965 107.707 14.7125 105.629 14.7125Z" stroke="#8E8E8E" stroke-width="4.25577" stroke-miterlimit="10"/>
+                                <path d="M16.7737 63.4035H27.4181" stroke="#8E8E8E" stroke-width="4.25577" stroke-miterlimit="10"/>
+                                <path d="M16.7737 74.9462H27.4181" stroke="#8E8E8E" stroke-width="4.25577" stroke-miterlimit="10"/>
+                                <path d="M81.5786 14.7125V22.8768" stroke="#8E8E8E" stroke-width="4.25577" stroke-miterlimit="10"/>
+                                <path d="M92.8401 14.7125V22.8768" stroke="#8E8E8E" stroke-width="4.25577" stroke-miterlimit="10"/>
+                            </svg>                         
+                            <p class="grid-paragraph">
+                                Ремонт двигателя
+                            </p>
+                        </div>
+                    </a> -->
                     <div class="grid-element">
-                        <svg width="149" height="149" viewBox="0 0 149 149" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="74.5" cy="74.5" r="74.5" fill="#D9D9D9" />
-                        </svg>
+                        <svg class="grid-svg" width="137" height="121" viewBox="0 0 137 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M75.063 22.8768H97.1697C103.43 22.8768 108.511 27.9577 108.511 34.2184V53.9388C108.511 55.9765 110.16 57.6389 112.211 57.6389H114.102C116.139 57.6389 117.802 55.9899 117.802 53.9388V48.6702C117.802 45.6672 120.228 43.2407 123.231 43.2407H126.301C129.304 43.2407 131.731 45.6672 131.731 48.6702V92.0792C131.731 95.0821 129.304 97.5086 126.301 97.5086H123.499C120.496 97.5086 118.07 95.0821 118.07 92.0792V86.7838C118.07 84.746 116.421 83.0837 114.37 83.0837H112.922C110.884 83.0837 109.222 84.7326 109.222 86.7838V92.2535C109.222 95.5916 107.761 98.7554 105.213 100.914L97.2099 107.684C92.2497 111.88 85.9488 114.186 79.4468 114.186H67.6629C61.5229 114.186 55.5571 112.068 50.798 108.167L44.6714 103.153C41.3065 100.404 37.0969 98.8627 32.7534 98.7822C29.7906 98.7286 27.4177 96.3155 27.4177 93.3528V46.0828C27.4177 41.9805 30.7693 38.6558 34.8715 38.7094C41.6416 38.7899 48.2374 36.6315 53.6535 32.5829L59.9007 27.9175C64.2845 24.6464 69.5934 22.8768 75.063 22.8768Z" stroke="#8E8E8E" stroke-width="4.25577" stroke-miterlimit="10"/>
+                            <path d="M13.2474 100.123H12.4565C10.526 100.123 8.93066 98.5409 8.93066 96.597V41.7392C8.93066 39.8087 10.5126 38.2134 12.4565 38.2134H13.2474C15.1779 38.2134 16.7732 39.7953 16.7732 41.7392V96.597C16.7732 98.5409 15.1779 100.123 13.2474 100.123Z" stroke="#8E8E8E" stroke-width="4.25577" stroke-miterlimit="10"/>
+                            <path d="M105.629 14.7125H68.789C66.6977 14.7125 64.9951 13.0099 64.9951 10.9186V10.0606C64.9951 7.96924 66.6977 6.26666 68.789 6.26666H105.616C107.707 6.26666 109.41 7.96924 109.41 10.0606V10.9186C109.423 12.9965 107.707 14.7125 105.629 14.7125Z" stroke="#8E8E8E" stroke-width="4.25577" stroke-miterlimit="10"/>
+                            <path d="M16.7737 63.4035H27.4181" stroke="#8E8E8E" stroke-width="4.25577" stroke-miterlimit="10"/>
+                            <path d="M16.7737 74.9462H27.4181" stroke="#8E8E8E" stroke-width="4.25577" stroke-miterlimit="10"/>
+                            <path d="M81.5786 14.7125V22.8768" stroke="#8E8E8E" stroke-width="4.25577" stroke-miterlimit="10"/>
+                            <path d="M92.8401 14.7125V22.8768" stroke="#8E8E8E" stroke-width="4.25577" stroke-miterlimit="10"/>
+                        </svg>                         
                         <p class="grid-paragraph">
                             Ремонт двигателя
                         </p>
                     </div>
                     <div class="grid-element">
-                        <svg width="149" height="149" viewBox="0 0 149 149" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="74.5" cy="74.5" r="74.5" fill="#D9D9D9" />
+                        <svg width="121" height="121" viewBox="0 0 121 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.5452 25.4849V95.6726" stroke="#8E8E8E" stroke-width="4.28768" stroke-linecap="round"/>
+                            <path d="M13.6819 60.5103L106.992 60.5103" stroke="#8E8E8E" stroke-width="4.28768" stroke-linecap="round"/>
+                            <path d="M60.2 25.4849V95.6726" stroke="#8E8E8E" stroke-width="4.28768" stroke-linecap="round"/>
+                            <path d="M106.992 25.4849V60.2367" stroke="#8E8E8E" stroke-width="4.28768" stroke-linecap="round"/>
+                            <path d="M106.992 72.0031V95.5358" stroke="#8E8E8E" stroke-width="4.28768" stroke-linecap="round"/>
+                            <circle cx="13.6818" cy="13.6818" r="11.538" stroke="#8E8E8E" stroke-width="4.28768"/>
+                            <circle cx="13.6818" cy="107.065" r="11.538" stroke="#8E8E8E" stroke-width="4.28768"/>
+                            <circle cx="60.1999" cy="13.6818" r="11.538" stroke="#8E8E8E" stroke-width="4.28768"/>
+                            <circle cx="60.1999" cy="107.065" r="11.538" stroke="#8E8E8E" stroke-width="4.28768"/>
+                            <circle cx="106.718" cy="13.6818" r="11.538" stroke="#8E8E8E" stroke-width="4.28768"/>
+                            <circle cx="106.718" cy="107.065" r="11.538" stroke="#8E8E8E" stroke-width="4.28768"/>
                         </svg>
                         <p class="grid-paragraph">
                             Ремонт КПП
                         </p>
                     </div>
                     <div class="grid-element">
-                        <svg width="149" height="149" viewBox="0 0 149 149" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="74.5" cy="74.5" r="74.5" fill="#D9D9D9" />
-                        </svg>
+                        <svg width="95" height="127" viewBox="0 0 95 127" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.7171 40.7732H13.7765C9.07933 40.7732 5.2312 36.9251 5.2312 32.2279V18.9304C5.2312 14.2333 9.07933 10.3851 13.7765 10.3851H15.7171C20.4142 10.3851 24.2623 14.2333 24.2623 18.9304V32.2169C24.2623 36.9251 20.4142 40.7732 15.7171 40.7732Z" stroke="#8E8E8E" stroke-width="4.02849" stroke-miterlimit="10"/>
+                            <path d="M15.7171 121.749H13.7765C9.07933 121.749 5.2312 117.901 5.2312 113.204V99.9064C5.2312 95.2093 9.07933 91.3612 13.7765 91.3612H15.7171C20.4142 91.3612 24.2623 95.2093 24.2623 99.9064V113.193C24.2623 117.901 20.4142 121.749 15.7171 121.749Z" stroke="#8E8E8E" stroke-width="4.02849" stroke-miterlimit="10"/>
+                            <path d="M79.9556 40.7732H78.015C73.3179 40.7732 69.4697 36.9251 69.4697 32.2279V18.9304C69.4697 14.2333 73.3179 10.3851 78.015 10.3851H79.9556C84.6527 10.3851 88.5009 14.2333 88.5009 18.9304V32.2169C88.5119 36.9251 84.6638 40.7732 79.9556 40.7732Z" stroke="#8E8E8E" stroke-width="4.02849" stroke-miterlimit="10"/>
+                            <path d="M79.9556 121.749H78.015C73.3179 121.749 69.4697 117.901 69.4697 113.204V99.9064C69.4697 95.2093 73.3179 91.3612 78.015 91.3612H79.9556C84.6527 91.3612 88.5009 95.2093 88.5009 99.9064V113.193C88.5119 117.901 84.6638 121.749 79.9556 121.749Z" stroke="#8E8E8E" stroke-width="4.02849" stroke-miterlimit="10"/>
+                            <path d="M46.866 34.5434C51.4698 34.5434 55.2018 30.8114 55.2018 26.2077C55.2018 21.6039 51.4698 17.8719 46.866 17.8719C42.2623 17.8719 38.5303 21.6039 38.5303 26.2077C38.5303 30.8114 42.2623 34.5434 46.866 34.5434Z" stroke="#8E8E8E" stroke-width="4.02849" stroke-miterlimit="10"/>
+                            <path d="M47.7593 114.704H45.973C41.6397 114.704 38.1003 111.164 38.1003 106.831V88.4282C38.1003 84.095 41.6397 80.5556 45.973 80.5556H47.7593C52.0925 80.5556 55.6319 84.095 55.6319 88.4282V106.831C55.6319 111.164 52.0925 114.704 47.7593 114.704Z" stroke="#8E8E8E" stroke-width="4.02849" stroke-miterlimit="10"/>
+                            <path d="M23.3145 25.5792H38.5416" stroke="#8E8E8E" stroke-width="4.02849" stroke-miterlimit="10"/>
+                            <path d="M24.2625 106.555H38.5854" stroke="#8E8E8E" stroke-width="4.02849" stroke-miterlimit="10"/>
+                            <path d="M55.2019 25.5792H70.429" stroke="#8E8E8E" stroke-width="4.02849" stroke-miterlimit="10"/>
+                            <path d="M55.1577 106.555H69.4697" stroke="#8E8E8E" stroke-width="4.02849" stroke-miterlimit="10"/>
+                            <path d="M46.8662 34.5435V80.5556" stroke="#8E8E8E" stroke-width="4.02849" stroke-miterlimit="10"/>
+                        </svg>                           
                         <p class="grid-paragraph">
                             Ремонт ходовой части
                         </p>
                     </div>
                     <div class="grid-element">
-                        <svg width="149" height="149" viewBox="0 0 149 149" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="74.5" cy="74.5" r="74.5" fill="#D9D9D9" />
-                        </svg>
+                        <svg width="114" height="108" viewBox="0 0 114 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M98.7059 76.7458C95.9782 75.6523 93.4307 75.6763 91.0874 76.2531L41.0746 28.7037C40.7021 28.3552 40.3055 28.0548 39.885 27.8145C40.4617 26.0841 40.7982 24.2335 40.7982 22.3109C40.7982 12.7457 33.0355 4.98303 23.4704 4.98303C22.6172 4.98303 21.788 5.05513 20.9709 5.1753C20.334 5.27143 20.1057 6.07654 20.5984 6.49712L24.2154 9.63343C28.0246 12.938 29.1181 18.5737 26.4384 22.8516C23.0738 28.2471 15.924 28.8479 11.1774 25.1828L7.12786 21.674C6.69527 21.3015 6.02234 21.674 6.13049 22.2388C6.33477 23.3203 6.88753 25.291 8.22137 28.8238C10.6367 35.2287 16.693 39.6748 23.5425 39.6507C26.3663 39.6387 29.01 38.9418 31.3652 37.7401C31.5455 37.9564 31.7257 38.1607 31.93 38.353L81.7386 85.6981C81.1738 88.0293 81.1738 90.5768 82.2793 93.2926C84.262 98.1232 88.8764 101.548 94.1036 101.596C101.326 101.668 107.178 95.792 107.093 88.5701C107.009 83.3188 103.573 78.6925 98.7059 76.7458Z" stroke="#8E8E8E" stroke-width="4.18272" stroke-miterlimit="10"/>
+                            <path d="M94.2443 93.6927C96.7854 93.6927 98.8453 91.6328 98.8453 89.0917C98.8453 86.5507 96.7854 84.4908 94.2443 84.4908C91.7032 84.4908 89.6433 86.5507 89.6433 89.0917C89.6433 91.6328 91.7032 93.6927 94.2443 93.6927Z" stroke="#8E8E8E" stroke-width="4.18272" stroke-miterlimit="10"/>
+                            <path d="M13.5205 97.4863L8.58175 92.5475C5.31325 89.279 5.31325 83.9197 8.58175 80.6512L35.4988 53.7341C38.7673 50.4656 44.1267 50.4656 47.4072 53.7341L52.346 58.6729C55.6145 61.9414 55.6145 67.3008 52.346 70.5693L25.4289 97.4863C22.1484 100.755 16.789 100.755 13.5205 97.4863Z" stroke="#8E8E8E" stroke-width="4.18272" stroke-miterlimit="10"/>
+                            <path d="M56.9246 43.7604L81.5585 19.3668" stroke="#8E8E8E" stroke-width="4.18272" stroke-miterlimit="10"/>
+                            <path d="M61.9592 48.2666L86.1125 24.3537" stroke="#8E8E8E" stroke-width="4.18272" stroke-miterlimit="10"/>
+                            <path d="M85.0912 24.6781L80.6211 20.232C79.4675 19.0904 79.4675 17.2279 80.6091 16.0863L90.6068 6.02844C91.7484 4.87485 93.611 4.87485 94.7525 6.01643L99.2227 10.4625C100.376 11.6041 100.376 13.4667 99.2347 14.6083L89.2369 24.6661C88.0954 25.8077 86.2448 25.8197 85.0912 24.6781Z" stroke="#8E8E8E" stroke-width="4.18272" stroke-miterlimit="10"/>
+                        </svg>                           
                         <p class="grid-paragraph">
                             Техническое обслуживание
                         </p>
                     </div>
                     <div class="grid-element">
-                        <svg width="149" height="149" viewBox="0 0 149 149" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="74.5" cy="74.5" r="74.5" fill="#D9D9D9" />
-                        </svg>
+                        <svg width="143" height="123" viewBox="0 0 143 123" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1440_2313)">
+                            <path d="M46.498 72.1772C60.5162 74.1258 73.4599 64.3415 75.4085 50.3233C77.3572 36.305 67.5728 23.3613 53.5546 21.4127C39.5364 19.4641 26.5927 29.2484 24.644 43.2666C22.6954 57.2848 32.4797 70.2285 46.498 72.1772Z" stroke="#8E8E8E" stroke-width="4.21426" stroke-miterlimit="10"/>
+                            <path d="M115.435 97.2847L80.9437 66.0886C80.8718 66.0248 80.7981 65.9742 80.7243 65.9235C83.3371 61.7503 85.133 56.9654 85.8545 51.7753C88.6044 31.9925 74.7894 13.7166 55.0065 10.9666C35.2237 8.21665 16.9478 22.0317 14.1978 41.8145C11.4479 61.5974 25.2629 79.8733 45.0457 82.6232C54.673 83.9615 63.9442 81.3734 71.2347 76.0869C71.3048 76.164 71.3484 76.2374 71.4203 76.3012L105.899 107.495C107.687 109.157 110.5 109.064 112.162 107.276L115.642 103.546C117.315 101.773 117.21 98.9449 115.435 97.2847Z" stroke="#8E8E8E" stroke-width="4.21426" stroke-miterlimit="10"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1440_2313">
+                            <rect width="128.967" height="105.867" fill="white" transform="translate(14.5762) rotate(7.91383)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>                            
                         <p class="grid-paragraph">
                             Диагностика
                         </p>
                     </div>
                     <div class="grid-element">
-                        <svg width="149" height="149" viewBox="0 0 149 149" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="74.5" cy="74.5" r="74.5" fill="#D9D9D9" />
-                        </svg>
+                        <svg width="104" height="128" viewBox="0 0 104 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.6146 2.13759H80.2634C91.6767 2.13759 100.929 11.3899 100.929 22.8032V76.2223C100.929 103.392 78.9034 125.418 51.7333 125.418C24.5632 125.418 2.53749 103.392 2.53749 76.2223V22.2147C2.53749 11.1264 11.5263 2.13759 22.6146 2.13759Z" fill="white" stroke="#8E8E8E" stroke-width="4.27517"/>
+                            <rect x="27.4262" y="31.6932" width="48.6138" height="19.0582" rx="5.6402" fill="white" stroke="#8E8E8E" stroke-width="4.27517"/>
+                        </svg>                            
                         <p class="grid-paragraph">
-                            Ремонт электрики
+                            Сварочные работы                        
+                        </p>
+                    </div>         
+                    <div class="grid-element">
+                        <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="63.4391" cy="63.7058" r="34.628" stroke="#8E8E8E" stroke-width="4.27506"/>
+                            <path d="M109.61 63.7058H125" stroke="#8E8E8E" stroke-width="4.27506" stroke-linecap="round"/>
+                            <path d="M108.076 45.861L122.024 39.3568" stroke="#8E8E8E" stroke-width="4.27506" stroke-linecap="round"/>
+                            <path d="M108.076 80.8061L122.024 87.3102" stroke="#8E8E8E" stroke-width="4.27506" stroke-linecap="round"/>
+                            <path d="M20.1018 45.861L6.15354 39.3568" stroke="#8E8E8E" stroke-width="4.27506" stroke-linecap="round"/>
+                            <path d="M20.1018 80.8061L6.15354 87.3102" stroke="#8E8E8E" stroke-width="4.27506" stroke-linecap="round"/>
+                            <path d="M2.7334 63.7058H18.1236" stroke="#8E8E8E" stroke-width="4.27506" stroke-linecap="round"/>
+                            <path d="M19.8337 21.8103L30.7163 32.6928" stroke="#8E8E8E" stroke-width="4.27506" stroke-linecap="round"/>
+                            <path d="M19.8337 106.224L30.7163 95.3413" stroke="#8E8E8E" stroke-width="4.27506" stroke-linecap="round"/>
+                            <path d="M107.667 21.8103L96.7847 32.6928" stroke="#8E8E8E" stroke-width="4.27506" stroke-linecap="round"/>
+                            <path d="M89.5356 8.13007L82.2493 21.6862" stroke="#8E8E8E" stroke-width="4.27506" stroke-linecap="round"/>
+                            <path d="M45.9302 106.456L38.6438 120.013" stroke="#8E8E8E" stroke-width="4.27506" stroke-linecap="round"/>
+                            <path d="M82.2495 106.456L89.5358 120.013" stroke="#8E8E8E" stroke-width="4.27506" stroke-linecap="round"/>
+                            <path d="M38.644 8.13007L45.9304 21.6862" stroke="#8E8E8E" stroke-width="4.27506" stroke-linecap="round"/>
+                            <path d="M107.667 106.224L96.7847 95.3413" stroke="#8E8E8E" stroke-width="4.27506" stroke-linecap="round"/>
+                            <path d="M63.4392 3L63.4392 18.3902" stroke="#8E8E8E" stroke-width="4.27506" stroke-linecap="round"/>
+                            <path d="M63.4392 109.876L63.4392 125.267" stroke="#8E8E8E" stroke-width="4.27506" stroke-linecap="round"/>
+                        </svg>                           
+                        <p class="grid-paragraph">
+                            Ремонт и заправка
+                            климатических систем
                         </p>
                     </div>
                     <div class="grid-element">
-                        <svg width="149" height="149" viewBox="0 0 149 149" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="74.5" cy="74.5" r="74.5" fill="#D9D9D9" />
-                        </svg>
+                        <svg width="64" height="119" viewBox="0 0 64 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4.52948" y="1.98016" width="24.2102" height="23.9968" rx="4.42224" stroke="#8E8E8E" stroke-width="3.96032"/>
+                            <circle cx="16.3145" cy="103.178" r="13.2789" stroke="#8E8E8E" stroke-width="3.96032"/>
+                            <rect x="11.1454" y="27.1629" width="10.9786" height="62.1978" stroke="#8E8E8E" stroke-width="3.96032"/>
+                            <mask id="path-4-inside-1_1440_2352" fill="white">
+                            <path d="M60.4602 95.8398C62.2099 95.8398 63.6284 97.2583 63.6284 99.0081L63.6284 107.721C63.6284 109.471 62.2099 110.889 60.4602 110.889L27.9855 110.889L27.9855 95.8398L60.4602 95.8398Z"/>
+                            </mask>
+                            <path d="M60.4602 95.8398C62.2099 95.8398 63.6284 97.2583 63.6284 99.0081L63.6284 107.721C63.6284 109.471 62.2099 110.889 60.4602 110.889L27.9855 110.889L27.9855 95.8398L60.4602 95.8398Z" stroke="#8E8E8E" stroke-width="7.92065" stroke-linejoin="round" mask="url(#path-4-inside-1_1440_2352)"/>
+                            <rect x="5.82499" y="49.9075" width="25.5658" height="9.0577" rx="4.52885" transform="rotate(15 5.82499 49.9075)" fill="white" stroke="#8E8E8E" stroke-width="3.96032"/>
+                            <rect x="5.60087" y="33.3157" width="25.5658" height="9.05396" rx="4.52698" transform="rotate(15 5.60087 33.3157)" fill="white" stroke="#8E8E8E" stroke-width="3.96032"/>
+                            <rect x="5.78983" y="68.2535" width="25.5658" height="8.92239" rx="4.46119" transform="rotate(15 5.78983 68.2535)" fill="white" stroke="#8E8E8E" stroke-width="3.96032"/>
+                        </svg>                           
                         <p class="grid-paragraph">
-                            Ремонт форсунок и ТНВД
+                            Ремонт подвески                                               
                         </p>
-                    </div>
-                    <div class="grid-element">
-                        <svg width="149" height="149" viewBox="0 0 149 149" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="74.5" cy="74.5" r="74.5" fill="#D9D9D9" />
-                        </svg>
-                        <p class="grid-paragraph">
-                            Кузовные работы
-                        </p>
-                    </div>
-                    <div class="grid-element">
-                        <svg width="149" height="149" viewBox="0 0 149 149" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="74.5" cy="74.5" r="74.5" fill="#D9D9D9" />
-                        </svg>
-                        <p class="grid-paragraph">
-                            Детейлинг
-                        </p>
-                    </div>
-                    <div class="grid-element">
-                        <svg width="149" height="149" viewBox="0 0 149 149" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="74.5" cy="74.5" r="74.5" fill="#D9D9D9" />
-                        </svg>
-                        <p class="grid-paragraph">
-                            Сварочные работы
-                        </p>
-                    </div>
-                    <div class="grid-element">
-                        <svg width="149" height="149" viewBox="0 0 149 149" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="74.5" cy="74.5" r="74.5" fill="#D9D9D9" />
-                        </svg>
-                        <p class="grid-paragraph">
-                            Шиномонтаж и хранение
-                        </p>
-                    </div>
-                    <div class="grid-element">
-                        <svg width="149" height="149" viewBox="0 0 149 149" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="74.5" cy="74.5" r="74.5" fill="#D9D9D9" />
-                        </svg>
-                        <p class="grid-paragraph">
-                            Ремонт и замена стекол
-                        </p>
-                    </div>
-                    <div class="grid-element">
-                        <svg width="149" height="149" viewBox="0 0 149 149" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="74.5" cy="74.5" r="74.5" fill="#D9D9D9" />
-                        </svg>
-                        <p class="grid-paragraph">
-                            Ремонт и заправка климатических систем
-                        </p>
-                    </div>
-                    <div class="grid-element">
-                        <svg width="149" height="149" viewBox="0 0 149 149" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="74.5" cy="74.5" r="74.5" fill="#D9D9D9" />
-                        </svg>
-                        <p class="grid-paragraph">
-                            Новые и Б/У запчасти
-                        </p>
-                    </div>
-                    <div class="grid-element">
-                        <svg width="149" height="149" viewBox="0 0 149 149" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="74.5" cy="74.5" r="74.5" fill="#D9D9D9" />
-                        </svg>
-                        <p class="grid-paragraph">
-                            Ремонт подвески
-                        </p>
-                    </div>
+                    </div>             
                 </div>
             </div>
         </section>
@@ -260,7 +264,6 @@
                 <div class="footer-end">
                     <div class="par">
                         <p class="footer__par">2020-2023 © АвтоМолл</p>
-                        <p class="footer__par">Лучшее качество, отличные цены</p>
                     </div>                             
                 </div>
             </div>

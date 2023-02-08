@@ -4,14 +4,14 @@
     z-index: 1;
     background-color: white;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 24px;
     line-height: 29px;
     text-transform: capitalize;
 }
 
 .header-menu {
-    margin-top: 25px;
+    margin-top: 35px;
 }
 
 .section_header-menu {
@@ -28,6 +28,7 @@
 
 .mainmenu__item {
     padding-right: 55px;
+    flex-shrink: 0;
 }
 
 .mainmenu__item__orange {
@@ -36,34 +37,92 @@
 
 .menu__link {
     color: rgba(142, 142, 142, 1);
+    transition: 0.2s color ease-in-out;
+}
+
+.menu__link:hover, .menu__link:focus {
+    color: rgba(243, 147, 13, 1);
+    transition: 0.2s color ease-in-out;
 }
 
 .menu__link__orange {
     color: rgba(243, 147, 13, 1);
+    transition: 0.2s color ease-in-out;
+}
+
+.menu__link__orange:hover, .menu__link__orange:focus {
+    color: rgba(142, 142, 142, 1);
+    transition: 0.2s color ease-in-out;
 }
 
 .orange__row {
-    /* margin-top: 30px; */
-    margin-top: 61px;
+    margin-top: 37px;
     width: 100%;
     height: 2px;
     background-color: #F3930D;   
     transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
-/* секция 7 */
+/* секция 6 */
+.section__services-menu {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+}
+
+.services-heading {
+    text-align: center;
+    margin-bottom: 87px;
+}
+
+.services-par {  
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-transform: capitalize;
+    color: #8E8E8E;
+}
+
+.services-grid-elements {
+    display: grid;
+    grid-template-columns:  repeat(4, 200px);
+    gap: 80px 70px;
+}
+
+.grid-link:hover .grid-element {
+    color: rgba(243, 147, 13, 1);
+}
+
+.grid-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-paragraph {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #8E8E8E;
+    margin-top: 19px;
+}
+/* секция 9 */
 .footer {
     background: #F3930D;
-    min-height: 270px;
+    min-height: 287px;
 }
 
 .section__footer-menu {
+    max-width: 1028px;
     margin-top: 80px;
 }
 
 .footer-contacts {
     display: flex;
-    margin-left: 80px;
+    justify-content: space-between;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -76,7 +135,6 @@
     flex-direction: column;
     justify-content: space-around;
     margin: 0;
-    margin-right: 35px;
 }
 
 .footer li {
@@ -99,8 +157,5 @@
 
 .footer-end {
     display: flex;
-    justify-content: space-between;
-    margin-top: 36px;
-    margin-bottom: 56px;
-    margin-left: 80px;
+    justify-content: center;
 }
