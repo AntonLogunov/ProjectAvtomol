@@ -12,8 +12,7 @@
     <link rel="manifest" href="src/icons/site.webmanifest">
     <link rel="stylesheet" href="dist/style/style.css">
     <link rel="stylesheet" href="src/style/anton.css">
-    <link defer rel="stylesheet" href="js/main.js">
-    <script defer src="js/vitaly.js"></script>
+    <script defer src="src/js/anton.js"></script>
 </head>
 
 <body>
@@ -52,8 +51,58 @@
     <main>
         <section class="section section__request">
             <div class="wrapper">
-                <p class="request__text">ЗАПИСЬ НА СТО</p>
                 <div class="wrapper__request">
+                    
+                    <div class="request__form2">
+                        <div class="select">
+                            <div>
+                                <label class="request__form2--text" for="meeting-time">3. Выберите дату</label>
+                                <input class="select__input" type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                            </div>
+                            <div>
+                                <label class="request__form2--text" for="meeting-time">4. Выберите время</label>
+                                <!-- ================= кастомный блок ======================= -->
+                                <div class="castom castom-is-active">
+                                    <div class="castom__header">
+                                        <div class="castom__form__time">
+                                            <span class="castom__current"> 9:00-20:00</span>
+                                            <div class="castom__icon">
+                                                <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M23.149 1.77586L12.5783 12.3466L2.00756 1.77586" stroke="#F3930D" stroke-width="3.51747" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                        <div class="castom__box">
+                                            <div class="castom__body">
+                                                <div class="castom__time">9:00</div>
+                                                <div class="castom__time">9:30</div>
+                                                <div class="castom__time">10:00</div>
+                                                <div class="castom__time">10:30</div>
+                                                <div class="castom__time">11:00</div>
+                                                <div class="castom__time">11:30</div>
+                                                <div class="castom__time">12:00</div>
+                                                <div class="castom__time">12:30</div>
+                                                <div class="castom__time">13:00</div>
+                                                <div class="castom__time">13:30</div>
+                                                <div class="castom__time">14:00</div>
+                                                <div class="castom__time">14:30</div>
+                                                <div class="castom__time">15:00</div>
+                                                <div class="castom__time">16:30</div>
+                                                <div class="castom__time">17:00</div>
+                                                <div class="castom__time">17:30</div>
+                                                <div class="castom__time">18:00</div>
+                                                <div class="castom__time">18:30</div>
+                                                <div class="castom__time">19:00</div>
+                                                <div class="castom__time">19:30</div>
+                                                <div class="castom__time">20:00</div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <!-- ====================================================== -->
+                            </div>
+                        </div>
+                    </div>
                     <div class="request__form1">
                         <p class="request__textdata">Контактные данные</p>
                         <form class="request" action="">
@@ -62,37 +111,12 @@
                             <input class="data" type="text" placeholder="Марка а/м">
                             <!-- ??????????????????????????????????????????????????? -->
                             <div class="radio">
-                                <input class="radio__button" type="checkbox" name="user_type" id="r1" value="admin">
-                                <label class="radio__text" for="r1">Я согласен(а) на обработку персональных данных</label>
+                                <input class="radio__input" type="radio" name="user_type" id="r1" value="admin">
+                                <label class="radio__label" for="r1">Я согласен(а) на обработку персональных данных</label>
                             </div>
                             <!-- ??????????????????????????????????????????????????? -->
                             <input class="button" type="submit" value="Записаться">
                         </form>
-                    </div>
-                    <div class="request__form2">
-                        <div class="select">
-                            <div class="select__addres">
-                                <!-- ??????????????????????????????????????????????????? -->
-                                <label class="request__form2--text">Выберите адрес</label>
-                                <select class="select__input" name="" id="">
-                                    <div class="adress__list">
-                                        <option value="beivel">ул. Бейвеля 116/3</option>
-                                        <option value="beivel">ул. Бейвеля 116/3</option>
-                                        <option value="beivel">ул. Бейвеля 116/3</option>
-                                        <option value="beivel">ул. Бейвеля 116/3</option>
-                                    </div>
-                                </select>
-                                <!-- ??????????????????????????????????????????????????? -->
-                            </div>
-                            <div>
-                                <label class="request__form2--text" for="meeting-time">Выберите дату</label>
-                                <input class="select__input" type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
-                            </div>
-                            <div>
-                                <label class="request__form2--text" for="meeting-time">Выберите время</label>
-                                <input class="select__input" type="time"  value="09:00"/>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
