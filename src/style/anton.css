@@ -224,7 +224,6 @@
     color: #A8A8A8;
     cursor: pointer;
     margin-left: 44px;
-    margin-top: 5px;
 }
 .radio__label::before{
     content: "";
