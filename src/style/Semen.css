@@ -6,7 +6,7 @@
     align-items: center;
     height: 413px;
     border-radius: 20px;
-    background: url('../img/sec-2-car.png')no-repeat;
+    background: url('/src/img/sec-2-car.png')no-repeat;
 }
 .sec2_p{
     width: 543px;
