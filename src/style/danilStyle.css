@@ -67,10 +67,7 @@
 .section__services-menu {
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
-=======
     max-width: 900px;
->>>>>>> danil
 }
 
 .services-heading {
@@ -89,44 +86,28 @@
 
 .services-grid-elements {
     display: grid;
-<<<<<<< HEAD
-    grid-template-columns:  repeat(5, 205px);
-    gap: 65px 51px;
-=======
     grid-template-columns:  repeat(4, 200px);
     gap: 80px 70px;
 }
 
-.grid-link:hover .grid-element {
-    color: rgba(243, 147, 13, 1);
->>>>>>> danil
+.grid-link:hover .grid-svg path {
+    stroke: rgba(243, 147, 13, 1);
 }
 
 .grid-element {
     display: flex;
     flex-direction: column;
     align-items: center;
-<<<<<<< HEAD
-    justify-content: space-between;
-=======
->>>>>>> danil
 }
 
 .grid-paragraph {
     font-style: normal;
     font-weight: 700;
-<<<<<<< HEAD
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    color: #8E8E8E;
-=======
     font-size: 15px;
     line-height: 18px;
     text-align: center;
     color: #8E8E8E;
     margin-top: 19px;
->>>>>>> danil
 }
 /* секция 9 */
 .footer {
