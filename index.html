@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="dist/style/style.css">
     <link defer rel="stylesheet" href="js/main.js">
     <script defer src="src/js/vitaly.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=um=constructor%3Aef276d26e94014049c7aec200e8c68065a4708447feadcd033084cba9bf9fe08&lang=ru_RU" type="text/javascript">
+    </script>
+    <script defer src="src/js/mapscript.js"></script>
 </head>
 
 <body>
@@ -553,24 +556,11 @@
             </div>
         </section>
         <!-- 8 секция -->
-        <section id="contacts_link" class="section section section-map">
-            <!-- <a class="link_list" name="adress_link"></a> -->
-            <div class="wrapper container-map">
-                <div class="map-text">
-                    <h1>где нас найти?</h1>
-                </div>
-                <div class="map-container">
-                    <div class="map">
-                        <script type="text/javascript" charset="utf-8" async
-                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aef276d26e94014049c7aec200e8c68065a4708447feadcd033084cba9bf9fe08&amp;width=1223&amp;height=332&amp;lang=ru_RU&amp;scroll=true"></script>
-                    </div>
-                    <div class="address-map">
-                        <a class="map-link" href="#">г. Челябинск</a>
-                        <img class="map-address-margin01" src="./src/img/map-line.svg" alt="">
-                        <a class="map-link map-address-margin38" href="#">ул. Бейвеля 116/3</a>
-                        <img class="map-address-margin02" src="./src/img/map-line.svg" alt="">
-                        <a class="map-link" href="#">Троицкий Тракт 62Ф</a>
-                    </div>
+        <section id="contacts_link" class="section-map section-wide-map">
+            <div class="map-container">
+                <p class="first-map-text-p">ГДЕ НАС НАЙТИ?</p>
+                <div id="map" class="map-style">
+    
                 </div>
             </div>
         </section>
