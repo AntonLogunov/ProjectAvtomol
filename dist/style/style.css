@@ -237,12 +237,12 @@
     line-height: 44px;
     color: #8E8E8E;
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 }
 .info{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 59px;
+    margin-bottom: 40px;
 }
 .info__div{
     display: flex;
@@ -255,6 +255,7 @@
     font-size: 84px;
     line-height: 102px;
     color: #F3930D;
+    margin: 0;
 }
 .info__text2{
     font-weight: 500;
@@ -272,7 +273,7 @@
     flex-direction: column;
     align-items: center;
     max-width: 290px;
-    max-height: 280px;
+    
     background: #F3930D;
 }
 .info__grid__block__img{
@@ -280,26 +281,28 @@
     height: 90px;
     background: #FFFFFF;
     border-radius: 50%;
-    margin-top: 46px;
-    margin-bottom: 17px;
+    margin-top: 40px;
+    margin-bottom: 15px;
 }
 .info__grid__block__text1{
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
     color: #FFFFFF;
+    margin: 0;
 }
 .info__grid__block__text2,
 .info__grid__block__text3{
+    width: 196px;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
     color: #FFFFFF;
+    margin: 0;
 }
 .info__grid__block__text3{
-    margin-top: 17px;
-    margin-bottom: 15px;
+    margin: 15px 0;
 }
 .avtomol__slider{
     width: 26.56px;
