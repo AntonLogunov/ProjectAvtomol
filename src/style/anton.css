@@ -282,9 +282,13 @@
     font-size: 31.6572px;
     line-height: 39px;
     color: #8E8E8E;
+    margin-bottom: 42px;
 }
 .select__input{
     margin-top: 42px;
+}
+.select__form{
+    margin-top: 47px;
 }
 /* ================выбор времени(кастомный блок)=========================== */
 .castom.castom-is-active .castom__box{
@@ -294,15 +298,15 @@
 }
 .castom__header{
     cursor: pointer;
-    height: 92px;
-    width: 480px;
+    height: 80px;
+    width: 430px;
     color: #F3930D;
     border: 1.5px solid #F3930D;
     border-radius: 15px;
 }
 .castom__form__time{
     display: flex;
-    margin-left: 180px;
+    margin-left: 150px;
     margin-top: 30px;
 }
 .castom__form__time div{
@@ -350,3 +354,24 @@
 
 }
 /* ========================================================== */
+body {
+    font-family: sans-serif;
+  }
+  
+
+  .qs-day:nth-child(7), 
+  .qs-day:nth-child(6){
+    color: #F3930D;
+  }
+  .qs-num:nth-child(7n),
+  .qs-num:nth-child(7n-1){
+    color: #F3930D;
+  }
+  .qs-num{
+    font-weight: 700;
+font-size: 20px;
+line-height: 22px;
+color: #313131;
+flex: none;
+order: 4;
+  }

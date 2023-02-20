@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="dist/style/style.css">
     <link rel="stylesheet" href="src/style/anton.css">
     <script defer src="src/js/anton.js"></script>
+    <link rel="stylesheet" href="src/js/datepicker.min.js">
+    <link rel="stylesheet" href="src/style/datepicker.min.css">
+    <link rel="stylesheet" href="src/js/kalendar.js">
 </head>
 
 <body>
@@ -56,11 +59,12 @@
                     <div class="request__form2">
                         <div class="select">
                             <div>
-                                <label class="request__form2--text" for="meeting-time">3. Выберите дату</label>
-                                <input class="select__input" type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                                <p class="request__form2--text" for="meeting-time">3. Выберите дату</p>
+                                <div id="app"></div>
+                                <input class="input" type="date" id="date">
                             </div>
-                            <div>
-                                <label class="request__form2--text" for="meeting-time">4. Выберите время</label>
+                            <div class="select__form">
+                                <p class="request__form2--text" for="meeting-time">4. Выберите время</p>
                                 <!-- ================= кастомный блок ======================= -->
                                 <div class="castom castom-is-active">
                                     <div class="castom__header">
