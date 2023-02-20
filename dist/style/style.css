@@ -1,4 +1,96 @@
-.container-map {
+.section-wide-map {
+    width: 100%;
+}
+.map-style {
+    width: 100%;
+    height: 621px;
+    margin: 50px auto 0px auto;
+}
+
+.first-map-text-p {
+    width: 282px;
+    height: 37px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #8E8E8E;
+
+    margin: 0 auto;
+}
+/*----------*/
+.map-container-choise {
+    width: 1046px;
+    margin: 200px auto 0px auto;
+}
+
+.second-map-text-p {
+    width: 308.03px;
+    height: 31.66px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31.6572px;
+    line-height: 39px;
+    color: #8E8E8E;
+}
+
+.choise-div {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 43px;
+    margin-bottom: 43px;
+}
+
+.choise-button {
+    width: 430px;
+    height: 80px;
+
+    border: 1px solid #F3930D;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choise-button p {
+    width: 150px;
+    height: 25px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21.1048px;
+    line-height: 26px;
+    color: #F3930D;
+}
+
+.choise-img {
+    width: 45px;
+    height: 48px;
+    margin: auto 0px auto 150px;
+}
+
+.choise-p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21.1048px;
+    line-height: 26px;
+    color: #8E8E8E;
+
+    margin: auto 0px auto 25px;
+}
+
+.map-style2 {
+    width: 1046px;
+    height: 292px;
+}
+
+
+/* .container-map {
     margin-bottom: 60px;
 }
 
@@ -71,7 +163,7 @@
 .telephone-map a {
     margin: 0px;
     margin-left: 26px;
-}
+} */
 /* секция 3 */
 .section__company{
     display: grid;
@@ -92,21 +184,33 @@
     display: grid;
     grid-template-columns: repeat(3, 310px);
     column-gap: 74px;
+    row-gap: 67px;
     max-width: 1078px;
     margin: 0 auto;
 }
 .advantages__block{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-bottom: 67px;
 }
-.img__block{
-    width: 149px;
-    height: 149px;
-    background-color: #D9D9D9;
-    border-radius: 50%;
+.advantages__svg1 svg{
+    margin-bottom: 10px;
+}
+.advantages__svg2 svg{
+    margin-bottom: 9px;
+}
+.advantages__svg3 svg{
+    margin-bottom: 26px;
+}
+.advantages__svg4 svg{
+    margin-bottom: 24.57px;
+}
+.advantages__svg5 svg{
+    margin-bottom: 18px;
+}
+.advantages__svg6 svg{
+    margin-top: 8px;
+    margin-bottom: 27px;
 }
 .text1__block{
     font-weight: 700;
@@ -114,8 +218,7 @@
     line-height: 29px;
     text-transform: capitalize;
     color: #8E8E8E;
-    margin-top: 17px;
-    margin-bottom: 12px;
+    margin-bottom: 12.8px;
 }
 .text2__block{
     font-weight: 500;
@@ -198,13 +301,29 @@
     margin-top: 17px;
     margin-bottom: 15px;
 }
-
-
+.avtomol__slider{
+    width: 26.56px;
+    height: 26.56px;
+    border-radius: 50%;
+    background: rgba(142, 142, 142, 0.47);
+    position: absolute;
+    display: inline-block;
+    border: none;
+    
+}
+.avtomol__slider--next{
+    right: 230px;
+    margin-top: -150px;
+}
+.avtomol__slider--prev{
+    left: 230px;
+    margin-top: -150px;
+}
 
 
 
 /* секция 1 записи*/
-/* .section__request{
+.section__request{
     margin-top: 200px
 }
 .wrapper__request{
@@ -258,17 +377,53 @@
     color: #F3930D;
 }
 .radio{
-    display: flex;
+    position: relative;
     margin-top: 45px;
 }
-.radio__button{
-    width: 31px;
-    height: 31px;
+.radio__input{
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
 }
-.radio__text{
-    color:#6E6E6E;
-    align-self:center;
-    margin-left: 10px;
+.radio__label{
+    font-size: 1rem;
+    color: #A8A8A8;
+    cursor: pointer;
+    margin-left: 44px;
+}
+.radio__label::before{
+    content: "";
+    display: block;
+    width: 27px;
+    height: 27px;
+    border: 1px solid #F3930D;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.radio__label::after{
+    content: "";
+    display: block;
+    width: 13px;
+    height: 13px;
+    background-color: #F3930D;
+    border-radius: 50%;
+    opacity: 0;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+    transition: opacity .1s linear;
+}
+.radio__input:checked + .radio__label:before{
+    background-color: #FFFFFF;
+    border-color: #F3930D;
+}
+.radio__input:checked + .radio__label:after{
+    opacity: 1;
 }
 .button{
     width: 524px;
@@ -288,26 +443,78 @@
     opacity: 1;
 }
 .request__form2--text{
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    color: #6E6E6E;
-    margin-bottom: 27px;
+    font-weight: 700;
+    font-size: 31.6572px;
+    line-height: 39px;
+    color: #8E8E8E;
 }
 .select__input{
-    width: 480px;
-    height: 92px;
-    background: #F3930D;
-    border-radius: 17px;
-    border: none;
-    margin-bottom: 85px;
-    text-align: center;
+    margin-top: 42px;
+}
+/* ================выбор времени(кастомный блок)=========================== */
+.castom.castom-is-active .castom__box{
+    display: none;
+    background-color: #F3930D;
     color: #FFFFFF;
+}
+.castom__header{
+    cursor: pointer;
+    height: 92px;
+    width: 480px;
+    color: #F3930D;
+    border: 1.5px solid #F3930D;
+    border-radius: 15px;
+}
+.castom__form__time{
+    display: flex;
+    margin-left: 180px;
+    margin-top: 30px;
+}
+.castom__form__time div{
+    width: 25px;
+    margin: 0;
+    margin-left: 92px;
+}
+.castom__current{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 26px;
+    color: #F3930D;
+}
+.custom__icon svg{
+    margin: 0;
+}
+.castom__box{
+    display: block;
+    box-shadow: 10px 10px 15px 0px rgba(34, 60, 80, 0.2);
+    margin-top: 7px;
+    border-radius: 15px;
+    padding: 36px 0px 46px 49px;
+}
+.castom__body{
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    column-gap: 47px;
+    row-gap: 26px;
+    width: 337px;
+    margin: 0;
+}
+.castom__time{
+    width: 84px;
+    height: 35px;
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
-} */
+    color: #8E8E8E;
+    flex: none;
+    text-align: center;
+    cursor: pointer;
+}
+.castom__time:hover{
+    color: #F3930D;
 
+}
+/* ========================================================== */
 /* name for Montserrat 500 from Figma: font-family: 'MontserratMedium'; */
 /* name for Montserrat 700 from Figma: font-family: 'MontserratBold'; */
 
