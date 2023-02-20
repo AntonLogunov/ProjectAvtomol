@@ -1,0 +1,765 @@
+[
+  {
+    "NameGroup": "Группа ТО",
+    "service": [
+      {
+        "Name": "Замена моторного масла с фильтром при покупке у нас",
+        "NativeCar": 0,
+        "ForeignCar": 0,
+        "LeadTime": "30 мин"
+      },
+      {
+        "Name": "Промывка масляной системы ДВС",
+        "NativeCar": 150,
+        "ForeignCar": 150,
+        "LeadTime": "15 мин"
+      },
+      {
+        "Name": "Снятие - установка защиты картера",
+        "NativeCar": 100,
+        "ForeignCar": 100,
+        "LeadTime": "10 мин"
+      },
+      {
+        "Name": "Замена масла МКПП",
+        "NativeCar": 400,
+        "ForeignCar": 400,
+        "LeadTime": "30 мин"
+      },
+      {
+        "Name": "Аппаратная замена масла в АКПП",
+        "NativeCar": 1000,
+        "ForeignCar": 1000,
+        "LeadTime": "90 мин"
+      },
+      {
+        "Name": "Частичная замена масла в АКПП",
+        "NativeCar": 700,
+        "ForeignCar": 700,
+        "LeadTime": "30 мин"
+      },
+      {
+        "Name": "Снятие, установка поддона АКПП с заменой фильтра",
+        "NativeCar": 1350,
+        "ForeignCar": 1350,
+        "LeadTime": "90 мин"
+      },
+      {
+        "Name": "Замена масла в раздатке",
+        "NativeCar": 400,
+        "ForeignCar": 400,
+        "LeadTime": "30 мин"
+      },
+      {
+        "Name": "Замена жидкости ГУРа частичная",
+        "NativeCar": 500,
+        "ForeignCar": 500,
+        "LeadTime": "1 час  "
+      },
+      {
+        "Name": "Замена воздушного фильтра карбюратор",
+        "NativeCar": 100,
+        "ForeignCar": 100,
+        "LeadTime": "10 мин"
+      },
+      {
+        "Name": "Замена воздушного фильтра инжектор",
+        "NativeCar": 100,
+        "ForeignCar": 100,
+        "LeadTime": "10 мин"
+      },
+      {
+        "Name": "Замена салонного фильтра",
+        "NativeCar": 150,
+        "ForeignCar": 300,
+        "LeadTime": "30 мин"
+      },
+      {
+        "Name": "Замена свечей зажигания на бронепроводах 1 шт.",
+        "NativeCar": 100,
+        "ForeignCar": 100,
+        "LeadTime": "30 мин"
+      },
+      {
+        "Name": "Замена свечей зажигания с индивид. катушками 1 шт.",
+        "NativeCar": 100,
+        "ForeignCar": 100,
+        "LeadTime": "30 мин"
+      },
+      {
+        "Name": "Замена свечей со снятием коллектора впускного 6 шт.",
+        "NativeCar": 120,
+        "ForeignCar": 1900,
+        "LeadTime": "2 часа"
+      },
+      {
+        "Name": "Слесарные работы норма-час",
+        "NativeCar": 750,
+        "ForeignCar": 750,
+        "LeadTime": "1 час"
+      },
+      {
+        "Name": "Сварочные работы норма-час",
+        "NativeCar": 750,
+        "ForeignCar": 750,
+        "LeadTime": "1 час"
+      }
+    ]
+  },
+  {
+    "NameGroup": "Диагностика",
+    "service": [
+      {
+        "Name": "Компьютерная диагностика",
+        "NativeCar": 500,
+        "ForeignCar": 500,
+        "LeadTime": "30 мин"
+      },
+      {
+        "Name": "Комплексная диагностика",
+        "NativeCar": 600,
+        "ForeignCar": 600,
+        "LeadTime": "1 час"
+      },
+      {
+        "Name": "Диагностика ходовой",
+        "NativeCar": 250,
+        "ForeignCar": 250,
+        "LeadTime": "30 мин"
+      },
+      {
+        "Name": "Контрольно-смотровые работы на подъемнике норма-час",
+        "NativeCar": 600,
+        "ForeignCar": 900,
+        "LeadTime": "1 час "
+      },
+      {
+        "Name": "Замер компрессии 1 цилиндр",
+        "NativeCar": 150,
+        "ForeignCar": 150,
+        "LeadTime": "1 час"
+      },
+      {
+        "Name": "Замер давления масло ДВС",
+        "NativeCar": 250,
+        "ForeignCar": 250,
+        "LeadTime": "30 мин"
+      }
+    ]
+  },
+  {
+    "NameGroup": "Замена ремней",
+    "service": [
+      {
+        "Name": "Замена приводного ремня",
+        "NativeCar": 450,
+        "ForeignCar": 600,
+        "LeadTime": "1 час"
+      },
+      {
+        "Name": "Замена ролика приводного ремня 1 шт",
+        "NativeCar": 650,
+        "ForeignCar": 950,
+        "LeadTime": "1 час"
+      },
+      {
+        "Name": "Замена ремня ГРМ и роликов",
+        "NativeCar": 1600,
+        "ForeignCar": "от 3500",
+        "LeadTime": "6 часов"
+      },
+      {
+        "Name": "Замена цепи ГРМ",
+        "NativeCar": 2500,
+        "ForeignCar": "от 4800",
+        "LeadTime": "12 часов"
+      },
+      {
+        "Name": "Замер давления в топливной системе",
+        "NativeCar": 300,
+        "ForeignCar": 300,
+        "LeadTime": "30 мин"
+      },
+      {
+        "Name": "Аппаратная чистка форсунок LAVR без жидкости",
+        "NativeCar": 1200,
+        "ForeignCar": 1200,
+        "LeadTime": "90 мин"
+      },
+      {
+        "Name": "Замена топливных форсунок (1-4 шт)",
+        "NativeCar": 1800,
+        "ForeignCar": "от 1500",
+        "LeadTime": "4 часа"
+      },
+      {
+        "Name": "Чистка дроссельной заслонки объем двигателя до 2,4",
+        "NativeCar": 500,
+        "ForeignCar": 750,
+        "LeadTime": "1 час"
+      },
+      {
+        "Name": "Чистка дроссельной заслонки объем двигателя свыше 2,4",
+        "NativeCar": "-",
+        "ForeignCar": 950,
+        "LeadTime": "1 час"
+      },
+      {
+        "Name": "Замена топливного насоса инжектор (погружной)",
+        "NativeCar": 900,
+        "ForeignCar": 1000,
+        "LeadTime": "90 мин"
+      },
+      {
+        "Name": "Замена топливного фильтра карбюратор",
+        "NativeCar": 100,
+        "ForeignCar": 100,
+        "LeadTime": "15 мин"
+      },
+      {
+        "Name": "Замена топливного фильтра инжектор\/дизель",
+        "NativeCar": 300,
+        "ForeignCar": 400,
+        "LeadTime": "30 мин"
+      },
+      {
+        "Name": "Замена топливного фильтра инжектор погружного в баке",
+        "NativeCar": 900,
+        "ForeignCar": 1000,
+        "LeadTime": "90 мин"
+      }
+    ]
+  },
+  {
+    "NameGroup": "Двигатель",
+    "service": [
+      {
+        "Name": "Замена прокладки клап крышки 1 шт",
+        "NativeCar": 1000,
+        "ForeignCar": 1200,
+        "LeadTime": "90 мин"
+      },
+      {
+        "Name": "Замена прокладки ГБЦ",
+        "NativeCar": 3200,
+        "ForeignCar": 6500,
+        "LeadTime": "6 часов"
+      },
+      {
+        "Name": "Замена прокладки картера",
+        "NativeCar": 900,
+        "ForeignCar": 1200,
+        "LeadTime": "90 мин"
+      },
+      {
+        "Name": "Замена прокладки впускного коллектора",
+        "NativeCar": 1200,
+        "ForeignCar": 1500,
+        "LeadTime": "90 мин"
+      },
+      {
+        "Name": "Замена м\/с колпачков",
+        "NativeCar": 3500,
+        "ForeignCar": 7500,
+        "LeadTime": "8 часов"
+      },
+      {
+        "Name": "Ремонт ГБЦ с притиркой клапанов",
+        "NativeCar": 4000,
+        "ForeignCar": 8500,
+        "LeadTime": "24 часа"
+      },
+      {
+        "Name": "Замена опоры ДВС 1 шт.",
+        "NativeCar": 500,
+        "ForeignCar": 700,
+        "LeadTime": "1 час"
+      },
+      {
+        "Name": "Замена переднего сальника коленвала",
+        "NativeCar": 1500,
+        "ForeignCar": 3500,
+        "LeadTime": "1 час"
+      },
+      {
+        "Name": "Замена заднего сальника коленвала",
+        "NativeCar": 3000,
+        "ForeignCar": 4500,
+        "LeadTime": "4 часа"
+      },
+      {
+        "Name": "Замена сальника распредвала",
+        "NativeCar": 1500,
+        "ForeignCar": 3500,
+        "LeadTime": "90 мин"
+      },
+      {
+        "Name": "Замена стартера",
+        "NativeCar": 850,
+        "ForeignCar": 1200,
+        "LeadTime": "90 мин"
+      },
+      {
+        "Name": "Замена генератора",
+        "NativeCar": 1000,
+        "ForeignCar": 1400,
+        "LeadTime": "90 мин"
+      },
+      {
+        "Name": "Замена катушки зажигания",
+        "NativeCar": 250,
+        "ForeignCar": 300,
+        "LeadTime": "30 мин"
+      },
+      {
+        "Name": "Замена в\/в проводов",
+        "NativeCar": 390,
+        "ForeignCar": 490,
+        "LeadTime": " 30 мин"
+      },
+      {
+        "Name": "Маховик замена",
+        "NativeCar": 3500,
+        "ForeignCar": 4000,
+        "LeadTime": "30 мин"
+      }
+    ]
+  },
+  {
+    "NameGroup": "Система охлаждения",
+    "service": [
+      {
+        "Name": "Замена охлаждающей жидкости",
+        "NativeCar": 550,
+        "ForeignCar": 600,
+        "LeadTime": "90 мин"
+      },
+      {
+        "Name": "Замена термостата",
+        "NativeCar": 800,
+        "ForeignCar": 1200,
+        "LeadTime": "1 час"
+      },
+      {
+        "Name": "Замена патрубка системы охлаждения 1 шт",
+        "NativeCar": 150,
+        "ForeignCar": 150,
+        "LeadTime": "15 мин"
+      },
+      {
+        "Name": "Замена радиатора основного системы охлаждения",
+        "NativeCar": 900,
+        "ForeignCar": 1500,
+        "LeadTime": "2 часа"
+      },
+      {
+        "Name": "Замена радиатора отопителя системы охлаждения",
+        "NativeCar": 2500,
+        "ForeignCar": 3000,
+        "LeadTime": "3 часа"
+      },
+      {
+        "Name": "Замена крана отопителя системы охлаждения",
+        "NativeCar": 1650,
+        "ForeignCar": 3000,
+        "LeadTime": "3 часа"
+      },
+      {
+        "Name": "Замена расширительного бачка",
+        "NativeCar": 250,
+        "ForeignCar": 350,
+        "LeadTime": "30 мин"
+      },
+      {
+        "Name": "Замена водяного насоса",
+        "NativeCar": 1900,
+        "ForeignCar": 2500,
+        "LeadTime": "3 часа"
+      },
+      {
+        "Name": "Замена вентилятора",
+        "NativeCar": 850,
+        "ForeignCar": 1500,
+        "LeadTime": "90 мин"
+      },
+      {
+        "Name": "Промывка системы охлаждения + к замене охл.жидкости",
+        "NativeCar": 500,
+        "ForeignCar": 500,
+        "LeadTime": "1 час"
+      }
+    ]
+  },
+  {
+    "NameGroup": "Ходовая часть",
+    "service": [
+      {
+        "Name": "Замена стойки амортизационной 1 шт (передняя подвеска)",
+        "NativeCar": 850,
+        "ForeignCar": 1200,
+        "LeadTime": "90 мин"
+      },
+      {
+        "Name": "Замена амортизатора 1 шт  (задняя подвеска)",
+        "NativeCar": 800,
+        "ForeignCar": 1100,
+        "LeadTime": "90 мин"
+      },
+      {
+        "Name": "Замена пружины 1 шт.",
+        "NativeCar": 950,
+        "ForeignCar": 1300,
+        "LeadTime": "90 мин"
+      },
+      {
+        "Name": "Замена шаровой 1 шт. без снятия рычага",
+        "NativeCar": 450,
+        "ForeignCar": 700,
+        "LeadTime": "1 час"
+      },
+      {
+        "Name": "Замена рулевого наконечника 1 шт.",
+        "NativeCar": 300,
+        "ForeignCar": 350,
+        "LeadTime": "30 мин"
+      },
+      {
+        "Name": "Замена рулевой тяги 1 шт.",
+        "NativeCar": 650,
+        "ForeignCar": 700,
+        "LeadTime": "1 час"
+      },
+      {
+        "Name": "Замена стойки стабилизатора 1 шт",
+        "NativeCar": 350,
+        "ForeignCar": 450,
+        "LeadTime": "30 мин"
+      },
+      {
+        "Name": "Замена втулки стабилизатора 1 шт",
+        "NativeCar": 350,
+        "ForeignCar": 450,
+        "LeadTime": "30 мин"
+      },
+      {
+        "Name": "Замена нижнего рычага передней подвески 1 шт",
+        "NativeCar": 650,
+        "ForeignCar": 900,
+        "LeadTime": "1 час"
+      },
+      {
+        "Name": "Замена верхнего рычага передней подвески 1 шт",
+        "NativeCar": 650,
+        "ForeignCar": 1200,
+        "LeadTime": "2 часа"
+      },
+      {
+        "Name": "Замена рычага задней подвески 1 шт",
+        "NativeCar": "-",
+        "ForeignCar": 900,
+        "LeadTime": "1 час"
+      },
+      {
+        "Name": "Замена реактивных тяг 1 шт",
+        "NativeCar": 450,
+        "ForeignCar": 450,
+        "LeadTime": "30 мин"
+      },
+      {
+        "Name": "Замена рычага маятникого ",
+        "NativeCar": 600,
+        "ForeignCar": 900,
+        "LeadTime": "1 час"
+      }
+    ]
+  },
+  {
+    "NameGroup": "Замена рулевого редуктора",
+    "service": [
+      {
+        "Name": "Замена рулевой рейки",
+        "NativeCar": 2000,
+        "ForeignCar": 4500,
+        "LeadTime": "4 часа"
+      },
+      {
+        "Name": "Замена пыльника рулевой рейки",
+        "NativeCar": 2000,
+        "ForeignCar": 4500,
+        "LeadTime": "4 часа"
+      },
+      {
+        "Name": "Перепресовка сайлентблока рычага 1 шт",
+        "NativeCar": 300,
+        "ForeignCar": 300,
+        "LeadTime": "15 мин"
+      },
+      {
+        "Name": "Замена сайлентблока задней балки 1 шт",
+        "NativeCar": 1200,
+        "ForeignCar": 1600,
+        "LeadTime": "2 часа"
+      },
+      {
+        "Name": "Замена подшипника передней ступицы",
+        "NativeCar": 850,
+        "ForeignCar": 1200,
+        "LeadTime": "90 мин"
+      },
+      {
+        "Name": "Замена подшипника ступицы задней оси",
+        "NativeCar": 850,
+        "ForeignCar": 1200,
+        "LeadTime": "90 мин"
+      },
+      {
+        "Name": "Регулировка подшипника ступицы 1 шт",
+        "NativeCar": 300,
+        "ForeignCar": 300,
+        "LeadTime": "30 мин"
+      }
+    ]
+  },
+  {
+    "NameGroup": "Трансмиссия",
+    "service": [
+      {
+        "Name": "Замена сцепления в сборе",
+        "NativeCar": 3000,
+        "ForeignCar": 4500,
+        "LeadTime": "5 часов"
+      },
+      {
+        "Name": "Замена жидкости сцепления",
+        "NativeCar": 300,
+        "ForeignCar": 300,
+        "LeadTime": "30 мин"
+      },
+      {
+        "Name": "Прокачка сцепления",
+        "NativeCar": 500,
+        "ForeignCar": 500,
+        "LeadTime": "30 мин"
+      },
+      {
+        "Name": "Замена троса сцепления",
+        "NativeCar": 400,
+        "ForeignCar": 600,
+        "LeadTime": "1 час"
+      },
+      {
+        "Name": "Замена главный цилиндр сцепления",
+        "NativeCar": 950,
+        "ForeignCar": 1500,
+        "LeadTime": "90 мин"
+      },
+      {
+        "Name": "Замена рабочий цилиндр сцепления",
+        "NativeCar": 750,
+        "ForeignCar": 950,
+        "LeadTime": "90 мин"
+      },
+      {
+        "Name": "Замена сальника привода",
+        "NativeCar": 1000,
+        "ForeignCar": 1500,
+        "LeadTime": "90 мин"
+      },
+      {
+        "Name": "Замена Шруса 1 шт",
+        "NativeCar": 990,
+        "ForeignCar": 1200,
+        "LeadTime": "90 мин"
+      },
+      {
+        "Name": "Замена привода в сборе",
+        "NativeCar": 990,
+        "ForeignCar": 1200,
+        "LeadTime": "90 мин"
+      },
+      {
+        "Name": "Замена пыльника шруса наружнего",
+        "NativeCar": 990,
+        "ForeignCar": 1200,
+        "LeadTime": "90 мин"
+      },
+      {
+        "Name": "Замена пыльника шруса внутреннего",
+        "NativeCar": 990,
+        "ForeignCar": 1200,
+        "LeadTime": "90 мин"
+      },
+      {
+        "Name": "Замена передних тормозных колодок (ось)",
+        "NativeCar": 450,
+        "ForeignCar": 550,
+        "LeadTime": "30 мин"
+      },
+      {
+        "Name": "Замена задних дисковых тормозных колодок (ось)",
+        "NativeCar": 450,
+        "ForeignCar": 550,
+        "LeadTime": "30 мин"
+      },
+      {
+        "Name": "Замена задних барабанных тормозных колодок (ось)",
+        "NativeCar": 850,
+        "ForeignCar": 1000,
+        "LeadTime": "1 час"
+      },
+      {
+        "Name": "Замена тормозного диска 1 шт",
+        "NativeCar": 550,
+        "ForeignCar": 650,
+        "LeadTime": "30 мин"
+      },
+      {
+        "Name": "Замена тормозного барабана 1 шт",
+        "NativeCar": 350,
+        "ForeignCar": 450,
+        "LeadTime": "1 час"
+      },
+      {
+        "Name": "Замена датчика АБС 1 шт",
+        "NativeCar": 500,
+        "ForeignCar": 700,
+        "LeadTime": "30 мин"
+      },
+      {
+        "Name": "Замена тормозного шланга 1 шт",
+        "NativeCar": 300,
+        "ForeignCar": 300,
+        "LeadTime": "30 мин"
+      },
+      {
+        "Name": "Замена главного тормозного цилиндра",
+        "NativeCar": 700,
+        "ForeignCar": 900,
+        "LeadTime": "90 мин"
+      },
+      {
+        "Name": "Замена зад. тормозного цилиндра 1 шт +  с\/у барабана",
+        "NativeCar": 300,
+        "ForeignCar": 300,
+        "LeadTime": "1 час"
+      },
+      {
+        "Name": "Замена перед. тормозного суппорта 1 шт",
+        "NativeCar": 550,
+        "ForeignCar": 750,
+        "LeadTime": "1 час"
+      },
+      {
+        "Name": "Замена ремкомплекта тормозного суппорта 1 шт. без прокачки торм. системы",
+        "NativeCar": "-",
+        "ForeignCar": 1000,
+        "LeadTime": "90 мин"
+      },
+      {
+        "Name": "Замена тормозной жидкости (прокачка)",
+        "NativeCar": 600,
+        "ForeignCar": 600,
+        "LeadTime": "30 мин"
+      },
+      {
+        "Name": "Замена колодок ручника дисковых тормозов",
+        "NativeCar": "-",
+        "ForeignCar": 1500,
+        "LeadTime": "2 часа"
+      },
+      {
+        "Name": "Замена тросов ручника 2 шт",
+        "NativeCar": 1200,
+        "ForeignCar": 1500,
+        "LeadTime": "2 часа"
+      },
+      {
+        "Name": "Регулировка стояночного тормоза",
+        "NativeCar": 300,
+        "ForeignCar": 400,
+        "LeadTime": "30 мин"
+      }
+    ]
+  },
+  {
+    "NameGroup": "Выхлопная система",
+    "service": [
+      {
+        "Name": "Замена глушителя",
+        "NativeCar": 450,
+        "ForeignCar": 600,
+        "LeadTime": "1 час"
+      },
+      {
+        "Name": "Замена резонатора",
+        "NativeCar": 450,
+        "ForeignCar": 600,
+        "LeadTime": "1 час"
+      },
+      {
+        "Name": "Замена кислородного датчика",
+        "NativeCar": 400,
+        "ForeignCar": 800,
+        "LeadTime": "1 час"
+      },
+      {
+        "Name": "Замена гофры системы выпуска",
+        "NativeCar": 1000,
+        "ForeignCar": 1500,
+        "LeadTime": "2 часа"
+      },
+      {
+        "Name": "Замена прокладки приемной трубы",
+        "NativeCar": 300,
+        "ForeignCar": 600,
+        "LeadTime": " 1 час"
+      },
+      {
+        "Name": "Замена прокладки коллектора выпускного",
+        "NativeCar": 1800,
+        "ForeignCar": 2500,
+        "LeadTime": "2 часа"
+      }
+    ]
+  },
+  {
+    "NameGroup": "Кондиционер",
+    "service": [
+      {
+        "Name": "Работа по заправке кондиционера",
+        "NativeCar": 1900,
+        "ForeignCar": 1900,
+        "LeadTime": "1 час"
+      },
+      {
+        "Name": "Замена радиатора кондиционера",
+        "NativeCar": 1500,
+        "ForeignCar": 1900,
+        "LeadTime": "2 часа"
+      },
+      {
+        "Name": "Шиномонтаж",
+        "NativeCar": 1400,
+        "ForeignCar": 1800,
+        "LeadTime": "1 час"
+      }
+    ]
+  },
+  {
+    "NameGroup": "Норма-час",
+    "service": [
+      {
+        "Name": "Отечественные автомобили",
+        "NativeCar": 600,
+        "ForeignCar": 600,
+        "LeadTime": "1 час"
+      },
+      {
+        "Name": "Иномарки",
+        "NativeCar": 900,
+        "ForeignCar": 900,
+        "LeadTime": "1 час"
+      }
+    ]
+  }
+]

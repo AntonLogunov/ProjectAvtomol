@@ -180,3 +180,150 @@
     display: none;
     overflow-x:inherit;
 }
+/*======================================================================================================*/
+.section-form{
+    margin-top: 200px;
+}
+.section-form__form{
+    width: 1048px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.section-form__block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: inherit;
+    height: 79px;
+    margin: 0 auto;
+    margin-top: 26px;
+    padding: 24px 36px;
+
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+
+    font-weight: 500;
+    font-size: 21.1048px;
+    line-height: 26px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.section-form__menu{
+    box-sizing: unset;
+    width: inherit;
+    margin: 0 auto;
+    margin-bottom: 26px;
+
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+
+    font-weight: 500;
+    font-size: 21.1048px;
+    line-height: 26px;
+    text-align: left;
+}
+.section-form__menuItems{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid 1px red;
+}
+.section-form__items{
+    width: inherit;
+    margin: 0 auto;
+    margin-bottom: 26px;
+
+    background-color: white;
+    color: black;
+
+    font-weight: 500;
+    font-size: 21.1048px;
+    line-height: 26px;
+    text-align: left;
+}
+.section-form__item{
+    width: inherit;
+    margin: 0em;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items:normal ;
+    appearance: auto;
+    
+    cursor: pointer;
+    box-sizing:border-box;
+    background-color: white;
+    color: black;
+
+    
+    border: none;
+    border-bottom: solid 1px black;
+
+    font-weight: 500;
+    font-size: 21.1048px;
+    line-height: 26px;
+    text-align: left;
+    writing-mode: horizontal-tb !important;
+    text-rendering:unset;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+
+}
+
+.section-form__chosenItem{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 0px 36px;
+    margin-top: 44px;
+
+    border-radius: 15px;
+    background-color: orange;
+
+    color: white;
+    font-size: 21.1048px;
+    line-height: 26px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.section-form__closeButton{
+    width: fit-content;
+    height: fit-content;
+    margin-left: 50px;
+    cursor: pointer;
+    background-color:inherit;
+    border: none;
+    font-size: 24px;
+    color: white;
+}
+.section-form__closeButton:hover{
+    outline: 1px solid black;
+    border-radius: 50%;
+}
+
+
+
+.section-form__time_and_price{
+    width: 1024px;
+    margin: 0 auto;
+    margin-top: 44px;
+}
+.section-form__price{
+    font-weight: bold;
+}
+.section-form__time{
+    font-weight: bold;
+}
+
+.section-form__orange-txt{
+    color: orange;
+}

@@ -237,12 +237,12 @@
     line-height: 44px;
     color: #8E8E8E;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
 }
 .info{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 40px;
+    margin-bottom: 59px;
 }
 .info__div{
     display: flex;
@@ -255,7 +255,7 @@
     font-size: 84px;
     line-height: 102px;
     color: #F3930D;
-    margin: 0;
+    
 }
 .info__text2{
     font-weight: 500;
@@ -273,7 +273,7 @@
     flex-direction: column;
     align-items: center;
     max-width: 290px;
-    
+    max-height: 280px;
     background: #F3930D;
 }
 .info__grid__block__img{
@@ -281,28 +281,26 @@
     height: 90px;
     background: #FFFFFF;
     border-radius: 50%;
-    margin-top: 40px;
-    margin-bottom: 15px;
+    margin-top: 46px;
+    margin-bottom: 17px;
 }
 .info__grid__block__text1{
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
     color: #FFFFFF;
-    margin: 0;
 }
 .info__grid__block__text2,
 .info__grid__block__text3{
-    width: 196px;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
     color: #FFFFFF;
-    margin: 0;
 }
 .info__grid__block__text3{
-    margin: 15px 0;
+    margin-top: 17px;
+    margin-bottom: 15px;
 }
 .avtomol__slider{
     width: 26.56px;
@@ -450,20 +448,14 @@
     font-size: 31.6572px;
     line-height: 39px;
     color: #8E8E8E;
-<<<<<<< HEAD
-=======
     margin-bottom: 42px;
->>>>>>> origin/danilNew
 }
 .select__input{
     margin-top: 42px;
 }
-<<<<<<< HEAD
-=======
 .select__form{
     margin-top: 47px;
 }
->>>>>>> origin/danilNew
 /* ================выбор времени(кастомный блок)=========================== */
 .castom.castom-is-active .castom__box{
     display: none;
@@ -472,24 +464,15 @@
 }
 .castom__header{
     cursor: pointer;
-<<<<<<< HEAD
-    height: 92px;
-    width: 480px;
-=======
     height: 80px;
     width: 430px;
->>>>>>> origin/danilNew
     color: #F3930D;
     border: 1.5px solid #F3930D;
     border-radius: 15px;
 }
 .castom__form__time{
     display: flex;
-<<<<<<< HEAD
-    margin-left: 180px;
-=======
     margin-left: 150px;
->>>>>>> origin/danilNew
     margin-top: 30px;
 }
 .castom__form__time div{
@@ -537,8 +520,6 @@
 
 }
 /* ========================================================== */
-<<<<<<< HEAD
-=======
 body {
     font-family: sans-serif;
   }
@@ -560,7 +541,6 @@ color: #313131;
 flex: none;
 order: 4;
   }
->>>>>>> origin/danilNew
 /* name for Montserrat 500 from Figma: font-family: 'MontserratMedium'; */
 /* name for Montserrat 700 from Figma: font-family: 'MontserratBold'; */
 
@@ -1099,4 +1079,151 @@ a {
     left: -9px;
     display: none;
     overflow-x:inherit;
+}
+/*======================================================================================================*/
+.section-form{
+    margin-top: 200px;
+}
+.section-form__form{
+    width: 1048px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.section-form__block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: inherit;
+    height: 79px;
+    margin: 0 auto;
+    margin-top: 26px;
+    padding: 24px 36px;
+
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+
+    font-weight: 500;
+    font-size: 21.1048px;
+    line-height: 26px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.section-form__menu{
+    box-sizing: unset;
+    width: inherit;
+    margin: 0 auto;
+    margin-bottom: 26px;
+
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+
+    font-weight: 500;
+    font-size: 21.1048px;
+    line-height: 26px;
+    text-align: left;
+}
+.section-form__menuItems{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid 1px red;
+}
+.section-form__items{
+    width: inherit;
+    margin: 0 auto;
+    margin-bottom: 26px;
+
+    background-color: white;
+    color: black;
+
+    font-weight: 500;
+    font-size: 21.1048px;
+    line-height: 26px;
+    text-align: left;
+}
+.section-form__item{
+    width: inherit;
+    margin: 0em;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items:normal ;
+    appearance: auto;
+    
+    cursor: pointer;
+    box-sizing:border-box;
+    background-color: white;
+    color: black;
+
+    
+    border: none;
+    border-bottom: solid 1px black;
+
+    font-weight: 500;
+    font-size: 21.1048px;
+    line-height: 26px;
+    text-align: left;
+    writing-mode: horizontal-tb !important;
+    text-rendering:unset;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+
+}
+
+.section-form__chosenItem{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 0px 36px;
+    margin-top: 44px;
+
+    border-radius: 15px;
+    background-color: orange;
+
+    color: white;
+    font-size: 21.1048px;
+    line-height: 26px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.section-form__closeButton{
+    width: fit-content;
+    height: fit-content;
+    margin-left: 50px;
+    cursor: pointer;
+    background-color:inherit;
+    border: none;
+    font-size: 24px;
+    color: white;
+}
+.section-form__closeButton:hover{
+    outline: 1px solid black;
+    border-radius: 50%;
+}
+
+
+
+.section-form__time_and_price{
+    width: 1024px;
+    margin: 0 auto;
+    margin-top: 44px;
+}
+.section-form__price{
+    font-weight: bold;
+}
+.section-form__time{
+    font-weight: bold;
+}
+
+.section-form__orange-txt{
+    color: orange;
 }
