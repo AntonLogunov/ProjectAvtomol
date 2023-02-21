@@ -181,8 +181,21 @@
     overflow-x:inherit;
 }
 /*======================================================================================================*/
+.select-form__header{
+    margin-bottom: 60px;
+    width: 308.03px;
+    height: 31.66px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31.6572px;
+    line-height: 39px;
+    color: #8E8E8E;
+}
 .section-form{
-    margin-top: 200px;
+    max-width: 1048px;
+    margin: 0 auto;
+    margin-top: 100px;
 }
 .section-form__form{
     width: 1048px;
@@ -200,10 +213,10 @@
     margin-top: 26px;
     padding: 24px 36px;
 
-    border: 2px solid black;
+    border: 2px solid #F3930D;
     border-radius: 15px;
     background-color: white;
-    color: black;
+    color: #F3930D;
 
     font-weight: 500;
     font-size: 21.1048px;
@@ -218,10 +231,10 @@
     margin: 0 auto;
     margin-bottom: 26px;
 
-    border: 2px solid black;
-    border-radius: 15px;
+    filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
     background-color: white;
-    color: black;
+    color: #F3930D;
 
     font-weight: 500;
     font-size: 21.1048px;
@@ -229,9 +242,14 @@
     text-align: left;
 }
 .section-form__menuItems{
-    display: flex;
-    justify-content: space-around;
-    border-bottom: solid 1px red;
+    width: inherit;
+    padding: 24px 36px;
+    max-height: 79px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    appearance: auto;
+    box-sizing:border-box;
+    border-bottom: solid 2px #F3930D;
 }
 .section-form__items{
     width: inherit;
@@ -239,7 +257,7 @@
     margin-bottom: 26px;
 
     background-color: white;
-    color: black;
+    color: #F3930D;
 
     font-weight: 500;
     font-size: 21.1048px;
@@ -248,21 +266,19 @@
 }
 .section-form__item{
     width: inherit;
-    margin: 0em;
-    padding: 0px;
-    display: flex;
-    justify-content: space-around;
-    align-items:normal ;
+    padding: 24px 36px;
+    max-height: 79px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
     appearance: auto;
+    box-sizing:border-box;
     
     cursor: pointer;
-    box-sizing:border-box;
     background-color: white;
-    color: black;
+    color: #F3930D;
 
     
     border: none;
-    border-bottom: solid 1px black;
 
     font-weight: 500;
     font-size: 21.1048px;
@@ -277,6 +293,14 @@
     text-shadow: none;
 
 }
+.section-form__item:hover{
+    background-color:#E7E7E7;
+}
+
+.section-form__itemTxt{
+    max-width: 440px;
+}
+
 
 .section-form__chosenItem{
     display: flex;
@@ -310,8 +334,6 @@
     border-radius: 50%;
 }
 
-
-
 .section-form__time_and_price{
     width: 1024px;
     margin: 0 auto;
@@ -323,7 +345,12 @@
 .section-form__time{
     font-weight: bold;
 }
-
+.section-form__inftext{
+    width: 1024px;
+    margin: 0 auto;
+    margin-top: 44px;
+}
 .section-form__orange-txt{
     color: orange;
+    text-decoration: underline;
 }

@@ -16,7 +16,6 @@ const choiceInf = {
     "price": priceValue,
     "time": timeValue
 }
-console.log(choiceInf);
 const price = document.querySelector(".section-form__price");
 const time = document.querySelector(".section-form__time");
 price.innerHTML = priceValue;
@@ -24,8 +23,6 @@ time.innerHTML = timeValue;
 fetch('src/js/services.json')
     .then((response) => response.json())
     .then((json) => {
-        console.log(json);
-        console.log(json[0]);
         const form = document.querySelector(".section-form__form");
         
         json.forEach(nameGroup => {
@@ -65,13 +62,17 @@ fetch('src/js/services.json')
                     menu.append(meniItems);
 
                     let items = createElementWithClass("div","section-form__items");
-                    console.log(nameGroup["service"]);
                     nameGroup["service"].forEach(service => {
                         let item = createElementWithClass("button","section-form__item");
                         for(const txt in service){
                             if(service[txt] != "+"){// remowes +
                                 let itemTxt = createElementWithClass("p","section-form__itemTxt");
-                                itemTxt.innerHTML= service[txt];
+                                if(service[txt] == service["NativeCar"] || service[txt] == service["ForeignCar"]){
+                                    itemTxt.innerHTML= service[txt] + " &#8381";
+                                }
+                                else{
+                                    itemTxt.innerHTML= service[txt];
+                                }
                                 item.append(itemTxt);
                                 const targetTxt = service["Name"];
                             }
@@ -90,10 +91,9 @@ fetch('src/js/services.json')
                             else if(service["LeadTime"].includes("мин")){
                                 valueT = parseInt(service["LeadTime"].replace(/\D/g, ''));
                             }
-                            console.log(valueT);
                             let valueP = 0;
                             if(isNaN(service["NativeCar"])){
-                                valueP = parseInt(service["NativeCar"].replace(/\D/g, '')) ;
+                                valueP = parseInt(service["NativeCar"].replace(/\D/g, ''));
                             }else{
                                 valueP = service["NativeCar"];
                             }
@@ -101,7 +101,6 @@ fetch('src/js/services.json')
                             choiceInf.services.push(service["Name"]);
                             choiceInf.price += valueP;
                             choiceInf.time += valueT;
-                            console.log(choiceInf);
 
                             priceValue += valueP;
                             timeValue += valueT;
@@ -117,7 +116,6 @@ fetch('src/js/services.json')
                                 choiceInf.services.push(service["Name"]);
                                 choiceInf.price -= valueP;
                                 choiceInf.time -= valueT;
-                                console.log(choiceInf);
 
                                 priceValue -= valueP;
                                 timeValue -= valueT; 
