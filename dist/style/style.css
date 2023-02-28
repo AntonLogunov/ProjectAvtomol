@@ -487,6 +487,7 @@
     color: #F3930D;
 }
 .custom__icon svg{
+    margin-left: 50px;
     margin: 0;
 }
 .castom__box{

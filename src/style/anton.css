@@ -212,15 +212,16 @@
     color: #F3930D;
 }
 .radio{
-    position: relative;
     margin-top: 45px;
 }
 .radio__input{
     -webkit-appearance: none;
     appearance: none;
-    position: absolute;
+    
+    margin-top: 10px;
 }
 .radio__label{
+    
     font-size: 1rem;
     color: #A8A8A8;
     cursor: pointer;
@@ -235,7 +236,7 @@
     background-color: #FFFFFF;
     border-radius: 50%;
     position: absolute;
-    top: 0;
+    top: -5px;
     left: 0;
     z-index: 1;
 }
@@ -248,7 +249,7 @@
     border-radius: 50%;
     opacity: 0;
     position: absolute;
-    top: 8px;
+    top: 3px;
     left: 8px;
     z-index: 1;
     transition: opacity .1s linear;
@@ -297,6 +298,9 @@
     color: #FFFFFF;
 }
 .castom__header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     height: 80px;
     width: 430px;
@@ -305,23 +309,25 @@
     border-radius: 15px;
 }
 .castom__form__time{
-    display: flex;
+    margin: auto;
     margin-left: 150px;
     margin-top: 30px;
 }
 .castom__form__time div{
+    position: relative;
     width: 25px;
-    margin: 0;
-    margin-left: 92px;
+    margin-top: 5px;
+    margin-left: 192px;
 }
 .castom__current{
+    position: absolute;
+    width: 120px;
+    text-align: center;
     font-weight: 500;
     font-size: 25px;
     line-height: 26px;
     color: #F3930D;
-}
-.custom__icon svg{
-    margin: 0;
+    max-width: 120px;
 }
 .castom__box{
     display: block;
