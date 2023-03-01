@@ -43,8 +43,81 @@
     margin-top: 43px;
     margin-bottom: 43px;
 }
+/*----------------*/
+.map-select {
+    width: 430px;
+    position: relative;
+}
 
-.choise-button {
+.map-select.map-is-active .map-select-body{
+    display: block;
+}
+
+.map-select.map-is-active .arrdownsvg{
+    rotate: 180deg;
+}
+
+.map-select-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #F3930D; 
+    border-radius: 14.9492px;
+    cursor: pointer;
+    height: 80px;
+}
+
+.map-current {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 26px;
+    color: #F3930D;
+    margin-left: auto;
+}
+
+.arrdownsvg {
+    margin-left: 90px;
+    margin-right: 30px;
+}
+
+.map-select-body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 110%;
+    display: none; 
+    z-index: 1;
+    border-radius: 15.0409px;
+    overflow: hidden;
+    filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.25));
+}
+
+.map-select-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 26px;
+    color: #8E8E8E;
+    background-color: #FFFFFF;
+    transition: 0.3s background-color ease-in-out,
+                0.3s color ease-in-out
+}
+
+.map-select-item:hover {
+    color: #ffffff;
+    background-color: #cacaca;
+    transition: 0.3s background-color ease-in-out,
+    0.3s color ease-in-out
+}
+/*-----------------*/
+/* .choise-button {
     width: 430px;
     height: 80px;
 
@@ -54,7 +127,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .choise-button p {
     width: 150px;

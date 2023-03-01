@@ -22,4 +22,24 @@ ymaps.ready(init);
             );
 
             myMap2.geoObjects.add(placemark2);
+
+            selectBody.forEach(item => {
+                item.addEventListener("click", () => {
+                let text = item.innerText,
+                currentText = item.closest(".map-select").querySelector(".map-current"),
+                select = item.closest(".map-select");
+
+                currentText.innerText = text;
+                select.classList.remove("map-is-active");
+
+                if(item.getAttribute("id") == "el"){                 
+                    //myMap.panTo([55.164566989281276,61.52518889519932], 16);
+                    myMap2.panTo([55.164566989281276,61.52518889519932], 16);
+                }
+                if(item.getAttribute("id") == "tr"){
+                    //myMap.panTo([55.09393942974375,61.388720357387655], 16);
+                    myMap2.panTo([55.09393942974375,61.388720357387655], 16);
+                }
+                });
+            });
         }
