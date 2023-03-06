@@ -78,7 +78,9 @@ fetch('src/js/services.json')
                             }
                         }
                         items.append(item);
-                        item.addEventListener("click",(event)=>{
+
+                        function eventListener() {
+                            item.classList = "section-form__item-chosen";
                             let chosenItem = createElementWithClass("div","section-form__chosenItem");
 
                             let chosenItemTxt = createElementWithClass("p","section-form__chosenItemTxt");
@@ -111,6 +113,8 @@ fetch('src/js/services.json')
                             closeButton.innerHTML = "X";
                             chosenItem.append(closeButton);
                             closeButton.addEventListener("click",(event)=>{
+                                item.classList = "section-form__item";
+                                addListener();
                                 event.currentTarget.parentNode.remove();
                                 
                                 choiceInf.services.push(service["Name"]);
@@ -122,10 +126,18 @@ fetch('src/js/services.json')
                                 price.innerHTML = priceValue;
                                 time.innerHTML = timeValue;
                                 
-                            })
+                            });
 
                             form.append(chosenItem);
-                        })
+                        }
+                        function addListener() {
+                            item.addEventListener("click", eventListener, {
+                                passive: true,
+                                once: true,
+                            });
+                        }
+                        
+                        addListener();
                     })
                     menu.append(items);
                     insertAfter(event.currentTarget,menu);

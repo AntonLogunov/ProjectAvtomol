@@ -293,6 +293,34 @@
     text-shadow: none;
 
 }
+.section-form__item-chosen{
+    width: inherit;
+    padding: 24px 36px;
+    max-height: 79px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    appearance: auto;
+    box-sizing:border-box;
+    
+    background-color: lightgray;
+    color: #F3930D;
+
+    
+    border: none;
+
+    font-weight: 500;
+    font-size: 21.1048px;
+    line-height: 26px;
+    text-align: left;
+    writing-mode: horizontal-tb !important;
+    text-rendering:unset;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+
+}
 .section-form__item:hover{
     background-color:#E7E7E7;
 }
