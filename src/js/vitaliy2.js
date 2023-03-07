@@ -54,8 +54,12 @@ fetch('src/js/services.json')
                     let meniItems = createElementWithClass("div","section-form__menuItems");
 
                     let meniItemsArray = ["Наименовние работ","Отечественный","Иномарка","Время"];
+                    let firstItem = true;   
                     meniItemsArray.forEach(itemName =>{
-                        let item = createElementWithClass("p","section-form__menuItemName");
+                        let classForP = "section-form__menuItemName";
+                        if(firstItem) {classForP += "-first";}
+                        let item = createElementWithClass("p",classForP);
+                        firstItem = false;
                         item.innerHTML = itemName;
                         meniItems.append(item);
                     })
@@ -95,7 +99,7 @@ fetch('src/js/services.json')
                             }
                             let valueP = 0;
                             if(isNaN(service["NativeCar"])){
-                                valueP = parseInt(service["NativeCar"].replace(/\D/g, ''));
+                                valueP = parseInt(service["NativeCar"].replace(/\D/g, '')) + 0;
                             }else{
                                 valueP = service["NativeCar"];
                             }
@@ -138,10 +142,10 @@ fetch('src/js/services.json')
                         }
                         
                         addListener();
-                    })
+                    });
                     menu.append(items);
                     insertAfter(event.currentTarget,menu);
                 }
-            })
+            });
         });
     });
