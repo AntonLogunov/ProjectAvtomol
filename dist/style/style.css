@@ -1082,6 +1082,11 @@ a {
     overflow-x:inherit;
 }
 /*======================================================================================================*/
+.section-form{
+    max-width: 1048px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
 .select-form__header{
     margin-bottom: 60px;
     width: 308.03px;
@@ -1092,11 +1097,6 @@ a {
     font-size: 31.6572px;
     line-height: 39px;
     color: #8E8E8E;
-}
-.section-form{
-    max-width: 1048px;
-    margin: 0 auto;
-    margin-top: 100px;
 }
 .section-form__form{
     width: 1048px;
@@ -1147,10 +1147,14 @@ a {
     padding: 24px 36px;
     max-height: 79px;
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-columns: 430px 162px 150px 210px;
+    justify-items: center;
     appearance: auto;
-    box-sizing:border-box;
+    box-sizing:border-box;  
     border-bottom: solid 2px #F3930D;
+}
+.section-form__menuItemName-first{
+    justify-self: left;
 }
 .section-form__items{
     width: inherit;
@@ -1159,6 +1163,8 @@ a {
 
     background-color: white;
     color: #F3930D;
+    border-radius: 0px 0px 20px 20px;
+    overflow: hidden;
 
     font-weight: 500;
     font-size: 21.1048px;
@@ -1176,6 +1182,33 @@ a {
     
     cursor: pointer;
     background-color: white;
+    color: #F3930D;
+    
+    border: none;
+
+    font-weight: 500;
+    font-size: 21.1048px;
+    line-height: 26px;
+    text-align: left;
+    writing-mode: horizontal-tb !important;
+    text-rendering:unset;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+
+}
+.section-form__item-chosen{
+    width: inherit;
+    padding: 24px 36px;
+    max-height: 79px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    appearance: auto;
+    box-sizing:border-box;
+    
+    background-color: lightgray;
     color: #F3930D;
 
     
