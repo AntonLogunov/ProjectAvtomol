@@ -6,9 +6,9 @@ ymaps.ready(init);
                 zoom: 12
             });
 
-            var placemark2 = new ymaps.Placemark(myMap2.getCenter(),
+            var placemark = new ymaps.Placemark([55.164566989281276,61.52518889519932],
             {
-            balloonContentHeader: '<p class="baloon-p1">ул. Бейвеля 4а</p>',
+            balloonContentHeader: '<p class="baloon-p1">Эльтонская 1-я, 16</p>',
             balloonContentBody: '<p class="baloon-p2">ПН- ВС с 09:00 до 20:00</p> <br/> ' + 
                                 '<button class="baloon-button"><a class="baloon-link" href="linkpage.html">Запись on-line</a></button>'
 
@@ -21,7 +21,30 @@ ymaps.ready(init);
             }
             );
 
+            var placemark2 = new ymaps.Placemark([55.09393942974375,61.388720357387655],
+            {
+            balloonContentHeader: '<p class="baloon-p1">троицкий тракт 62ф</p>',
+            balloonContentBody: '<p class="baloon-p2">ПН- ВС с 09:00 до 20:00</p> <br/> ' + 
+                                '<button class="baloon-button"><a class="baloon-link" href="linkpage.html">Запись on-line</a></button>'
+
+            },
+            {
+                iconLayout: 'default#image',
+                iconImageHref: 'src/img/mark.png',
+                iconImageSize: [48, 48],
+                iconImageOffset: [-3, -42],
+            }
+            );
+
+            myMap2.geoObjects.add(placemark);
             myMap2.geoObjects.add(placemark2);
+
+            var selectHeader = document.querySelector(".map-select-header");
+            var selectBody = document.querySelectorAll(".map-select-item");
+
+            selectHeader.addEventListener("click", () => {
+                selectHeader.parentElement.classList.toggle("map-is-active");
+            })
 
             selectBody.forEach(item => {
                 item.addEventListener("click", () => {
