@@ -363,8 +363,6 @@
 body {
     font-family: sans-serif;
   }
-  
-
   .qs-day:nth-child(7), 
   .qs-day:nth-child(6){
     color: #F3930D;
@@ -381,3 +379,6 @@ color: #313131;
 flex: none;
 order: 4;
   }
+  input::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
