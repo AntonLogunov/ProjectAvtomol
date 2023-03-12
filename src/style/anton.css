@@ -379,6 +379,6 @@ color: #313131;
 flex: none;
 order: 4;
   }
-  input::-webkit-calendar-picker-indicator {
+.input::-webkit-calendar-picker-indicator {
     filter: invert(1);
 }
