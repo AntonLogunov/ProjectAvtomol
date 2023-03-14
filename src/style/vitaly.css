@@ -361,10 +361,10 @@
     border: none;
     font-size: 24px;
     color: white;
+    translate: transform 0.3s;
 }
 .section-form__closeButton:hover{
-    outline: 1px solid black;
-    border-radius: 50%;
+    transform: scale(0.9);
 }
 
 .section-form__time_and_price{
