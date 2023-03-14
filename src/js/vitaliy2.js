@@ -85,7 +85,7 @@ fetch('src/js/services.json')
                             for(const txt in service){
                                 if(service[txt] != "+"){// remowes +
                                     let itemTxt = createElementWithClass("p","section-form__itemTxt");
-                                    if(service[txt] == service["isActive"]){
+                                    if(service[txt] === service["isActive"]){// remowes isActive
                                         continue;
                                     }
                                     if(service[txt] == service["NativeCar"] || service[txt] == service["ForeignCar"]){
