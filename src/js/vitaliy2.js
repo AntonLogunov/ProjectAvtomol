@@ -67,10 +67,14 @@ fetch('src/js/services.json')
 
                     let items = createElementWithClass("div","section-form__items");
                     nameGroup["service"].forEach(service => {
-                        let item = createElementWithClass("button","section-form__item");
+                        let itemClass = (service.isActive == true)? "section-form__item-chosen":"section-form__item";//console.log(itemClass + "70");
+                        let item = createElementWithClass("button",itemClass);
                         for(const txt in service){
                             if(service[txt] != "+"){// remowes +
                                 let itemTxt = createElementWithClass("p","section-form__itemTxt");
+                                if(service[txt] == service["isActive"]){
+                                    continue;
+                                }
                                 if(service[txt] == service["NativeCar"] || service[txt] == service["ForeignCar"]){
                                     itemTxt.innerHTML= service[txt] + " &#8381";
                                 }
@@ -84,7 +88,8 @@ fetch('src/js/services.json')
                         items.append(item);
 
                         function eventListener() {
-                            item.classList = "section-form__item-chosen";
+                            item.classList = "section-form__item-chosen"; //console.log("chosen 91");
+                            service.isActive = true;
                             let chosenItem = createElementWithClass("div","section-form__chosenItem");
 
                             let chosenItemTxt = createElementWithClass("p","section-form__chosenItemTxt");
@@ -117,9 +122,24 @@ fetch('src/js/services.json')
                             closeButton.innerHTML = "X";
                             chosenItem.append(closeButton);
                             closeButton.addEventListener("click",(event)=>{
-                                item.classList = "section-form__item";
-                                addListener();
+                                service.isActive = false;
+                                item.classList = "section-form__item"; //console.log("unchosen 126");
+
+                                let res = document.querySelectorAll(".section-form__item-chosen")
+                                //console.log(res);
+                                for (const chosenItem in res) {
+                                    if(isNaN(chosenItem)){
+                                        continue;
+                                    }
+                                    if(res[chosenItem].firstChild.innerHTML == event.currentTarget.parentNode.firstChild.innerHTML){
+                                        res[chosenItem].classList = "section-form__item";
+                                    }
+                                    //console.log(res[chosenItem]);
+                                    //console.log(event.currentTarget.parentNode.firstChild.innerHTML)
+                                }
+                                
                                 event.currentTarget.parentNode.remove();
+                                addListener();
                                 
                                 choiceInf.services.push(service["Name"]);
                                 choiceInf.price -= valueP;
@@ -140,8 +160,9 @@ fetch('src/js/services.json')
                                 once: true,
                             });
                         }
-                        
-                        addListener();
+                        if(!service.isActive){
+                            addListener();
+                        }
                     });
                     menu.append(items);
                     insertAfter(event.currentTarget,menu);
