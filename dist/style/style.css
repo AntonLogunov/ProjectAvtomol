@@ -1086,6 +1086,9 @@ a {
     margin: 0 auto;
     margin-top: 100px;
 }
+.section-form-hidden{
+    display: none;
+}
 .select-form__header{
     margin-bottom: 60px;
     width: 308.03px;
