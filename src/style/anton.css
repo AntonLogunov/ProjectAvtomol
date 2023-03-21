@@ -360,26 +360,104 @@
     color: #F3930D;
 
 }
-/* ========================================================== */
-body {
-    font-family: sans-serif;
-  }
-  .qs-day:nth-child(7), 
-  .qs-day:nth-child(6){
+/* ====================== kalendar ==================================== */
+input::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+.input{
+    /* display: flex;
+    justify-content: center;
+    padding-left: 100px; */
+    width: 430px;
+    height: 80px;
+    border-radius: 14.9492px;
+    border: 1.5px solid #F3930D;
     color: #F3930D;
-  }
-  .qs-num:nth-child(7n),
-  .qs-num:nth-child(7n-1){
+    background-color: #fff;
+    text-align: center;
+    font-weight: 500;
+    font-size: 21.1048px;
+    line-height: 26px;
+}
+.form__kalendar{
+    width: 420px;
+    height: 80px;
+    font-weight: 500;
+    font-size: 21.1048px;
+    line-height: 26px;
     color: #F3930D;
-  }
-  .qs-num{
+    border: 1.5px solid #F3930D;
+    border-radius: 14.9492px;
+    text-align: center;
+}
+.qs-datepicker-container{
+    width: 431px;
+    height: 460px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 25.395px;
+    border: none;
+    margin-top: 7.1px;
+}
+.qs-datepicker{
+    padding: 49.61px 44.44px 44.44px 44.44px;
+}
+.qs-month-year{
+    display: flex;
+    justify-content: space-between;
+    max-width: 205px;
+    margin-right: 75px;
+}
+.qs-arrow{
+    margin-top: 4px;
+}
+.qs-month{
+    width: 100%;
     font-weight: 700;
-font-size: 20px;
-line-height: 22px;
-color: #313131;
-flex: none;
-order: 4;
-  }
-  input::-webkit-calendar-picker-indicator {
-    filter: invert(1);
+    font-size: 31.7437px;
+    line-height: 37px;
+    color: #313131;
+}
+.qs-year{
+    font-weight: 400;
+    font-size: 31.7437px;
+    line-height: 37px;
+    color: #313131;
+    margin-left: 25px;
+}
+.qs-controls{
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 31px;
+}
+.qs-day{
+    font-weight: 400;
+    font-size: 19.0462px;
+    line-height: 22px;
+    color: #A3A3A3;
+}
+.qs-squares{
+    height: 292.04px;
+    padding: 0;
+}
+.qs-square{
+    height: 38px;
+}
+.qs-square:nth-child(7n),
+.qs-square:nth-child(7n-1){
+    color: #F3930D;
+}
+.qs-num{
+    font-weight: 700;
+    font-size: 19.0462px;
+    line-height: 22px;
+    color: #313131;
+}
+.qs-active,
+.qs-range-end,
+.qs-range-start{
+    background: none;
+}
+.qs-submit{
+    display: none;
 }
