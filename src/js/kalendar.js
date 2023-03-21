@@ -23,7 +23,7 @@ datepicker("#date", {
   ],
   customDays: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
   onSelect: (instance, date) => {
-    const value = date.toISOString().substring(0, 1);
+    const value = date.toISOString().substring(0, 10);
     console.log(date);
     dateInput.value = value; // => '1/1/2099'
   }
