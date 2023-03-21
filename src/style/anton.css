@@ -331,11 +331,14 @@
     max-width: 120px;
 }
 .castom__box{
+    position: absolute;
+    background-color: #fff;
     display: block;
     box-shadow: 10px 10px 15px 0px rgba(34, 60, 80, 0.2);
     margin-top: 7px;
     border-radius: 15px;
-    padding: 36px 0px 46px 49px;
+    padding: 36px 49px 46px 49px;
+    z-index: 1;
 }
 .castom__body{
     display: grid;
