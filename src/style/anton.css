@@ -364,9 +364,13 @@
 
 }
 /* ====================== kalendar ==================================== */
-input::-webkit-calendar-picker-indicator {
-  filter: invert(1);
+/*==== удаление иконки календаря у input type="date" ====*/
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
 }
+/*================*/
 .input{
     /* display: flex;
     justify-content: center;
