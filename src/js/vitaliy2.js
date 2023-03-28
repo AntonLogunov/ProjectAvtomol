@@ -19,7 +19,7 @@ function gatherInf(service,valueP,valueT,add = true){
         time.innerHTML = timeValue;
     }
     if(!add){
-        choiceInf.services.splice(service["Name"],1);
+        choiceInf.services.splice(choiceInf.services.findIndex(el => el == service["Name"]),1);
         choiceInf.price -= valueP;
         choiceInf.time -= valueT;
         priceValue -= valueP;
@@ -27,7 +27,8 @@ function gatherInf(service,valueP,valueT,add = true){
         price.innerHTML = priceValue;
         time.innerHTML = timeValue;
     }
-    console.log(choiceInf);
+    //console.log(choiceInf);
+    //console.log(service);
 }
 let priceValue = 0;
 let timeValue = 0;
