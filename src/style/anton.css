@@ -165,14 +165,17 @@
     display: flex;
     flex-direction:row;
     justify-content: space-between;
+    max-width: 1048px;
+    margin: auto;
 }
 .request{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid #F3930D;
+    border: 1.5px solid #F3930D;
     border-radius: 27px;
-    width: 623px;
+    max-width: 520px;
+    height: 480px;
 }
 .request__text{
     font-weight: 700;
@@ -196,12 +199,11 @@
     text-align: center;
 }
 .data{
-    width: 524px;
+    max-width: 426px;
     border: none;
-    border-bottom: 2px solid #F3930D;
+    border-bottom: 1.75873px solid #F3930D;
     padding: 0 0 22px 0;
-    margin-top: 60px;
-
+    margin-top: 40px;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
@@ -222,7 +224,7 @@
 }
 .radio__label{
     position: relative;
-    font-size: 1rem;
+    font-size: 14px;
     color: #A8A8A8;
     cursor: pointer;
     
@@ -263,8 +265,8 @@
     opacity: 1;
 }
 .button{
-    width: 524px;
-    height: 92px;
+    max-width: 427px;
+    height: 72px;
     background-color:#F3930D;
     border: none;
     border-radius: 17px;
@@ -273,8 +275,8 @@
     font-size: 24px;
     line-height: 29px;
     color: rgba(255, 255, 255, 1);
-    margin-top: 64px;
-    margin-bottom: 64px;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 .button:hover{
     opacity: 1;
@@ -285,6 +287,9 @@
     line-height: 39px;
     color: #8E8E8E;
     margin-bottom: 42px;
+} 
+.select{
+    max-width: 430px;
 }
 .select__input{
     margin-top: 42px;
@@ -361,6 +366,17 @@
 }
 .castom__time:hover{
     color: #F3930D;
+}
+.castom__time--auto{
+    width: 100%;
+}
+.castom--auto{
+    max-width: 1046px;
+    margin: auto;
+}
+.castom__body--auto{
+    display: flex;
+    flex-direction: column;
 
 }
 /* ====================== kalendar ==================================== */
@@ -375,7 +391,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     /* display: flex;
     justify-content: center;
     padding-left: 100px; */
-    width: 430px;
+    width: 100%;
     height: 80px;
     border-radius: 14.9492px;
     border: 1.5px solid #F3930D;
@@ -398,7 +414,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     text-align: center;
 }
 .qs-datepicker-container{
-    width: 431px;
+    width: 433px;
     height: 460px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
     border-radius: 25.395px;

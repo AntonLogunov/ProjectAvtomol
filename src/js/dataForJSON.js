@@ -1,13 +1,15 @@
 'use strict'
 require("vitaiy2.js");
+require("kalendar.js");
+require("mapscript.js");
 
-let adress = "1. Выберите адрес";
+let adress = text;
 let serviceData = choiceInf;
-let date = "3. Выберите дату";
-let time = "4. Выберите время";
-let name = "ФИО";
-let phone = "88005553535";
-let carModel = "Марка машины"
+let date = dateValue;
+let time = textTime;
+let name = nameInfo;
+let phone = phoneInfo;
+let carModel = markInfo;
 const data = {
     "adress": adress,
     "serviceData" : serviceData,

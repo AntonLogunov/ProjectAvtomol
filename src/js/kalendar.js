@@ -24,8 +24,8 @@ datepicker("#date", {
   customDays: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
   onSelect: (instance, date) => {
     date.setDate(date.getDate() + 1);
-    const value = date.toISOString().substring(0, 10);
-    console.log(date);
-    dateInput.value = value; // => '1/1/2099'
+    const dateValue = date.toISOString().substring(0, 10);
+    dateInput.value = dateValue; // => '1/1/2099'
+    console.log(dateValue);
   }
 });
