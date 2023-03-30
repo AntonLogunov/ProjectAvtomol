@@ -33,6 +33,7 @@
 
 .mainmenu__item__orange {
     padding-right: 0;
+    color: rgba(243, 147, 13, 1);
 }
 
 .menu__link {
@@ -63,7 +64,7 @@
     transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
-/* секция 6 */
+/* секция 5 */
 .section__services-menu {
     display: flex;
     flex-direction: column;
@@ -90,8 +91,14 @@
     gap: 80px 70px;
 }
 
-.grid-link:hover .grid-svg path {
+.grid-link:hover .grid-svg path, 
+.grid-link:hover .grid-svg circle,
+.grid-link:hover .grid-svg rect {
     stroke: rgba(243, 147, 13, 1);
+}
+
+.grid-link:hover .grid-paragraph{
+    color: rgba(243, 147, 13, 1);
 }
 
 .grid-element {
