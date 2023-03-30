@@ -8,14 +8,27 @@ function createElementWithClass(elemType,className){
     elem.classList.add(className);
     return elem;
 }
-function gatherInf(service,valueP,valueT){
-    choiceInf.services.push(service["Name"]);
-    choiceInf.price += valueP;
-    choiceInf.time += valueT;
-    priceValue += valueP;
-    timeValue += valueT; 
-    price.innerHTML = priceValue;
-    time.innerHTML = timeValue;
+function gatherInf(service,valueP,valueT,add = true){
+    if(add){
+        choiceInf.services.push(service["Name"]);
+        choiceInf.price += valueP;
+        choiceInf.time += valueT;
+        priceValue += valueP;
+        timeValue += valueT; 
+        price.innerHTML = priceValue;
+        time.innerHTML = timeValue;
+    }
+    if(!add){
+        choiceInf.services.splice(choiceInf.services.findIndex(el => el == service["Name"]),1);
+        choiceInf.price -= valueP;
+        choiceInf.time -= valueT;
+        priceValue -= valueP;
+        timeValue -= valueT; 
+        price.innerHTML = priceValue;
+        time.innerHTML = timeValue;
+    }
+    //console.log(choiceInf);
+    //console.log(service);
 }
 let priceValue = 0;
 let timeValue = 0;
@@ -134,7 +147,7 @@ fetch('src/js/services.json')
                                     event.currentTarget.parentNode.remove();
                                     addListener();
 
-                                    gatherInf(service,-valueP,-valueT);
+                                    gatherInf(service,valueP,valueT,false);
                                 });
                                 form.append(chosenItem);
                             }
