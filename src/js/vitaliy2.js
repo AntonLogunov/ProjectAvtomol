@@ -79,7 +79,10 @@ fetch('src/js/services.json')
                         let menu = createElementWithClass("div","section-form__menu");
                         let meniItems = createElementWithClass("div","section-form__menuItems");
 
-                        let meniItemsArray = ["Наименовние работ","Отечественный","Иномарка","Время"];
+                        let carType = document.querySelector(".castom__current").innerHTML
+                        console.log(carType);
+                        let meniItemsArray = ["Наименовние работ",carType,"Время"];
+                        //let meniItemsArray = ["Наименовние работ","Отечественный","Иномарка","Время"];
                         let firstItem = true;   
                         meniItemsArray.forEach(itemName =>{
                             let classForP = "section-form__menuItemName";
@@ -96,20 +99,24 @@ fetch('src/js/services.json')
                             let itemClass = (service.isActive == true)? "section-form__item-chosen":"section-form__item";
                             let item = createElementWithClass("button",itemClass);
                             for(const txt in service){
-                                if(service[txt] != "+"){// remowes +
-                                    let itemTxt = createElementWithClass("p","section-form__itemTxt");
-                                    if(service[txt] === service["isActive"]){// remowes isActive
-                                        continue;
-                                    }
-                                    if(service[txt] == service["NativeCar"] || service[txt] == service["ForeignCar"]){
-                                        itemTxt.innerHTML= service[txt] + " &#8381";
-                                    }
-                                    else{
-                                        itemTxt.innerHTML= service[txt];
-                                    }
-                                    item.append(itemTxt);
-                                    const targetTxt = service["Name"];
+                                let itemTxt = createElementWithClass("p","section-form__itemTxt");
+                                if(service[txt] === service["isActive"]){// remowes isActive
+                                    continue;
                                 }
+                                if(txt == "NativeCar" && carType != "Отечественный"){
+                                    continue;
+                                }
+                                if(txt == "ForeignCar" && carType != "Иномарка"){
+                                    continue;
+                                }
+                                if(service[txt] == service["NativeCar"] || service[txt] == service["ForeignCar"]){
+                                    itemTxt.innerHTML= service[txt] + " &#8381";
+                                }
+                                else{
+                                    itemTxt.innerHTML= service[txt];
+                                }
+                                item.append(itemTxt);
+                                const targetTxt = service["Name"];
                             }
                             items.append(item);
 
