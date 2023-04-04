@@ -111,10 +111,8 @@
 }
 
 .map-select-item:hover {
-    color: #ffffff;
-    background-color: #cacaca;
-    transition: 0.3s background-color ease-in-out,
-    0.3s color ease-in-out
+    color: #F3930D;
+    transition: 0.2s color ease-in-out;
 }
 /*-----------------*/
 /* .choise-button {
@@ -162,87 +160,62 @@
     height: 292px;
 }
 
-
-/* .container-map {
-    margin-bottom: 60px;
-}
-
-.map-text h1{
-    font-size: 32px;
-    font-family: 'Montserrat';
-    text-transform: uppercase;
-    color: #6E6E6E;
-    margin-bottom: 60px;
-}
-
-.map-container {
-  margin-bottom: 300px;
-}
-
-.address-map {
-    width: 776px;
-    margin: 62px auto 0 auto;
-    display: flex;
-    justify-content: center;
-}
-
-.address-map p {
-    font-size: 28px;
-    font-family: 'Montserrat';
-    color: #6E6E6E;
-    margin-bottom: 35px;
-}
-
-.address-map ul {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-}
-
-.map-address-margin01 {
-    margin-left: 32px;
-    margin-right: 38px;
-}
-
-.map-address-margin02 {
-    margin-left: 38px;
-    margin-right: 32px;
-}
-
-.map {
-    margin: 0px;
-}
-
-.map-img {
-    width: 628px;
-    height: 482px;
-}
-
-.map-link {
-    text-decoration: none;
-    font-size: 28px;
-    font-family: 'Montserrat';
-    color: #6E6E6E;
-    margin: auto 0;
-}
-
-.telephone-map {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 56px;
-}
-
-.telephone-map a {
-    margin: 0px;
-    margin-left: 26px;
-} */
-
 /* user page style*/
 
 .user_wrapper {
     width: 1046px;
     margin: 100px auto 200px auto;
+}
+
+/* ---baloon style----- */
+.baloon-p1 {
+    font-weight: 700;
+    font-size: 19.9329px;
+    line-height: 24px;
+    color: #8E8E8E;
+}
+
+.baloon-divheader {
+    margin: 50px auto 0 auto;
+    padding-left: 45px;
+    padding-right: 30px;
+}
+
+.baloon-div{
+    margin: 0 auto 20px auto;
+    padding-left: 45px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.baloon-p2 {
+    width: 150px;
+    margin-bottom: 20px;
+    font-size: 13.2886px;
+    line-height: 16px;
+    color: #8E8E8E;
+}
+
+.baloon-button {
+    width: 172px;
+    height: 47px;
+    background: #F3930E;
+    border-radius: 31.0067px;
+    border: none;
+}
+
+.baloon-link {
+    font-size: 13.2886px;
+    line-height: 16px;
+    color: #FFFFFF;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 /*------ user block --------*/
