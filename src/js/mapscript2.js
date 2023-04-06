@@ -10,7 +10,7 @@ ymaps.ready(init);
             {
             balloonContentHeader: '<div class="baloon-divheader"><p class="baloon-p1">Эльтонская 1-я, 16</p></div>',
             balloonContentBody: '<div class="baloon-div"><p class="baloon-p2">ПН- ВС с 09:00 до 21:00</p>' + 
-                                '<button class="baloon-button"><a class="baloon-link" href="linkpage.html">Запись on-line</a></button></div>'
+                                '<button class="baloon-button"> Выбрать </button></div>'
 
             },
             {
@@ -23,9 +23,9 @@ ymaps.ready(init);
 
             var placemark2 = new ymaps.Placemark([55.13012608675315,61.25751477307758],
             {
-            balloonContentHeader: '<div class="baloon-divheader"><p class="baloon-p1">​СНТ Вишнёвый, 1264</p></div>',
+            balloonContentHeader: '<div class="baloon-divheader"><p class="baloon-p1">СНТ вишнёвый, 1264</p></div>',
             balloonContentBody: '<div class="baloon-div"><p class="baloon-p2">ПН- ВС с 09:00 до 21:00</p>' + 
-                                '<button class="baloon-button"><a class="baloon-link" href="linkpage.html">Запись on-line</a></button></div>'
+                                '<button class="baloon-button"> Выбрать </button></div>'
 
             },
             {
@@ -66,4 +66,15 @@ ymaps.ready(init);
                 console.log(text);
                 });
             });
+
+            var mapDiv = document.querySelector(".map-style2");
+            var mapCurrentPoint = document.querySelector(".map-current");
+
+            mapDiv.addEventListener('click', (event) => {
+                if(event.target.classList.contains("baloon-button"))  {
+                    let lll = event.target.closest(".ymaps-2-1-79-balloon__content");
+                    let p = lll.querySelector(".baloon-p1");
+                    mapCurrentPoint.innerHTML = p.innerHTML;
+                }  
+            })
         }
