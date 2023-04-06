@@ -80,8 +80,8 @@ fetch('src/js/services.json')
                         let meniItems = createElementWithClass("div","section-form__menuItems");
 
                         let carType = document.querySelector(".castom__current").innerHTML
-                        console.log(carType);
-                        let meniItemsArray = ["Наименовние работ",carType,"Время"];
+                        //console.log(carType);
+                        let meniItemsArray = ["Наименовние работ","Цена","Время"];
                         //let meniItemsArray = ["Наименовние работ","Отечественный","Иномарка","Время"];
                         let firstItem = true;   
                         meniItemsArray.forEach(itemName =>{
@@ -116,7 +116,7 @@ fetch('src/js/services.json')
                                     itemTxt.innerHTML= service[txt];
                                 }
                                 item.append(itemTxt);
-                                const targetTxt = service["Name"];
+                                //const targetTxt = service["Name"];
                             }
                             items.append(item);
 
