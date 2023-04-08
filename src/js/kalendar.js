@@ -27,5 +27,7 @@ datepicker("#date", {
     const dateValue = date.toISOString().substring(0, 10);
     dateInput.value = dateValue; // => '1/1/2099'
     console.log(dateValue);
+    const input = document.querySelector('input');
+    dateValue.classList.add('castom__header--click');
   }
 });

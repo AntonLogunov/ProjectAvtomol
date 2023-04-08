@@ -15,10 +15,12 @@ let castom = function () {
     function castomChoose(){
         let textTime = this.innerText, 
             castom = this.closest('.castom'),
-            currentText = castom.querySelector('.castom__current');
+            currentText = castom.closest('.castom').querySelector('.castom__current');
+            castomBlock = this.closest('.castom__header');
         currentText.innerText = textTime;
         castom.classList.remove('castom-is-active');
-        console.log(textTime);
+        castomBlock.classList.add('castom__header--click');
+        console.log(castom);
     }
 }
 castom();

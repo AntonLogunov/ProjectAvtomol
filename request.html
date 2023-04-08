@@ -68,7 +68,7 @@
                         <div class="map-select">
                             <div class="map-select-header">
                                 <span class="map-current">Выбрать адрес</span>
-                                <img class="arrdownsvg" src="src/img/arrdown.png" alt="">
+                                <img class="deployment__img" src="src/img/arrdown.png" alt="">
                             </div>
                             <div class="map-select-body">
                                 <div id="el" class="map-select-item">Эльтонская 1-я, 16</div>
@@ -89,25 +89,17 @@
         
         <!-- выбор марки авто -->
         <section class="section">
-            <div class="wrapper">
-                <div class="castom castom-is-active castom--auto">
-                    <p class="request__form2--text" for="meeting-time">2. Выберите категорию</p>
+            <div class="wrapper castom--auto">
+                <p class="request__form2--text" for="meeting-time">2. Выберите категорию</p>
+                <div class="castom">
                     <div class="castom__header">
-                        <div class="castom__form__time">
-                            <span class="castom__current">Иномарка</span>
-                            <div class="castom__icon">
-                                <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M23.149 1.77586L12.5783 12.3466L2.00756 1.77586" stroke="#F3930D" stroke-width="3.51747" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>  
-                            </div>
-                        </div>
+                        <span class="castom__current">Иномарка</span>
+                        <img class="deployment__img" src="src/img/arrdown.png" alt="">
                     </div>
-                        <div class="castom__box">
-                            <div class="castom__body castom__body--auto">
-                                <div class="castom__time castom__time--auto">Иномарка</div>
-                                <div class="castom__time castom__time--auto">Отечественный</div>
-                            </div>
-                        </div>
+                    <div class="castom__body castom__body--auto">
+                        <div class="castom__time castom__time--auto">Иномарка</div>
+                        <div class="castom__time castom__time--auto">Отечественный</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -139,46 +131,41 @@
                             <div>
                                 <p class="request__form2--text" for="meeting-time">4. Выберите дату</p>
                                 <div id="app"></div>
-                                <input class="input" type="date" onсlick="event.preventDefault()"  id="date" />
+                                <div class="custom__header">
+                                    <input class="input" type="date" onсlick="event.preventDefault()"  id="date" />
+
+                                </div>
                             </div>
                             <div class="select__form">
                                 <p class="request__form2--text" for="meeting-time">5. Выберите время</p>
                                 <!-- ================= кастомный блок ======================= -->
-                                <div class="castom castom-is-active">
+                                <div class="castom">
                                     <div class="castom__header">
-                                        <div class="castom__form__time">
                                             <span class="castom__current"> 9:00-20:00</span>
-                                            <div class="castom__icon">
-                                                <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M23.149 1.77586L12.5783 12.3466L2.00756 1.77586" stroke="#F3930D" stroke-width="3.51747" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </svg>  
-                                            </div>
-                                        </div>
+                                            <img class="deployment__img" src="src/img/arrdown.png" alt="">
                                     </div>
-                                        <div class="castom__box">
-                                            <div class="castom__body">
-                                                <div class="castom__time">9:00</div>
-                                                <div class="castom__time">9:30</div>
-                                                <div class="castom__time">10:00</div>
-                                                <div class="castom__time">10:30</div>
-                                                <div class="castom__time">11:00</div>
-                                                <div class="castom__time">11:30</div>
-                                                <div class="castom__time">12:00</div>
-                                                <div class="castom__time">12:30</div>
-                                                <div class="castom__time">13:00</div>
-                                                <div class="castom__time">13:30</div>
-                                                <div class="castom__time">14:00</div>
-                                                <div class="castom__time">14:30</div>
-                                                <div class="castom__time">15:00</div>
-                                                <div class="castom__time">16:30</div>
-                                                <div class="castom__time">17:00</div>
-                                                <div class="castom__time">17:30</div>
-                                                <div class="castom__time">18:00</div>
-                                                <div class="castom__time">18:30</div>
-                                                <div class="castom__time">19:00</div>
-                                                <div class="castom__time">19:30</div>
-                                                <div class="castom__time">20:00</div>
-                                            </div>
+                                        <div class="castom__body ">
+                                            <div class="castom__time">9:00</div>
+                                            <div class="castom__time">9:30</div>
+                                            <div class="castom__time">10:00</div>
+                                            <div class="castom__time">10:30</div>
+                                            <div class="castom__time">11:00</div>
+                                            <div class="castom__time">11:30</div>
+                                            <div class="castom__time">12:00</div>
+                                            <div class="castom__time">12:30</div>
+                                            <div class="castom__time">13:00</div>
+                                            <div class="castom__time">13:30</div>
+                                            <div class="castom__time">14:00</div>
+                                            <div class="castom__time">14:30</div>
+                                            <div class="castom__time">15:00</div>
+                                            <div class="castom__time">16:30</div>
+                                            <div class="castom__time">17:00</div>
+                                            <div class="castom__time">17:30</div>
+                                            <div class="castom__time">18:00</div>
+                                            <div class="castom__time">18:30</div>
+                                            <div class="castom__time">19:00</div>
+                                            <div class="castom__time">19:30</div>
+                                            <div class="castom__time">20:00</div>
                                         </div>
                                 </div>
                                 <!-- ====================================================== -->
@@ -191,9 +178,8 @@
                             <input id="name" class="data" type="text" placeholder="ФИО">
                             <input id="phone" class="data" type="text" placeholder="Контактный телефон">
                             <input id="mark" class="data" type="text" placeholder="Марка а/м">
-                            
                             <div class="radio">
-                                <input class="radio__input" type="radio" name="user_type" id="r1" value="admin">
+                                <input class="radio__input" type="checkbox" name="user_type" id="r1" value="admin">
                                 <label class="radio__label" for="r1">Я согласен(а) на обработку персональных данных</label>
                             </div>
                             <button class="button" type="button" value="Записаться" onclick="dataOutput()">Записаться</button>
