@@ -53,7 +53,7 @@
     display: block;
 }
 
-.map-select.map-is-active .arrdownsvg{
+.map-select.map-is-active .deployment__img{
     rotate: 180deg;
 }
 

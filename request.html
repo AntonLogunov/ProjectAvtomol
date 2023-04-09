@@ -94,7 +94,9 @@
                 <div class="castom">
                     <div class="castom__header">
                         <span class="castom__current">Иномарка</span>
-                        <img class="deployment__img" src="src/img/arrdown.png" alt="">
+                        <svg class="deployment__img" width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.2695 2.19263L12.6988 12.7633L2.12811 2.19263" stroke="#F3930D" stroke-width="3.51747" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                     </div>
                     <div class="castom__body castom__body--auto">
                         <div class="castom__time castom__time--auto">Иномарка</div>
@@ -131,16 +133,15 @@
                             <div>
                                 <p class="request__form2--text" for="meeting-time">4. Выберите дату</p>
                                 <div id="app"></div>
-                                <div class="custom__header">
+                                <div>
                                     <input class="input" type="date" onсlick="event.preventDefault()"  id="date" />
-
                                 </div>
                             </div>
                             <div class="select__form">
                                 <p class="request__form2--text" for="meeting-time">5. Выберите время</p>
                                 <!-- ================= кастомный блок ======================= -->
                                 <div class="castom">
-                                    <div class="castom__header">
+                                    <div id="castom__header" class="castom__header">
                                             <span class="castom__current"> 9:00-20:00</span>
                                             <img class="deployment__img" src="src/img/arrdown.png" alt="">
                                     </div>
