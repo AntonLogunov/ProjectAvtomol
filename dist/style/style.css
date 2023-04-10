@@ -404,14 +404,17 @@
     display: flex;
     flex-direction:row;
     justify-content: space-between;
+    max-width: 1048px;
+    margin: auto;
 }
 .request{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid #F3930D;
+    border: 1.5px solid #F3930D;
     border-radius: 27px;
-    width: 623px;
+    max-width: 520px;
+    height: 480px;
 }
 .request__text{
     font-weight: 700;
@@ -435,12 +438,11 @@
     text-align: center;
 }
 .data{
-    width: 524px;
+    max-width: 426px;
     border: none;
-    border-bottom: 2px solid #F3930D;
+    border-bottom: 1.75873px solid #F3930D;
     padding: 0 0 22px 0;
-    margin-top: 60px;
-
+    margin-top: 40px;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
@@ -460,11 +462,11 @@
     margin-top: 10px;
 }
 .radio__label{
-    
-    font-size: 1rem;
+    position: relative;
+    font-size: 14px;
     color: #A8A8A8;
     cursor: pointer;
-    margin-left: 44px;
+    
 }
 .radio__label::before{
     content: "";
@@ -476,8 +478,9 @@
     border-radius: 50%;
     position: absolute;
     top: -5px;
-    left: 0;
+    left: -40px;
     z-index: 1;
+    
 }
 .radio__label::after{
     content: "";
@@ -489,7 +492,7 @@
     opacity: 0;
     position: absolute;
     top: 3px;
-    left: 8px;
+    left: -32px;
     z-index: 1;
     transition: opacity .1s linear;
 }
@@ -501,8 +504,8 @@
     opacity: 1;
 }
 .button{
-    width: 524px;
-    height: 92px;
+    max-width: 427px;
+    height: 72px;
     background-color:#F3930D;
     border: none;
     border-radius: 17px;
@@ -511,8 +514,8 @@
     font-size: 24px;
     line-height: 29px;
     color: rgba(255, 255, 255, 1);
-    margin-top: 64px;
-    margin-bottom: 64px;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 .button:hover{
     opacity: 1;
@@ -523,6 +526,9 @@
     line-height: 39px;
     color: #8E8E8E;
     margin-bottom: 42px;
+} 
+.select{
+    max-width: 430px;
 }
 .select__input{
     margin-top: 42px;
@@ -569,11 +575,14 @@
     max-width: 120px;
 }
 .castom__box{
+    position: absolute;
+    background-color: #fff;
     display: block;
     box-shadow: 10px 10px 15px 0px rgba(34, 60, 80, 0.2);
     margin-top: 7px;
     border-radius: 15px;
-    padding: 36px 0px 46px 49px;
+    padding: 36px 49px 46px 49px;
+    z-index: 1;
 }
 .castom__body{
     display: grid;
@@ -596,30 +605,124 @@
 }
 .castom__time:hover{
     color: #F3930D;
+}
+.castom__time--auto{
+    width: 100%;
+}
+.castom--auto{
+    max-width: 1046px;
+    margin: auto;
+}
+.castom__body--auto{
+    display: flex;
+    flex-direction: column;
 
 }
-/* ========================================================== */
-body {
-    font-family: sans-serif;
-  }
-  
-
-  .qs-day:nth-child(7), 
-  .qs-day:nth-child(6){
+/* ====================== kalendar ==================================== */
+/*==== удаление иконки календаря у input type="date" ====*/
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+/*================*/
+.input{
+    /* display: flex;
+    justify-content: center;
+    padding-left: 100px; */
+    width: 100%;
+    height: 80px;
+    border-radius: 14.9492px;
+    border: 1.5px solid #F3930D;
     color: #F3930D;
-  }
-  .qs-num:nth-child(7n),
-  .qs-num:nth-child(7n-1){
+    background-color: #fff;
+    text-align: center;
+    font-weight: 500;
+    font-size: 21.1048px;
+    line-height: 26px;
+}
+.form__kalendar{
+    width: 420px;
+    height: 80px;
+    font-weight: 500;
+    font-size: 21.1048px;
+    line-height: 26px;
     color: #F3930D;
-  }
-  .qs-num{
+    border: 1.5px solid #F3930D;
+    border-radius: 14.9492px;
+    text-align: center;
+}
+.qs-datepicker-container{
+    width: 433px;
+    height: 460px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 25.395px;
+    border: none;
+    margin-top: 7.1px;
+}
+.qs-datepicker{
+    padding: 49.61px 44.44px 44.44px 44.44px;
+}
+.qs-month-year{
+    display: flex;
+    justify-content: space-between;
+    max-width: 205px;
+    margin-right: 75px;
+}
+.qs-arrow{
+    margin-top: 4px;
+}
+.qs-month{
+    width: 100%;
     font-weight: 700;
-font-size: 20px;
-line-height: 22px;
-color: #313131;
-flex: none;
-order: 4;
-  }
+    font-size: 31.7437px;
+    line-height: 37px;
+    color: #313131;
+}
+.qs-year{
+    font-weight: 400;
+    font-size: 31.7437px;
+    line-height: 37px;
+    color: #313131;
+    margin-left: 25px;
+}
+.qs-controls{
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 31px;
+}
+.qs-day{
+    font-weight: 400;
+    font-size: 19.0462px;
+    line-height: 22px;
+    color: #A3A3A3;
+}
+.qs-squares{
+    height: 292.04px;
+    padding: 0;
+}
+.qs-square{
+    height: 38px;
+}
+.qs-square:nth-child(7n),
+.qs-square:nth-child(7n-1){
+    color: #F3930D;
+}
+.qs-num{
+    font-weight: 700;
+    font-size: 19.0462px;
+    line-height: 22px;
+    color: #313131;
+}
+.qs-active,
+.qs-range-end,
+.qs-range-start{
+    background: none;
+}
+.qs-submit{
+    display: none;
+}
 /* name for Montserrat 500 from Figma: font-family: 'MontserratMedium'; */
 /* name for Montserrat 700 from Figma: font-family: 'MontserratBold'; */
 
@@ -665,7 +768,7 @@ a {
 /* секция 1 */
 .header {
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     background-color: white;
     font-style: normal;
     font-weight: 700;
@@ -697,6 +800,7 @@ a {
 
 .mainmenu__item__orange {
     padding-right: 0;
+    color: rgba(243, 147, 13, 1);
 }
 
 .menu__link {
@@ -727,7 +831,7 @@ a {
     transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
-/* секция 6 */
+/* секция 5 */
 .section__services-menu {
     display: flex;
     flex-direction: column;
@@ -754,8 +858,14 @@ a {
     gap: 80px 70px;
 }
 
-.grid-link:hover .grid-svg path {
+.grid-link:hover .grid-svg path, 
+.grid-link:hover .grid-svg circle,
+.grid-link:hover .grid-svg rect {
     stroke: rgba(243, 147, 13, 1);
+}
+
+.grid-link:hover .grid-paragraph{
+    color: rgba(243, 147, 13, 1);
 }
 
 .grid-element {
@@ -777,6 +887,7 @@ a {
 .footer {
     background: #F3930D;
     min-height: 287px;
+    margin-top: 100px;
 }
 
 .section__footer-menu {
@@ -969,54 +1080,56 @@ a {
     text-align: center;
     margin-bottom: 87px;
 }
-.section_clients_reviews__button{
-    border-radius: 43px;
-    width: 390px;
-    height: 81px;
+
+.section_clients_reviews__button {
+    border-radius: 12px;
+    width: 346px;
+    height: 71px;
+    background-color: #F3930E;
+    opacity: 0.8;
+    border: none;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+
+    margin-top: 52px;
+    margin-bottom: 138px;
+}
+.section_clients_reviews__button:hover{
+    opacity: 1;
+}
+  
+.section_clients_reviews input:checked {
+    background: #F3930D;
 }
 
 .section_clients_reviews__slider{
     position: relative;
     text-align: center;
-    width: 1233px;
+    width: 1060px;
 }
 .section_clients_reviews__wrapper-for-slider{
     display: flex;
     overflow-x: hidden;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
-  .section_clients_reviews__button {
-    width: 524px;
-    height: 92px;
-    background-color: #F3930D;
-    border: none;
-    border-radius: 17px;
-    opacity: 0.8;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    color: rgba(255, 255, 255, 1);
-    margin-top: 64px;
-    margin-bottom: 64px;
-}
-  
-  .section_clients_reviews input:checked {
-    background: #F3930D;
-  }
-
-  .section_clients_reviews__list{
+.section_clients_reviews__list{
     display: flex;
     transition: transform 1s;
 }
 .section_clients_reviews__slider-item{
     display: flex;
-    width: 385px;
-    height: 460px;
+    width: 340px;
+    height: 407px;
     background: #FFFFFF;
-    box-shadow: -20px -20px 20px rgba(0, 0, 0, 0.05), 20px 20px 50px rgba(0, 0, 0, 0.05);
-    border-radius: 20px;
+    box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.05), 5px 5px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
     text-align: center;
-    margin: 0 5px;
+    margin: 0 7px;
     justify-content: center;
     flex-shrink: 0;
 }
