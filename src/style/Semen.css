@@ -1,3 +1,14 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+   
+}
 .sec2{ 
     margin-top: 216px;
     max-width: 1275px;
@@ -6,7 +17,7 @@
     align-items: center;
     height: 413px;
     border-radius: 20px;
-    background: url('/src/img/sec-2-car.png')no-repeat;
+    background: url('../../src/img/sec-2-car.png')no-repeat;
 }
 .sec2_p{
     width: 543px;
@@ -42,4 +53,216 @@
 .link_list{
     position: relative;
     bottom: 125px;
+}
+.createAccount{
+    width: 573px;
+    height: 935px;
+    border-radius: 30px;
+    padding: 100px 112px 100px 112px;
+}
+.modal-p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.187px;
+    line-height: 22px;
+    margin: 13px 0px 7px 0px;
+    user-select: none;
+    color: #CBCBCB;
+}
+.modal-input{
+    width: 348.06px;
+    height: 58.01px;
+    top: 0px;
+    padding-left: 17px;
+    border: none;
+    outline: none;
+    background: #F1F1F1;
+    border-radius: 11.602px;
+}
+
+.modal-btn{
+    height: 58px;
+    border: none;
+    background: #F3930D;
+    border-radius: 11.602px;
+    
+    font-family: 'MontserratBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18.187px;
+    line-height: 22px;
+    user-select: none;
+    color: #FFFFFF;
+}
+.modal-btn:hover{
+        background: rgba(243, 147, 13, 0.81);
+        cursor: pointer;
+}
+.modal-btn-create{
+    width: 348px;
+}
+.modal-p-p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    user-select: none;
+    text-align: center;
+    margin-top: 20px;
+    color: #8E8E8E;
+}
+.modal-a-create{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    user-select: none;
+    color: #F3930D;
+}
+.modal-label{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.187px;
+    line-height: 22px;
+    user-select: none;
+    color: #8E8E8E;
+}
+.authorization{
+    width: 573px;
+    height: 474px;
+    border-radius: 30px;
+    padding: 82px 112px 71px 112px;
+}
+.modal-btn-auth{
+    width: 168px;
+}
+.checkbox {
+	position:relative;
+    left: 100px;
+}
+.checkbox input[type=checkbox] {
+	display:none;
+}
+.checkbox label:after {
+	content:'';
+    border-radius: 5px;
+	display:block;
+	height:20px;
+	width:20px;
+	border:1px solid #8E8E8E;
+	position:absolute;
+	top:0;
+    right: 90px;
+    
+}
+.checkbox input[type=checkbox]:checked + label:after {
+	border:1px solid #F3930D; 
+	background-color:#F3930D;
+    content: url('../../src/img/checkmark.svg');
+    line-height: 15px;
+    text-align: center;
+}
+.checkbox label:hover{
+    cursor: pointer;
+}
+.authorization-2{
+    display: flex;
+    align-items: center;
+    margin-top: 29px;
+}
+.modal-p-auth{
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    user-select: none;
+    color: #8E8E8E;
+}
+.authorization-2-a{
+    display: flex;
+    margin-top: 29px;
+    justify-content: space-between
+    
+}
+#password1,#password2,#password3{
+	width: 100%;
+	font-size: 25px;
+}
+.password{
+    position: relative;
+}
+.password-eye{
+    border: none;
+    position: absolute;
+    user-select: none;
+    right: 17px;
+    top: 19px;
+    opacity: .3;
+    cursor: pointer
+}
+.password-eye.active{
+    opacity: 1;
+}
+.password-eye-img{
+    pointer-events: none;
+}
+.restore{
+    width: 573px;
+    height: 293px;
+    border-radius: 30px;
+    padding: 64px 112px 60px 112px;
+}
+.modal-btn-restore{
+    width: 199px;
+    margin-top: 24px;
+}
+.alert{
+    width: 573px;
+    height: 269px;
+    border-radius: 30px;
+    padding: 90px 112px 90px 112px;
+    text-align: center;
+}
+.modal{
+    display: none ; 
+    position: fixed; 
+    z-index: 11; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}   
+.close{ 
+    position: absolute;
+    color: #8E8E8E;
+
+    font-size: 28px;
+    font-weight: bold;
+    user-select: none;
+    top: 0;
+    right: 0;
+    padding: 8% 8% 0 0;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-form{
+    display: none;
+    top: 20%;
+    margin: 0 auto;
+    position: relative;
+    background-color: #FFFFFF;
 }

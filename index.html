@@ -17,6 +17,7 @@
     </script>
     <script defer src="src/js/mapscript.js"></script>
     <script defer src="src/js/danilScroll.js"></script>
+    <script defer src="src/js/semen.js"></script>
 </head>
 
 <body> <!-- id="top" ??????????-->
@@ -774,6 +775,58 @@
                 </div>
             </div>
         </section>
+    <div id="Modal" class="modal">
+        <form class="authorization modal-form">
+            <span class="close">&times;</span>
+            <p class="modal-p">Телефон</p>
+            <input class="modal-input" type="tel" id="phone-mask" placeholder="+7(000)000-00-00" required>
+            <p class="modal-p">Пароль</p>
+            <div class="password">
+                <input class="modal-input" id="password3" placeholder="Введите пароль" name="password" type="password" required>
+                <button type="button" class="password-eye" data-target="#password3"><img class="password-eye-img" src="src/img/closedeye.svg" alt=""></button>
+            </div>
+            <div class="authorization-2">
+                <button type="submit" class="modal-btn modal-btn-auth">Вход</button>
+                <div class="checkbox"><input class="checkbox-input" type="checkbox" id="remember-id" name="remember-name" value="remember-value"><label class="modal-label" for="remember-id">запомнить</label></div>
+            </div>
+                <div class="authorization-2-a"><p id="restoreaccess" class="modal-p-auth">Восстановить доступ</p><p id="createanaccount" class="modal-p-auth">Создать аккаунт</p>
+            </div>
+        </form>
+        <form class="createAccount modal-form">
+            <span class="close">&times;</span>
+            <p class="modal-p">Имя</p>
+            <input class="modal-input" type="text" required>
+            <p class="modal-p">Телефон</p>
+            <input class="modal-input" type="tel" id="phone-mask" placeholder="+7(000)000-00-00" required>
+            <p class="modal-p">E-mail</p>
+            <input class="modal-input" type="text" required>
+            <p class="modal-p">Пароль</p>
+            <div class="password">
+                <input class="modal-input " id="password1" placeholder="Введите пароль" name="password" type="password" required>
+                <button type="button" class="password-eye" data-target="#password1"><img class="password-eye-img" src="src/img/closedeye.svg" alt=""></button>
+            </div>
+            <p class="modal-p">Пароль еще раз</p>
+            <div class="password">
+                <input class="modal-input " id="password2" placeholder="Повторите пароль" name="password" type="password" required>
+                <button type="button" class="password-eye" data-target="#password2"><img class="password-eye-img" src="src/img/closedeye.svg" alt=""></button>
+            </div>
+            <p class="modal-p">Дата рождения</p>
+            <button type="submit" class="modal-btn modal-btn-create" required>Создать</button>
+            <p class="modal-p-p">Нажимая «Создать» вы принимаете следующие</p>
+            <a class="modal-a-create" href=""><p>условия использования</p></a>
+        </form>
+        <div class="restore modal-form">
+            <span class="close">&times;</span>
+            <P class="modal-p">Телефон или E-mail</P>
+            <input class="modal-input" type="text">
+            <button id="btnrestore" type="submit"class="modal-btn modal-btn-restore">Восстановить</button>
+        </div>
+        <form class="alert modal-form">
+            <span class="close">&times;</span>
+            <p class="modal-p">Мы отправили временный пароль на ваш телефон. 
+                Вы так же можете задать новый пароль пройдя по ссылке.</p>
+        </form>
+    </div>
     </main>
     <footer class="footer">
         <!-- 9 секция (подвал) -->
