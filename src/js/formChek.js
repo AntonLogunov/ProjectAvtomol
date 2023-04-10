@@ -9,8 +9,11 @@ let timeCheck = false;
 //let contactDataCheck = false // атрибут reqired на инпутах
 
 function formCheck(){
-    if (choiceInf.services.length > 0){
+    if (timeCheck != "" && dateCheck != "" && choiceInf.services.length > 0){
         serviceCheck = true;
+        dateCheck = true;
+        timeCheck = true;
+
     }
 
     //Добавить проверку adressCheck,dateCheck,timeCheck

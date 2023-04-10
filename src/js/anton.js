@@ -4,22 +4,29 @@ let castom = function () {
     let castomItem = document.querySelectorAll('.castom__time');
 
     castomHeader.forEach(item => {
-        item.addEventListener('click', castomToggle);
+        item.addEventListener('click', ()=>{
+            item.parentElement.classList.toggle('castom-is-active');
+        });
+        
     });
     castomItem.forEach(item => {
-        item.addEventListener('click', castomChoose);
-    });
-    function castomToggle(){
-        this.parentElement.classList.toggle('castom-is-active');
-    }
-    function castomChoose(){
-        let textTime = this.innerText, 
-            castom = this.closest('.castom'),
-            currentText = castom.querySelector('.castom__current');
+        item.addEventListener('click', ()=>{
+            let textTime = item.innerText, 
+            castom = item.closest('.castom'),
+            currentText = castom.closest('.castom').querySelector('.castom__current'),
+
+            header = document.querySelector('.castom__header'),
+            headerID = document.getElementById('castom__header');
+            currentText.classList.add('castom__current--click');
+            header.classList.add("castom__header--click");
+            headerID.classList.add('castom__header--click');
+
         currentText.innerText = textTime;
         castom.classList.remove('castom-is-active');
         console.log(textTime);
-    }
+
+    });
+    });
 }
 castom();
 
