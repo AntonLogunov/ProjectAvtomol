@@ -77,4 +77,9 @@ ymaps.ready(init);
                     mapCurrentPoint.innerHTML = p.innerHTML;
                 }  
             })
+
+            myMap2.events.add('click', function (e) {  
+                placemark.balloon.close();  
+                placemark2.balloon.close();                 
+            });
         }
