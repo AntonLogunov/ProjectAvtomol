@@ -11,7 +11,7 @@ ymaps.ready(init);
             {
             balloonContentHeader: '<div class="baloon-divheader"><p class="baloon-p1">Эльтонская 1-я, 16</p></div>',
             balloonContentBody: '<div class="baloon-div"><p class="baloon-p2">ПН- ВС с 09:00 до 21:00</p>' + 
-                                '<button class="baloon-button"><a class="baloon-link" href="linkpage.html">Запись on-line</a></button></div>'
+                                '<button class="baloon-button"><a class="baloon-link" href="request.html">Запись on-line</a></button></div>'
     
             },
             {
@@ -26,7 +26,7 @@ ymaps.ready(init);
             {
             balloonContentHeader: '<div class="baloon-divheader"><p class="baloon-p1">​СНТ Вишнёвый, 1264</p></div>',
             balloonContentBody: '<div class="baloon-div"><p class="baloon-p2">ПН- ВС с 09:00 до 21:00</p>' + 
-                                '<button class="baloon-button"><a class="baloon-link" href="linkpage.html">Запись on-line</a></button></div>'
+                                '<button class="baloon-button"><a class="baloon-link" href="request.html">Запись on-line</a></button></div>'
         
             },
             {
