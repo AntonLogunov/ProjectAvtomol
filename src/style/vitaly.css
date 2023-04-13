@@ -180,3 +180,213 @@
     display: none;
     overflow-x:inherit;
 }
+/*======================================================================================================*/
+.section-form{
+    max-width: 1048px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.section-form-hidden{
+    display: none;
+}
+.select-form__header{
+    margin-bottom: 60px;
+    width: 308.03px;
+    height: 31.66px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31.6572px;
+    line-height: 39px;
+    color: #8E8E8E;
+}
+.section-form__form{
+    width: 1048px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.section-form__block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: inherit;
+    height: 79px;
+    margin: 0 auto;
+    margin-top: 26px;
+    padding: 24px 36px;
+
+    border: 2px solid #F3930D;
+    border-radius: 15px;
+    background-color: white;
+    color: #F3930D;
+
+    font-weight: 500;
+    font-size: 21.1048px;
+    line-height: 26px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.section-form__menu{
+    box-sizing: unset;
+    width: inherit;
+    margin: 0 auto;
+    margin-bottom: 26px;
+
+    filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+    background-color: white;
+    color: #F3930D;
+
+    font-weight: 500;
+    font-size: 21.1048px;
+    line-height: 26px;
+    text-align: left;
+}
+.section-form__menuItems{
+    width: inherit;
+    padding: 24px 36px;
+    max-height: 79px;
+    display: grid;
+    grid-template-columns: 430px 162px 150px 210px;
+    justify-items: center;
+    appearance: auto;
+    box-sizing:border-box;  
+    border-bottom: solid 2px #F3930D;
+}
+.section-form__menuItemName-first{
+    justify-self: left;
+}
+.section-form__items{
+    width: inherit;
+    margin: 0 auto;
+    margin-bottom: 26px;
+
+    background-color: white;
+    color: #F3930D;
+    border-radius: 0px 0px 20px 20px;
+    overflow: hidden;
+
+    font-weight: 500;
+    font-size: 21.1048px;
+    line-height: 26px;
+    text-align: left;
+}
+.section-form__item{
+    width: inherit;
+    padding: 24px 36px;
+    max-height: 79px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    appearance: auto;
+    box-sizing:border-box;
+    
+    cursor: pointer;
+    background-color: white;
+    color: #F3930D;
+    
+    border: none;
+
+    font-weight: 500;
+    font-size: 21.1048px;
+    line-height: 26px;
+    text-align: left;
+    writing-mode: horizontal-tb !important;
+    text-rendering:unset;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+
+}
+.section-form__item-chosen{
+    width: inherit;
+    padding: 24px 36px;
+    max-height: 79px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    appearance: auto;
+    box-sizing:border-box;
+    
+    background-color: lightgray;
+    color: #F3930D;
+
+    
+    border: none;
+
+    font-weight: 500;
+    font-size: 21.1048px;
+    line-height: 26px;
+    text-align: left;
+    writing-mode: horizontal-tb !important;
+    text-rendering:unset;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+
+}
+.section-form__item:hover{
+    background-color:#E7E7E7;
+}
+
+.section-form__itemTxt{
+    max-width: 440px;
+}
+
+
+.section-form__chosenItem{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 0px 36px;
+    margin-top: 44px;
+
+    border-radius: 15px;
+    background-color: orange;
+
+    color: white;
+    font-size: 21.1048px;
+    line-height: 26px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.section-form__closeButton{
+    width: fit-content;
+    height: fit-content;
+    margin-left: 50px;
+    cursor: pointer;
+    background-color:inherit;
+    border: none;
+    font-size: 24px;
+    color: white;
+    translate: transform 0.3s;
+}
+.section-form__closeButton:hover{
+    transform: scale(0.9);
+}
+
+.section-form__time_and_price{
+    width: 1024px;
+    margin: 0 auto;
+    margin-top: 44px;
+}
+.section-form__price{
+    font-weight: bold;
+}
+.section-form__time{
+    font-weight: bold;
+}
+.section-form__inftext{
+    width: 1024px;
+    margin: 0 auto;
+    margin-top: 44px;
+}
+.section-form__orange-txt{
+    color: orange;
+    text-decoration: underline;
+}

@@ -11,11 +11,17 @@
     <link rel="icon" type="image/png" sizes="16x16" href="src/icons/favicon-16x16.png">
     <link rel="manifest" href="src/icons/site.webmanifest">
     <link rel="stylesheet" href="dist/style/style.css">
+    <link rel="stylesheet" href="src/mini/datepicker.min.css">
     <link rel="stylesheet" href="src/style/anton.css">
+    <link rel="stylesheet" href="src/style/danilStyle.css">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=um=constructor%3Aef276d26e94014049c7aec200e8c68065a4708447feadcd033084cba9bf9fe08&lang=ru_RU" type="text/javascript">
     </script>
     <script defer src="src/js/mapscript2.js"></script>
     <script defer src="src/js/anton.js"></script>
+    <script defer src="src/js/vitaliy2.js"></script>
+    <script defer src="src/mini/datepicker.min.js"></script>
+    <script defer src="src/js/kalendar.js"></script>
+    
 </head>
 
 <body>
@@ -52,7 +58,8 @@
     </header>
     <a class="link_list" name="top_link"></a>
     <main>
-        <section class="section section section-map">
+        <!-- выбор адреса -->
+        <section class="section  section-map">
             <div class="wrapper">
                 <div class="map-container-choise">
                     <p class="second-map-text-p">1. Выберите адрес</p>
@@ -79,18 +86,63 @@
                 </div> 
             </div>
         </section>
-        <section class="section section__request">
+        
+        <!-- выбор марки авто -->
+        <section class="section">
+            <div class="wrapper">
+                <div class="castom castom-is-active castom--auto">
+                    <p class="request__form2--text" for="meeting-time">2. Выберите категорию</p>
+                    <div class="castom__header">
+                        <div class="castom__form__time">
+                            <span class="castom__current">Иномарка</span>
+                            <div class="castom__icon">
+                                <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.149 1.77586L12.5783 12.3466L2.00756 1.77586" stroke="#F3930D" stroke-width="3.51747" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>  
+                            </div>
+                        </div>
+                    </div>
+                        <div class="castom__box">
+                            <div class="castom__body castom__body--auto">
+                                <div class="castom__time castom__time--auto">Иномарка</div>
+                                <div class="castom__time castom__time--auto">Отечественный</div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- выбор услуг -->
+        <section class="section section-form">
+            <p class="select-form__header">3. Выберите услугу</p>
+            <div class="section-form__form">
+                <!-- ФОРМА УСЛУГ ЗДЕСЬ -->
+            </div>
+            <div class="section-form__time_and_price">
+                <p class="section-form__price_p">Стоимость работ:<span class="section-form__price">XXX</span> рублей</p>
+                <p class="section-form__time_p">Работы займут:<span class="section-form__time">XXX</span> минут</p>
+            </div>
+            <div class="section-form__inftext">
+                <p>Цена на сайте может отличаться в зависимости от марки и конструкции автомобиля. 
+                    Точную цену можно узнать у наших специалистов по телефону <span class="section-form__orange-txt">277-74-94</span> </p>
+            </div>
+
+        </section>
+
+        <!-- заполнение формы(дата, время, ФИО, номер телефона, марка а/м) -->
+        <section class="section">
             <div class="wrapper">
                 <div class="wrapper__request">
                     
                     <div class="request__form2">
                         <div class="select">
                             <div>
-                                <label class="request__form2--text" for="meeting-time">3. Выберите дату</label>
-                                <input class="select__input" type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                                <p class="request__form2--text" for="meeting-time">4. Выберите дату</p>
+                                <div id="app"></div>
+                                <input class="input" type="date" onсlick="event.preventDefault()"  id="date" />
                             </div>
-                            <div>
-                                <label class="request__form2--text" for="meeting-time">4. Выберите время</label>
+                            <div class="select__form">
+                                <p class="request__form2--text" for="meeting-time">5. Выберите время</p>
                                 <!-- ================= кастомный блок ======================= -->
                                 <div class="castom castom-is-active">
                                     <div class="castom__header">
@@ -134,36 +186,23 @@
                         </div>
                     </div>
                     <div class="request__form1">
-                        <p class="request__textdata">Контактные данные</p>
+                        <p class="request__form2--text" for="meeting-time">6. Контактные данные</p>
                         <form class="request" action="">
-                            <input class="data" type="text" placeholder="ФИО">
-                            <input class="data" type="text" placeholder="Контактный телефон">
-                            <input class="data" type="text" placeholder="Марка а/м">
-                            <!-- ??????????????????????????????????????????????????? -->
+                            <input id="name" class="data" type="text" placeholder="ФИО">
+                            <input id="phone" class="data" type="text" placeholder="Контактный телефон">
+                            <input id="mark" class="data" type="text" placeholder="Марка а/м">
+                            
                             <div class="radio">
                                 <input class="radio__input" type="radio" name="user_type" id="r1" value="admin">
                                 <label class="radio__label" for="r1">Я согласен(а) на обработку персональных данных</label>
                             </div>
-                            <!-- ??????????????????????????????????????????????????? -->
-                            <input class="button" type="submit" value="Записаться">
+                            <button class="button" type="button" value="Записаться" onclick="dataOutput()">Записаться</button>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section">
-            <div class="wrapper">
-            </div>
-        </section>
-        <section class="section">
-            <div class="wrapper">
-            </div>
-        </section>
-        <section class="section">
-            <div class="wrapper">
-            </div>
-        </section>
-        
+
     </main>
     <footer class="footer">
         <section id="adress_link" class="section footer-menu">
