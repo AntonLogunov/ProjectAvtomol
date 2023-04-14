@@ -14,6 +14,7 @@
     <link defer rel="stylesheet" href="js/main.js">
     <script defer src="src/js/vitaly.js"></script>
     <script defer src="src/js/danilScroll.js"></script>
+    <script defer src="src/js/danilModal.js"></script>
 </head>
 
 <body> <!-- id="top" ??????????-->
@@ -217,8 +218,8 @@
             </div>
         </section>
         <!-- 4 секция -->
-        <section id="slider_link" class="section section-slider">
-            <!-- <a class="link_list" name="slider_link"></a> -->
+        <section class="section section-slider">
+            <div class="link-hide"  id="slider_link"></div>            
             <div class="wrapper section-slider__wrapper">
                 <div class="section-slider__slider">
                     <div class="section-slider__wrapper-for-slider">
@@ -272,12 +273,13 @@
             </div>
         </section>
         <!-- 5 секция -->
-        <section id="services_link" class="section section-services">
+        <section class="section section-services">
+            <div class="link-hide" id="services_link" ></div>
             <div class="wrapper section__services-menu">
                 <div class="services-heading">
-                    <p class="services-par">
+                    <h2 class="services-par">
                         ШИРОКИЙ СПЕКТР УСЛУГ
-                    </p>
+                    </h2>
                 </div>
                 <div class="services-grid-elements">
                     <a href="#" class="grid-link">
@@ -480,43 +482,71 @@
                             </p>
                         </div>
                     </a>
-                    <a href="#" class="grid-link">
-                        <div class="grid-element">
-                            <svg class="grid-svg"  width="64" height="119" viewBox="0 0 64 119" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect x="4.52948" y="1.98016" width="24.2102" height="23.9968" rx="4.42224"
-                                    stroke="#8E8E8E" stroke-width="3.96032" />
-                                <circle cx="16.3145" cy="103.178" r="13.2789" stroke="#8E8E8E" stroke-width="3.96032" />
-                                <rect x="11.1454" y="27.1629" width="10.9786" height="62.1978" stroke="#8E8E8E"
-                                    stroke-width="3.96032" />
-                                <mask id="path-4-inside-1_1440_2352" fill="white">
+                    <button type="button" class="btn--open grid-link">                        
+                            <div class="grid-element">
+                                <svg class="grid-svg"  width="64" height="119" viewBox="0 0 64 119" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4.52948" y="1.98016" width="24.2102" height="23.9968" rx="4.42224"
+                                        stroke="#8E8E8E" stroke-width="3.96032" />
+                                    <circle cx="16.3145" cy="103.178" r="13.2789" stroke="#8E8E8E" stroke-width="3.96032" />
+                                    <rect x="11.1454" y="27.1629" width="10.9786" height="62.1978" stroke="#8E8E8E"
+                                        stroke-width="3.96032" />
+                                    <mask id="path-4-inside-1_1440_2352" fill="white">
+                                        <path
+                                            d="M60.4602 95.8398C62.2099 95.8398 63.6284 97.2583 63.6284 99.0081L63.6284 107.721C63.6284 109.471 62.2099 110.889 60.4602 110.889L27.9855 110.889L27.9855 95.8398L60.4602 95.8398Z" />
+                                    </mask>
                                     <path
-                                        d="M60.4602 95.8398C62.2099 95.8398 63.6284 97.2583 63.6284 99.0081L63.6284 107.721C63.6284 109.471 62.2099 110.889 60.4602 110.889L27.9855 110.889L27.9855 95.8398L60.4602 95.8398Z" />
-                                </mask>
-                                <path
-                                    d="M60.4602 95.8398C62.2099 95.8398 63.6284 97.2583 63.6284 99.0081L63.6284 107.721C63.6284 109.471 62.2099 110.889 60.4602 110.889L27.9855 110.889L27.9855 95.8398L60.4602 95.8398Z"
-                                    stroke="#8E8E8E" stroke-width="7.92065" stroke-linejoin="round"
-                                    mask="url(#path-4-inside-1_1440_2352)" />
-                                <rect x="5.82499" y="49.9075" width="25.5658" height="9.0577" rx="4.52885"
-                                    transform="rotate(15 5.82499 49.9075)" fill="white" stroke="#8E8E8E"
-                                    stroke-width="3.96032" />
-                                <rect x="5.60087" y="33.3157" width="25.5658" height="9.05396" rx="4.52698"
-                                    transform="rotate(15 5.60087 33.3157)" fill="white" stroke="#8E8E8E"
-                                    stroke-width="3.96032" />
-                                <rect x="5.78983" y="68.2535" width="25.5658" height="8.92239" rx="4.46119"
-                                    transform="rotate(15 5.78983 68.2535)" fill="white" stroke="#8E8E8E"
-                                    stroke-width="3.96032" />
-                            </svg>
-                            <p class="grid-paragraph">
-                                Ремонт подвески
+                                        d="M60.4602 95.8398C62.2099 95.8398 63.6284 97.2583 63.6284 99.0081L63.6284 107.721C63.6284 109.471 62.2099 110.889 60.4602 110.889L27.9855 110.889L27.9855 95.8398L60.4602 95.8398Z"
+                                        stroke="#8E8E8E" stroke-width="7.92065" stroke-linejoin="round"
+                                        mask="url(#path-4-inside-1_1440_2352)" />
+                                    <rect x="5.82499" y="49.9075" width="25.5658" height="9.0577" rx="4.52885"
+                                        transform="rotate(15 5.82499 49.9075)" fill="white" stroke="#8E8E8E"
+                                        stroke-width="3.96032" />
+                                    <rect x="5.60087" y="33.3157" width="25.5658" height="9.05396" rx="4.52698"
+                                        transform="rotate(15 5.60087 33.3157)" fill="white" stroke="#8E8E8E"
+                                        stroke-width="3.96032" />
+                                    <rect x="5.78983" y="68.2535" width="25.5658" height="8.92239" rx="4.46119"
+                                        transform="rotate(15 5.78983 68.2535)" fill="white" stroke="#8E8E8E"
+                                        stroke-width="3.96032" />
+                                </svg>
+                                <p class="grid-paragraph">
+                                    Ремонт подвески
+                                </p>
+                            </div>                       
+                    </button>
+                    
+                </div>
+                <div class="modal">
+                    <div class="modal__wrapper">
+                        <div class="Modalinfo">
+                            <p class="modalHeading">
+                                Ремонт двигателя
                             </p>
-                        </div>
-                    </a>
+                            <p class="modalSmallDescription">
+                                Профессиональный ремонт бензиновых и дизельных двигателей, узлов и агрегатов, навесного оборудования
+                            </p>
+                            <p class="modalBigDescription">
+                                Наш автотехцентр более 14 лет специализируется на ремонте бензиновых и дизельных двигателей всех моделей автомобилей. Предоставляем всем нашим клиентам высокое качество сервиса, сохраняя приемлемый уровень цен выполняемых работ. Большой ассортимент запчастей в наличии и под заказ.
+                            </p>
+                            <div class="modalButton">
+                                <button class="modalButt" onclick="window.location.href = 'request.html'">
+                                    Запись on-line
+                                </button>
+                            </div>
+                        </div> 
+                        <div class="X">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="1.41421" y1="1" x2="15" y2="14.5858" stroke="#8E8E8E" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="1" y1="-1" x2="20.2132" y2="-1" transform="matrix(-0.707107 0.707107 0.707107 0.707107 16 1)" stroke="#8E8E8E" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>   
+                    </div>
                 </div>
             </div>
         </section>
         <!-- 6 секция -->
-        <section id="about_company_link" class="section">
+        <section class="section">
+            <div class="link-hide" id="about_company_link"></div>
             <div class="wrapper section__6">
                 <p class="avtomol">ОБ АВТОМОЛЛ</p>
                 <div class="info">
@@ -559,7 +589,8 @@
             </div>
         </section>
         <!-- 7 секция -->
-        <section id="clients_reviews_link" class="section section_clients_reviews">
+        <section class="section section_clients_reviews">
+            <div class="link-hide" id="clients_reviews_link"></div>
             <div class="wrapper section_clients_reviews__wrapper">
                 <h2 class="section_clients_reviews__header">Отызвы клиентов</h2>
                 <div class="section_clients_reviews__slider">
@@ -763,8 +794,8 @@
             </div>
         </section>
         <!-- 8 секция -->
-        <section id="contacts_link" class="section section section-map">
-            <!-- <a class="link_list" name="adress_link"></a> -->
+        <section class="section section section-map">
+            <div class="link-hide"  id="contacts_link"></div>
             <div class="wrapper container-map">
                 <div class="map-text">
                     <h1>где нас найти?</h1>
@@ -842,7 +873,7 @@
                     </ul>
                     <ul class="footer-list">
                         <li>
-                            <a class="footer-links" href="#">
+                            <a class="footer-links" href="mailto:automall74@mail.ru">
                                 <svg width="26" height="27" viewBox="0 0 26 27" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path

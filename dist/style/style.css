@@ -448,8 +448,8 @@ color: #313131;
 flex: none;
 order: 4;
   }
-/* name for Montserrat 500 from Figma: font-family: 'MontserratMedium'; */
-/* name for Montserrat 700 from Figma: font-family: 'MontserratBold'; */
+/* name for Montserrat 500 from Figma ==> font-family: 'MontserratMedium'; */
+/* name for Montserrat 700 from Figma ==> font-family: 'MontserratBold'; */
 
 *,
 *::before,
@@ -482,6 +482,7 @@ footer{
     max-width: 1226.53px;
     margin: 0 auto;
     margin-top: 100px;
+    position: relative;
 }
 ul {
     list-style: none;
@@ -489,6 +490,10 @@ ul {
 }
 a {
     text-decoration: none;
+}
+.link-hide {
+    position: absolute;
+    top: -200px;
 }
 /* секция 1 */
 .header {
@@ -608,6 +613,104 @@ a {
     color: #8E8E8E;
     margin-top: 19px;
 }
+
+/* Модальное окно */
+
+.modal {
+    width: 889px;
+    height: 485px;
+    border-radius: 29.3156px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: transform 0.3s ease-in-out,
+                opacity 0.3s ease-in-out;
+}
+
+.modal--open {
+    display: flex;
+    pointer-events: auto;
+    opacity: 1;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out,
+                opacity 0.3s ease-in-out;
+}
+
+.modal__wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 38px;
+    margin-bottom: 70px;
+    margin-right: 50px;
+    margin-left: 102px;
+}
+
+.X {
+    margin-left: auto;
+}
+
+.Modalinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 630px;
+    height: 355px;
+    margin-top: 25px;
+}
+
+.modalHeading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40.2043px;
+    line-height: 49px;
+    font-variant: small-caps;
+    color: #8E8E8E;
+}
+
+.modalSmallDescription {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20.1021px;
+    line-height: 25px;
+    font-variant: small-caps;
+    color: #8E8E8E;
+}
+
+.modalBigDescription {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15.0766px;
+    line-height: 18px;
+    font-variant: small-caps;
+    color: #8E8E8E;
+}
+
+.modalButton {
+
+}
+
+.modalButt {
+    width: 278px;
+    height: 67px;
+    background: #F3930E;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20.1021px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
 /* секция 9 */
 .footer {
     background: #F3930D;

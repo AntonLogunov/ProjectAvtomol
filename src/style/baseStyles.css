@@ -1,5 +1,5 @@
-/* name for Montserrat 500 from Figma: font-family: 'MontserratMedium'; */
-/* name for Montserrat 700 from Figma: font-family: 'MontserratBold'; */
+/* name for Montserrat 500 from Figma ==> font-family: 'MontserratMedium'; */
+/* name for Montserrat 700 from Figma ==> font-family: 'MontserratBold'; */
 
 *,
 *::before,
@@ -32,6 +32,7 @@ footer{
     max-width: 1226.53px;
     margin: 0 auto;
     margin-top: 100px;
+    position: relative;
 }
 ul {
     list-style: none;
@@ -39,4 +40,8 @@ ul {
 }
 a {
     text-decoration: none;
+}
+.link-hide {
+    position: absolute;
+    top: -200px;
 }

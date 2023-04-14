@@ -6,6 +6,8 @@ for (let anchor of anchors) {
     
     const blockID = anchor.getAttribute('href').substr(1)
     
+    // blockID.style.marginTop = '100px'
+
     document.getElementById(blockID).scrollIntoView({
       behavior: 'smooth',
       block: 'start'
