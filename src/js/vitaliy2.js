@@ -69,7 +69,6 @@ function createItem(service,carType){
     return item;
 }
 function eventListener(item,service,carType,form) {
-    console.log(item);console.log(service);console.log(carType);
     item.classList = "section-form__item-chosen";
     service.isActive = true;
     let chosenItem = createElementWithClass("div","section-form__chosenItem");
@@ -130,6 +129,50 @@ function createBlock(nameGroup){
     
     return block;
 }
+function createForm(json){
+    let form = document.querySelector(".section-form__form");
+    json.forEach(nameGroup => {
+        let block = createBlock(nameGroup)
+        form.append(block);
+        let isMenuCreated = false;
+        block.addEventListener("click",(event) => {
+            if(!event.currentTarget.classList.contains("section-form__active")){
+                event.currentTarget.querySelector(".section-form__arrow").innerHTML = "V";
+                event.currentTarget.classList.add("section-form__active");
+                event.currentTarget.nextSibling.classList.add("section-form-hidden");
+            }
+            else{
+                event.currentTarget.querySelector(".section-form__arrow").innerHTML = "^";
+                event.currentTarget.classList.remove("section-form__active");
+                if(isMenuCreated){
+                    event.currentTarget.nextSibling.classList.remove("section-form-hidden");
+                }
+                else{
+                    let carType = document.querySelector(".castom__current").innerHTML
+                    let menu = createMenu(isMenuCreated);
+                    let items = createElementWithClass("div","section-form__items");
+                    nameGroup["service"].forEach(service => {
+                        let item = createItem(service,carType);
+                        items.append(item);
+                        if(!service.isActive){
+                            addListener(item,service,carType,form);
+                        }
+                    });
+                    menu.append(items);
+                    insertAfter(event.currentTarget,menu);
+                }
+            }
+        });
+    });
+    return form;
+}
+function jsonRefreshActiveServices(json){
+    json.forEach(nameGroup => {
+        nameGroup.service.forEach(item => {
+            item["isActive"] = false;
+        });
+    });
+}
 let priceValue = 0;
 let timeValue = 0;
 const choiceInf = {
@@ -149,38 +192,19 @@ time.innerHTML = timeValue;
 fetch('src/js/services.json')
     .then((response) => response.json())
     .then((json) => {
-        const form = document.querySelector(".section-form__form");
-        json.forEach(nameGroup => {
-            let block = createBlock(nameGroup)
-            form.append(block);
-            let isMenuCreated = false;
-            block.addEventListener("click",(event) => {
-                if(!event.currentTarget.classList.contains("section-form__active")){
-                    event.currentTarget.querySelector(".section-form__arrow").innerHTML = "V";
-                    event.currentTarget.classList.add("section-form__active");
-                    event.currentTarget.nextSibling.classList.add("section-form-hidden");
-                }
-                else{
-                    event.currentTarget.querySelector(".section-form__arrow").innerHTML = "^";
-                    event.currentTarget.classList.remove("section-form__active");
-                    if(isMenuCreated){
-                        event.currentTarget.nextSibling.classList.remove("section-form-hidden");
-                    }
-                    else{
-                        let carType = document.querySelector(".castom__current").innerHTML
-                        let menu = createMenu(isMenuCreated);
-                        let items = createElementWithClass("div","section-form__items");
-                        nameGroup["service"].forEach(service => {
-                            let item = createItem(service,carType);
-                            items.append(item);
-                            if(!service.isActive){
-                                addListener(item,service,carType,form);
-                            }
-                        });
-                        menu.append(items);
-                        insertAfter(event.currentTarget,menu);
-                    }
-                }
-            });
+        let form = createForm(json)
+
+        let carTypeMenu = document.querySelector(".castom__body--auto");
+        carTypeMenu.addEventListener("click",(event)=>{
+            priceValue = 0;
+            timeValue = 0;
+            choiceInf["services"] = [];
+            choiceInf["price"] = priceValue;
+            choiceInf["time"] = timeValue;
+            price.innerHTML = priceValue;
+            time.innerHTML = timeValue;
+            form.innerHTML = "";
+            jsonRefreshActiveServices(json);
+            form = createForm(json);
         });
     });
