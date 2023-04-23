@@ -174,8 +174,7 @@
     align-items: center;
     border: 1.5px solid #F3930D;
     border-radius: 27px;
-    max-width: 520px;
-    height: 480px;
+    padding: 0 46px;
 }
 .request__text{
     font-weight: 700;
@@ -199,7 +198,7 @@
     text-align: center;
 }
 .data{
-    max-width: 426px;
+    width: 426px;
     border: none;
     border-bottom: 1.75873px solid #F3930D;
     padding: 0 0 22px 0;
@@ -208,13 +207,14 @@
     font-size: 20px;
     line-height: 24px;
     color: #A8A8A8;
+    opacity: 0.8;
 }
 .data:focus{
     outline: none;
     color: #F3930D;
 }
 .radio{
-    margin-top: 45px;
+    margin-top: 37px;
 }
 .radio__input{
     -webkit-appearance: none;
@@ -224,7 +224,7 @@
 }
 .radio__label{
     position: relative;
-    font-size: 14px;
+    font-size: 13px;
     color: #A8A8A8;
     cursor: pointer;
     
@@ -238,7 +238,7 @@
     background-color: #FFFFFF;
     border-radius: 50%;
     position: absolute;
-    top: -5px;
+    top: -4px;
     left: -40px;
     z-index: 1;
     
@@ -265,7 +265,7 @@
     opacity: 1;
 }
 .button{
-    max-width: 427px;
+    width: 427px;
     height: 72px;
     background-color:#F3930D;
     border: none;
@@ -316,7 +316,10 @@
 .castom.castom-is-active .deployment__img{
     rotate: 180deg;
 }
-.castom__header--click{
+.castom__header--click--category{
+    background-color: #F3930D;
+}
+.castom__header--click--time{
     background-color: #F3930D;
 }
 .castom__current--click{
@@ -326,7 +329,11 @@
     position: relative;
     left: 170px;
 }
-.castom__header{
+.path{
+    stroke: #fff;
+}
+.castom__header--category,
+.castom__header--time{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -337,7 +344,8 @@
     border: 1.5px solid #F3930D;
     border-radius: 15px;
 }
-.castom__current{
+.castom__current,
+.castom__current--time{
     position: absolute;
     text-align: center;
     font-weight: 500;
@@ -357,7 +365,8 @@
     padding: 36px 49px 46px 49px;
     z-index: 1;
 }
-.castom__time{
+.castom__time, 
+.castom__item--time{
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
@@ -367,7 +376,7 @@
     cursor: pointer;
 }
 .castom__time--auto{
-    padding: 36px 129px 46px 129px;
+    padding: 24px 129px 24px 129px;
 }
 .castom__time:hover{
     color: #F3930D;
