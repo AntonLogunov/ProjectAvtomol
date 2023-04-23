@@ -21,6 +21,7 @@
     <script defer src="src/js/vitaliy2.js"></script>
     <script defer src="src/mini/datepicker.min.js"></script>
     <script defer src="src/js/kalendar.js"></script>
+    <script defer src="src/js/formChek.js"></script>
     
 </head>
 
@@ -142,7 +143,7 @@
                                 <!-- ================= кастомный блок ======================= -->
                                 <div class="castom">
                                     <div id="castom__header--time" class="castom__header--time">
-                                            <span class="castom__current--time"> 9:00-20:00</span>
+                                            <span id="time_select_btn" class="castom__current--time"> 9:00-20:00</span>
                                             <svg class="deployment__img" width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path id="path--time" d="M23.2695 2.19263L12.6988 12.7633L2.12811 2.19263" stroke="#F3930D" stroke-width="3.51747" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
@@ -185,12 +186,26 @@
                                 <input class="radio__input" type="checkbox" name="user_type" id="r1" value="admin" required/>
                                 <label class="radio__label" for="r1">я согласен(а) на обработку персональных данных</label>
                             </div>
-                            <input class="button" type="submit" value="Записаться" onclick="dataOutput()"/>
+                            <button class="button" id="sign_in_btn" type="button" value="Записаться" onclick="dataOutput()">Записаться</button>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
+        
+        <div id="Modal" class="modal">
+            <form class="form-finish modal-form">
+                <span class="close">&times;</span>
+                <p class="form-h">Пожалйуста выберите: </p>
+                <ul class="form-ul">
+                    <li class="form-li adress-error">адрес</li>
+                    <li class="form-li service-error">услуги</li>
+                    <li class="form-li date-error">дату</li>
+                    <li class="form-li time-error">время</li>
+                </ul>
+                <p class="form-p">Данные были отправлены. Спасибо, что обратились к нам. </p>
+            </form>
+        </div>
 
     </main>
     <footer class="footer footer2">

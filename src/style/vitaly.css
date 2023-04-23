@@ -386,3 +386,46 @@
     color: orange;
     text-decoration: underline;
 }
+/*======================================================================================================*/
+
+.form-finish{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 30px;
+    padding: 82px 112px 71px 112px;
+}
+.form-h{
+    display: none;
+    margin-bottom: 5px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.187px;
+    line-height: 22px;
+    margin: 13px 0px 7px 0px;
+    user-select: none;
+}
+.form-ul{
+    display: none;
+}
+.form-li{
+    display: none;
+    color: red;
+    margin-bottom: 2px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.187px;
+    line-height: 22px;
+    user-select: none;
+}
+.form-p{
+    display: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.187px;
+    line-height: 22px;
+    margin: 13px 0px 7px 0px;
+    user-select: none;
+}
