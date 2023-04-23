@@ -21,6 +21,7 @@
     <script defer src="src/js/vitaliy2.js"></script>
     <script defer src="src/mini/datepicker.min.js"></script>
     <script defer src="src/js/kalendar.js"></script>
+    <script defer src="src/js/formChek.js"></script>
     
 </head>
 
@@ -142,7 +143,7 @@
                                 <!-- ================= кастомный блок ======================= -->
                                 <div class="castom">
                                     <div id="castom__header" class="castom__header">
-                                            <span class="castom__current"> 9:00-20:00</span>
+                                            <span id="time_select_btn" class="castom__current"> 9:00-20:00</span>
                                             <img class="deployment__img" src="src/img/arrdown.png" alt="">
                                     </div>
                                         <div class="castom__body ">
@@ -183,12 +184,26 @@
                                 <input class="radio__input" type="checkbox" name="user_type" id="r1" value="admin">
                                 <label class="radio__label" for="r1">Я согласен(а) на обработку персональных данных</label>
                             </div>
-                            <button class="button" type="button" value="Записаться" onclick="dataOutput()">Записаться</button>
+                            <button class="button" id="sign_in_btn" type="button" value="Записаться" onclick="dataOutput()">Записаться</button>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
+        
+        <div id="Modal" class="modal">
+            <form class="form-finish modal-form">
+                <span class="close">&times;</span>
+                <p class="form-h">Пожалйуста выберите: </p>
+                <ul class="form-ul">
+                    <li class="form-li adress-error">адрес</li>
+                    <li class="form-li service-error">услуги</li>
+                    <li class="form-li date-error">дату</li>
+                    <li class="form-li time-error">время</li>
+                </ul>
+                <p class="form-p">Данные были отправлены. Спасибо, что обратились к нам. </p>
+            </form>
+        </div>
 
     </main>
     <footer class="footer">
