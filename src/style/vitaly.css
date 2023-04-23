@@ -130,11 +130,7 @@
 }
 .section_clients_reviews__item-content{
     text-align: left;
-    padding: 40px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
+    padding: 30px;
     line-height: 22px;
 
     color: #8E8E8E;
@@ -195,8 +191,6 @@
     margin-bottom: 60px;
     width: 308.03px;
     height: 31.66px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 31.6572px;
     line-height: 39px;

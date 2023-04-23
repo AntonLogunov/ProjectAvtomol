@@ -10,8 +10,6 @@
 .first-map-text-p {
     width: 282px;
     height: 37px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 37px;
@@ -29,8 +27,6 @@
 .second-map-text-p {
     width: 308.03px;
     height: 31.66px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 31.6572px;
     line-height: 39px;
@@ -69,8 +65,6 @@
 }
 
 .map-current {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 500;
     font-size: 21px;
     line-height: 26px;
@@ -100,8 +94,6 @@
     justify-content: center;
     align-items: center;
     height: 80px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 500;
     font-size: 21px;
     line-height: 26px;
@@ -131,8 +123,6 @@
 .choise-button p {
     width: 150px;
     height: 25px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 500;
     font-size: 21.1048px;
     line-height: 26px;
@@ -146,8 +136,6 @@
 }
 
 .choise-p {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 21.1048px;
     line-height: 26px;
@@ -213,9 +201,6 @@
     font-size: 13.2886px;
     line-height: 16px;
     color: #FFFFFF;
-
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 500;
     text-decoration: none;
 }
@@ -243,8 +228,6 @@
 }
 
 .user_name {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 56.9145px;
     line-height: 69px;
@@ -253,8 +236,6 @@
 }
 
 .user_car {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 500;
     font-size: 28.4572px;
     line-height: 35px;
@@ -287,8 +268,6 @@
 
 .user_level_fh h1 {
     text-align: center;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 36.9281px;
     color: #8E8E8E;
@@ -297,8 +276,6 @@
 }
 
 .user_level_fh p {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 500;
     font-size: 15.8263px;
     line-height: 19px;
@@ -314,8 +291,6 @@
 }
 
 .user_level_sh p {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 500;
     font-size: 15.8263px;
     line-height: 19px;
@@ -342,9 +317,6 @@
 .user_points_fh_f h1 {
     margin-top: 45px;
     margin-left: 50px;
-
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 36.9281px;
     line-height: 45px;
@@ -354,8 +326,6 @@
 .user_points_fh_f h2 {
     width: 200px;
     margin-left: 50px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 500;
     font-size: 15.8263px;
     line-height: 19px;
@@ -368,8 +338,6 @@
 
 .user_points_fh_s p {
     margin-top: 60px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 500;
     font-size: 15.8263px;
     line-height: 19px;
@@ -386,8 +354,6 @@
     margin-top: 50px;
     margin-left: 50px;
     margin-bottom: 45px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 63.3053px;
     line-height: 77px;
@@ -410,8 +376,6 @@
 
 .user_order_fh p {
     margin: 26px 0 27px 67px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 500;
     font-size: 21.1018px;
     line-height: 35px;
@@ -420,8 +384,6 @@
 
 .user_order_fh h1 {
     margin: 0 0 0 67px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 31.6527px;
     line-height: 39px;
@@ -430,8 +392,6 @@
 
 .user_order_fh h2 {
     margin: 0 0 27px 67px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 21.1018px;
     line-height: 26px;
@@ -453,8 +413,6 @@
     margin: 0;
     width: 140px;
     height: 24px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 21.1018px;
     line-height: 26px;
@@ -468,8 +426,6 @@
 
 .user_order_sh p {
     width: 408px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 21.1018px;
     line-height: 35px;
@@ -479,8 +435,6 @@
 /*------ user_sales-------*/
 .user_sales h1 {
     margin: 108px 0 47px 0;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 31.6527px;
     line-height: 39px;
@@ -495,8 +449,6 @@
 
 .user_sales_block_fh p {
     margin: 100px 0 100px 87px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 109.291px;
     line-height: 133px;
@@ -505,8 +457,6 @@
 
 .user_sales_block_sh p {
     margin: 75px 0 20px 60px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 500;
     font-size: 21.1018px;
     line-height: 35px;
@@ -516,8 +466,6 @@
 .user_sales_block_sh h2 {
     margin: 0 0 25px 60px;
     width: 350px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 31.6527px;
     line-height: 35px;
@@ -537,8 +485,6 @@
 
 .user_sales_block_sh div p {
     margin: 0;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 13.7025px;
     line-height: 17px;
@@ -548,8 +494,6 @@
 /*---------USER-ORDER-------------*/
 .user_order_history h1{
     margin: 137px 0 47px 0;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 31.6527px;
     line-height: 39px;   
@@ -570,8 +514,6 @@
 
 .user_order_history_card_fh img {
     margin: 37px 0 0 65px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 31.6527px;
     line-height: 39px;   
@@ -580,8 +522,6 @@
 
 .user_order_history_card_fh h2 {
     margin: 30px 0 0 65px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 31.6527px;
     line-height: 39px;   
@@ -590,8 +530,6 @@
 
 .user_order_history_card_fh p {
     margin: 0 0 40px 65px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 21.1018px;
     line-height: 35px;   
@@ -605,8 +543,6 @@
 
 .user_order_history_card_sh h2 {
     margin: 50px 0 0 0;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 31.6527px;
     line-height: 39px;
@@ -615,8 +551,6 @@
 
 .user_order_history_card_sh_check {
     text-decoration: underline;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 500;
     font-size: 21.1018px;
     line-height: 35px;
@@ -626,9 +560,6 @@
 .user_order_history_card_sh_datep{
     margin: 37px 0 0 0;
     text-decoration: none;
-
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 500;
     font-size: 21.1018px;
     line-height: 35px;
