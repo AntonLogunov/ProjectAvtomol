@@ -124,12 +124,12 @@
     height: 485px;
     border-radius: 29.3156px;
 
+    z-index: 1;
     position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgb(0, 0, 0, 0.3);
+    top: 20%;
+    margin: 0 auto;
+    background-color:  #FFFFFF;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.15);
     display: flex;
     justify-content: center;
     align-items: center;
