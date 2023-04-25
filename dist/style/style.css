@@ -617,19 +617,16 @@ a {
 /* Модальное окно */
 
 .modal {
-    width: 889px;
     height: 485px;
     border-radius: 29.3156px;
-
+    padding-left: 100px;
+    padding-right: 160px;
     z-index: 1;
     position: fixed;
     top: 20%;
     margin: 0 auto;
     background-color:  #FFFFFF;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.15);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     pointer-events: none;
     opacity: 0;
     transform: scale(1.5);
@@ -639,6 +636,8 @@ a {
 
 .modal--open {
     display: flex;
+    justify-content: center;
+    align-items: center;    
     pointer-events: auto;
     opacity: 1;
     transform: scale(1);
@@ -646,17 +645,23 @@ a {
                 opacity 0.3s ease-in-out;
 }
 
-.modal__wrapper {
-    display: flex;
-    flex-direction: row;
-    margin-top: 38px;
-    margin-bottom: 70px;
-    margin-right: 50px;
-    margin-left: 102px;
+.X {
+    top: 0;
+    right: 0;
+    position: absolute;
+    padding: 3% 5% 0 0;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    color: #8E8E8E;
+    font-size: 40px;
+    text-transform: lowercase;
+    font-weight: bold;
+    user-select: none;
 }
 
-.X {
-    margin-left: auto;
+.X:hover {
+    color: black;
 }
 
 .Modalinfo {
@@ -705,10 +710,16 @@ a {
     background: #F3930E;
     border-radius: 10px;
     font-style: normal;
-    font-weight: 500;
     font-size: 20.1021px;
     line-height: 25px;
-    color: #FFFFFF;
+    background-color: #F3930D;
+    border: none;
+    opacity: 0.8;
+    color: rgba(255, 255, 255, 1);
+}
+
+.modalButt:hover {
+    opacity: 1;
 }
 
 /* секция 9 */

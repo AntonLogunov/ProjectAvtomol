@@ -1,6 +1,6 @@
 'use strict'
 
-const btnOpen = document.querySelector('.btn--open');
+const btnOpen = document.querySelectorAll('.btn--open');
 const modal = document.querySelector('.modal');
 
 const closeBtn = document.querySelector('.X');
@@ -13,4 +13,6 @@ closeBtn.onclick = function() {
     modal.classList.remove('modal--open');
 }
 
-btnOpen.addEventListener('click', modalViewHandler);
+btnOpen.forEach(btn => {
+    btn.addEventListener('click', modalViewHandler);
+})
