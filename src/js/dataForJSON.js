@@ -1,25 +1,29 @@
 'use strict'
-require("vitaiy2.js");
-require("kalendar.js");
-require("mapscript.js");
 
-let adress = text;
-let serviceData = choiceInf;
-let date = dateValue;
-let time = textTime;
-let name = nameInfo;
-let phone = phoneInfo;
-let carModel = markInfo;
-const data = {
-    "adress": adress,
-    "serviceData" : serviceData,
-    "date": date,
-    "time": time,
-    "name": name,
-    "phone": phone,
-    "carModel": carModel
-}
 function checkInButtonPress(){
-    JSON.stringify(data);
+    let chosenAdress = document.querySelector(".map-current").innerHTML;
+    let serviceData = choiceInf;
+    let chosenDate = document.getElementById("date").value;
+    let chosenTime = document.getElementById("time_select_btn").innerHTML;
+    let name = document.getElementById("name").value;
+    let phone = document.getElementById("phone").value;
+    let carModel = document.getElementById("mark").value;
+    const data = {
+        "adress": chosenAdress,
+        "serviceData" : serviceData,
+        "date": chosenDate,
+        "time": chosenTime,
+        "name": name,
+        "phone": phone,
+        "carModel": carModel
+    }
+    
+    let result = JSON.stringify(data);
+    console.log(data);
+    console.log(result);
+    console.log(JSON.parse(result));
+    
+    let fs = require('fs');
+    fs.writeFile("orderData.json", result);
 }
-
+//checkInButtonPress()
