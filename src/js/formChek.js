@@ -21,10 +21,18 @@ let dateError = document.querySelector(".date-error");
 let timeError = document.querySelector(".time-error");
 let formFinish = document.querySelector(".form-p")
 function formCheck(){
+    result = {
+        "adress": false,
+        "service": false,
+        "date": false,
+        "time": false,
+        "total": false
+    };
     if(adressChoice.innerHTML != "Выбрать адрес" && adressChoice.innerHTML != null && adressChoice.innerHTML != ""){
         result.adress = true;
     }
     if(choiceInf.services.length >= 1){ //typeof choiceInf.services[0] === "string"
+        console.log(choiceInf.services.length);
         result.service = true;
     }
     if(dateChoice.value != null && dateChoice.value != ""){
@@ -72,4 +80,7 @@ signInBtn.addEventListener("click",(event)=>{
 
 btnclose.onclick=function(){
 	modal.style.display = "none";
+    if(result.total == true){
+        location.reload();
+    }
 }
