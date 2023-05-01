@@ -742,8 +742,6 @@
     border: 1.5px solid #F3930D;
     border-radius: 27px;
     padding: 0 46px;
-    max-width: 520px;
-    height: 480px;
 }
 .request__text{
     font-weight: 700;
@@ -767,7 +765,7 @@
     text-align: center;
 }
 .data{
-    max-width: 426px;
+    width: 426px;
     border: none;
     border-bottom: 1.75873px solid #F3930D;
     padding: 0 0 22px 0;
@@ -793,7 +791,7 @@
 }
 .radio__label{
     position: relative;
-    font-size: 14px;
+    font-size: 13px;
     color: #A8A8A8;
     cursor: pointer;
     
@@ -807,7 +805,7 @@
     background-color: #FFFFFF;
     border-radius: 50%;
     position: absolute;
-    top: -5px;
+    top: -4px;
     left: -40px;
     z-index: 1;
     
@@ -834,7 +832,7 @@
     opacity: 1;
 }
 .button{
-    max-width: 427px;
+    width: 427px;
     height: 72px;
     background-color:#F3930D;
     border: none;
@@ -922,11 +920,13 @@
     line-height: 26px;
     
 }
-.castom__box{
+
+.castom__body{
     position: absolute;
+    display: none;
+    margin: 0;
     background-color: #fff;
-    display: block;
-    box-shadow: 10px 10px 15px 0px rgba(34, 60, 80, 0.2);
+    filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.25));
     margin-top: 7px;
     border-radius: 15px;
     padding: 36px 49px 46px 49px;
@@ -948,17 +948,13 @@
 .castom__time:hover{
     color: #F3930D;
 }
-.castom__time--auto{
-    width: 100%;
-}
 .castom--auto{
     max-width: 1046px;
     margin: auto;
 }
 .castom__body--auto{
-    display: flex;
-    flex-direction: column;
-
+    display: none;
+    padding: 0;
 }
 /* ====================== kalendar ==================================== */
 /*==== удаление иконки календаря у input type="date" ====*/
@@ -997,7 +993,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .qs-datepicker-container{
     width: 433px;
     height: 460px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.25));
     border-radius: 25.395px;
     border: none;
     margin-top: 7.1px;
@@ -1064,6 +1060,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 .qs-submit{
     display: none;
+}
+
+.footer2{
+    margin-top: 100px;
 }
 /* name for Montserrat 500 from Figma: font-family: 'MontserratMedium'; */
 /* name for Montserrat 700 from Figma: font-family: 'MontserratBold'; */
@@ -1229,7 +1229,6 @@ a {
 .footer {
     background: #F3930D;
     min-height: 287px;
-    margin-top: 100px;
 }
 
 .section__footer-menu {
@@ -1284,6 +1283,9 @@ a {
     box-sizing: border-box;
 }
 
+p{
+   
+}
 .sec2{ 
     margin-top: 216px;
     max-width: 1275px;
@@ -1741,10 +1743,10 @@ a {
 }
 .select-form__header{
     margin-bottom: 60px;
-    width: 308.03px;
-    height: 31.66px;
+    width: 308px;
+    height: 31px;
     font-weight: 700;
-    font-size: 31.6572px;
+    font-size: 31px;
     line-height: 39px;
     color: #8E8E8E;
 }
@@ -1770,7 +1772,7 @@ a {
     color: #F3930D;
 
     font-weight: 500;
-    font-size: 21.1048px;
+    font-size: 21px;
     line-height: 26px;
     text-align: left;
     cursor: pointer;
@@ -1788,7 +1790,7 @@ a {
     color: #F3930D;
 
     font-weight: 500;
-    font-size: 21.1048px;
+    font-size: 21px;
     line-height: 26px;
     text-align: left;
 }
@@ -1817,7 +1819,7 @@ a {
     overflow: hidden;
 
     font-weight: 500;
-    font-size: 21.1048px;
+    font-size: 21px;
     line-height: 26px;
     text-align: left;
 }
@@ -1837,7 +1839,7 @@ a {
     border: none;
 
     font-weight: 500;
-    font-size: 21.1048px;
+    font-size: 21px;
     line-height: 26px;
     text-align: left;
     writing-mode: horizontal-tb !important;
@@ -1865,7 +1867,7 @@ a {
     border: none;
 
     font-weight: 500;
-    font-size: 21.1048px;
+    font-size: 21px;
     line-height: 26px;
     text-align: left;
     writing-mode: horizontal-tb !important;
@@ -1897,7 +1899,7 @@ a {
     background-color: orange;
 
     color: white;
-    font-size: 21.1048px;
+    font-size: 21px;
     line-height: 26px;
     text-align: left;
     font-weight: bold;
@@ -1952,7 +1954,7 @@ a {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 18.187px;
+    font-size: 18px;
     line-height: 22px;
     margin: 13px 0px 7px 0px;
     user-select: none;
@@ -1967,7 +1969,7 @@ a {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 18.187px;
+    font-size: 18px;
     line-height: 22px;
     user-select: none;
 }
@@ -1976,7 +1978,7 @@ a {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 18.187px;
+    font-size: 18px;
     line-height: 22px;
     margin: 13px 0px 7px 0px;
     user-select: none;
