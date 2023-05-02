@@ -69,6 +69,7 @@ function createItem(service,carType){
     return item;
 }
 function eventListener(item,service,carType,form) {
+    let selectedServicesDiv = document.querySelector(".selected--services");
     item.classList = "section-form__item-chosen";
     service.isActive = true;
     let chosenItem = createElementWithClass("div","section-form__chosenItem");
@@ -104,7 +105,7 @@ function eventListener(item,service,carType,form) {
 
         gatherInf(service,valueP,valueT,"-");
     });
-    form.append(chosenItem);
+    selectedServicesDiv.append(chosenItem);
 }
 function addListener(item,service,carType,form) {
     item.addEventListener("click",function(){
