@@ -119,7 +119,7 @@
 
 /* Модальное окно */
 
-.modal {
+/* .modal {
     height: 485px;
     border-radius: 29.3156px;
     padding-left: 100px;
@@ -223,7 +223,7 @@
 
 .modalButt:hover {
     opacity: 1;
-}
+} */
 
 /* секция 9 */
 .footer {
