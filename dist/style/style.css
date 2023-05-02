@@ -1099,6 +1099,7 @@ footer{
     max-width: 1226.53px;
     margin: 0 auto;
     margin-top: 100px;
+    position: relative;
 }
 ul {
     list-style: none;
@@ -1106,6 +1107,10 @@ ul {
 }
 a {
     text-decoration: none;
+}
+.link-hide {
+    position: absolute;
+    top: -200px;
 }
 /* секция 1 */
 .header {
@@ -1225,6 +1230,115 @@ a {
     color: #8E8E8E;
     margin-top: 19px;
 }
+
+/* Модальное окно */
+
+.modal {
+    height: 485px;
+    border-radius: 29.3156px;
+    padding-left: 100px;
+    padding-right: 160px;
+    z-index: 1;
+    position: fixed;
+    top: 20%;
+    margin: 0 auto;
+    background-color:  #FFFFFF;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.15);
+    pointer-events: none;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: transform 0.3s ease-in-out,
+                opacity 0.3s ease-in-out;
+}
+
+.modal--open {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    pointer-events: auto;
+    opacity: 1;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out,
+                opacity 0.3s ease-in-out;
+}
+
+.X {
+    top: 0;
+    right: 0;
+    position: absolute;
+    padding: 3% 5% 0 0;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    color: #8E8E8E;
+    font-size: 40px;
+    text-transform: lowercase;
+    font-weight: bold;
+    user-select: none;
+}
+
+.X:hover {
+    color: black;
+}
+
+.Modalinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 630px;
+    height: 355px;
+    margin-top: 25px;
+}
+
+.modalHeading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40.2043px;
+    line-height: 49px;
+    font-variant: small-caps;
+    color: #8E8E8E;
+}
+
+.modalSmallDescription {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20.1021px;
+    line-height: 25px;
+    font-variant: small-caps;
+    color: #8E8E8E;
+}
+
+.modalBigDescription {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15.0766px;
+    line-height: 18px;
+    font-variant: small-caps;
+    color: #8E8E8E;
+}
+
+.modalButton {
+
+}
+
+.modalButt {
+    width: 278px;
+    height: 67px;
+    background: #F3930E;
+    border-radius: 10px;
+    font-style: normal;
+    font-size: 20.1021px;
+    line-height: 25px;
+    background-color: #F3930D;
+    border: none;
+    opacity: 0.8;
+    color: rgba(255, 255, 255, 1);
+}
+
+.modalButt:hover {
+    opacity: 1;
+}
+
 /* секция 9 */
 .footer {
     background: #F3930D;
