@@ -31,8 +31,7 @@ function formCheck(){
     if(adressChoice.innerHTML != "Выбрать адрес" && adressChoice.innerHTML != null && adressChoice.innerHTML != ""){
         result.adress = true;
     }
-    if(choiceInf.services.length >= 1){ //typeof choiceInf.services[0] === "string"
-        console.log(choiceInf.services.length);
+    if(choiceInf.services.length >= 1){
         result.service = true;
     }
     if(dateChoice.value != null && dateChoice.value != ""){
@@ -47,12 +46,6 @@ function formCheck(){
 
 signInBtn.addEventListener("click",(event)=>{
     formCheck()
-    console.log("formCheck "+result.total);
-    console.log("adressCheck "+ result.adress);
-    console.log(choiceInf.services.length);
-    console.log("serviceCheck "+ result.service);
-    console.log("dateCheck "+result.date);
-    console.log("timeCheck "+result.time);
     modal.style.display = "block";
     authorization.style.display = "block";
     if(result.total == false){
@@ -81,6 +74,7 @@ signInBtn.addEventListener("click",(event)=>{
 btnclose.onclick=function(){
 	modal.style.display = "none";
     if(result.total == true){
-        location.reload();
+        checkInButtonPress()
+        //location.reload();
     }
 }

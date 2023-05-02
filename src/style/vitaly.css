@@ -189,10 +189,10 @@
 }
 .select-form__header{
     margin-bottom: 60px;
-    width: 308.03px;
-    height: 31.66px;
+    width: 308px;
+    height: 31px;
     font-weight: 700;
-    font-size: 31.6572px;
+    font-size: 31px;
     line-height: 39px;
     color: #8E8E8E;
 }
@@ -218,7 +218,7 @@
     color: #F3930D;
 
     font-weight: 500;
-    font-size: 21.1048px;
+    font-size: 21px;
     line-height: 26px;
     text-align: left;
     cursor: pointer;
@@ -236,7 +236,7 @@
     color: #F3930D;
 
     font-weight: 500;
-    font-size: 21.1048px;
+    font-size: 21px;
     line-height: 26px;
     text-align: left;
 }
@@ -265,7 +265,7 @@
     overflow: hidden;
 
     font-weight: 500;
-    font-size: 21.1048px;
+    font-size: 21px;
     line-height: 26px;
     text-align: left;
 }
@@ -285,7 +285,7 @@
     border: none;
 
     font-weight: 500;
-    font-size: 21.1048px;
+    font-size: 21px;
     line-height: 26px;
     text-align: left;
     writing-mode: horizontal-tb !important;
@@ -313,7 +313,7 @@
     border: none;
 
     font-weight: 500;
-    font-size: 21.1048px;
+    font-size: 21px;
     line-height: 26px;
     text-align: left;
     writing-mode: horizontal-tb !important;
@@ -345,7 +345,7 @@
     background-color: orange;
 
     color: white;
-    font-size: 21.1048px;
+    font-size: 21px;
     line-height: 26px;
     text-align: left;
     font-weight: bold;
@@ -400,7 +400,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 18.187px;
+    font-size: 18px;
     line-height: 22px;
     margin: 13px 0px 7px 0px;
     user-select: none;
@@ -415,7 +415,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 18.187px;
+    font-size: 18px;
     line-height: 22px;
     user-select: none;
 }
@@ -424,7 +424,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 18.187px;
+    font-size: 18px;
     line-height: 22px;
     margin: 13px 0px 7px 0px;
     user-select: none;
