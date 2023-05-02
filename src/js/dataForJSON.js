@@ -22,8 +22,5 @@ function checkInButtonPress(){
     console.log(data);
     console.log(result);
     console.log(JSON.parse(result));
-    
-    let fs = require('fs');
-    fs.writeFile("orderData.json", result);
 }
 //checkInButtonPress()
