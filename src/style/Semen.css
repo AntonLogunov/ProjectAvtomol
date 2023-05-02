@@ -29,8 +29,8 @@ p{
     color: #FFFFFF;
 }
 .sec2_btn{
-    width: 335px;
-    height: 90px;
+    padding: 20px 40px;
+    white-space: nowrap;
     border-radius: 20px;
     border: none;
     margin-left: auto;
@@ -128,9 +128,13 @@ p{
 .modal-btn-auth{
     width: 168px;
 }
+.modal-tel{
+    width: 100%;
+    font-size: 25px;
+}
 .checkbox {
 	position:relative;
-    left: 100px;
+    left: 92px;
 }
 .checkbox input[type=checkbox] {
 	display:none;
@@ -162,7 +166,7 @@ p{
     align-items: center;
     margin-top: 29px;
 }
-.modal-p-auth{
+.modal-a-auth{
     cursor: pointer;
     font-weight: 400;
     font-size: 15px;
@@ -250,4 +254,7 @@ p{
     margin: 0 auto;
     position: relative;
     background-color: #FFFFFF;
+}
+.modal-date{
+    bottom: 19px;
 }

@@ -18,6 +18,10 @@
     <script defer src="src/js/mapscript.js"></script>
     <script defer src="src/js/danilScroll.js"></script>
     <script defer src="src/js/semen.js"></script>
+    <script defer src="src/mini/datepicker.min.js"></script>
+    <script defer src="src/js/kalendar.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <link rel="stylesheet" href="src/mini/datepicker.min.css">
 </head>
 
 <body> <!-- id="top" ??????????-->
@@ -58,7 +62,7 @@
         <section class="section">
             <div class="wrapper sec2">
                 <p class="sec2_p">Добро пожаловать в АВТОМОЛЛ — сеть автомагазинов и СТО в одном месте!</p>
-                <button class="sec2_btn" onclick="window.location.href = 'request.html'">Запись on-line</button>
+                <a class="sec2_btn" onclick="window.location.href = 'request.html'">Запись on-line</a>
             </div>
         </section>
 
@@ -779,17 +783,17 @@
         <form class="authorization modal-form">
             <span class="close">&times;</span>
             <p class="modal-p">Телефон</p>
-            <input class="modal-input" type="tel" id="phone-mask" placeholder="+7(000)000-00-00" required>
+            <input class="modal-input  modal-tel" type="tel" id="phone-mask" placeholder="+7(000)000-00-00" required>
             <p class="modal-p">Пароль</p>
             <div class="password">
                 <input class="modal-input" id="password3" placeholder="Введите пароль" name="password" type="password" required>
                 <button type="button" class="password-eye" data-target="#password3"><img class="password-eye-img" src="src/img/closedeye.svg" alt=""></button>
             </div>
             <div class="authorization-2">
-                <button type="submit" class="modal-btn modal-btn-auth">Вход</button>
+                <button type="submit" class="modal-btn modal-btn-auth" onclick="window.location.href = 'user_page.html'">Вход</button>
                 <div class="checkbox"><input class="checkbox-input" type="checkbox" id="remember-id" name="remember-name" value="remember-value"><label class="modal-label" for="remember-id">запомнить</label></div>
             </div>
-                <div class="authorization-2-a"><p id="restoreaccess" class="modal-p-auth">Восстановить доступ</p><p id="createanaccount" class="modal-p-auth">Создать аккаунт</p>
+                <div class="authorization-2-a"><a id="restoreaccess" class="modal-a-auth">Восстановить доступ</a><a id="createanaccount" class="modal-a-auth">Создать аккаунт</a>
             </div>
         </form>
         <form class="createAccount modal-form">
@@ -797,7 +801,7 @@
             <p class="modal-p">Имя</p>
             <input class="modal-input" type="text" required>
             <p class="modal-p">Телефон</p>
-            <input class="modal-input" type="tel" id="phone-mask" placeholder="+7(000)000-00-00" required>
+            <input class="modal-input modal-tel" type="tel" id="phone-mask" placeholder="+7(000)000-00-00" required>
             <p class="modal-p">E-mail</p>
             <input class="modal-input" type="text" required>
             <p class="modal-p">Пароль</p>
@@ -811,16 +815,20 @@
                 <button type="button" class="password-eye" data-target="#password2"><img class="password-eye-img" src="src/img/closedeye.svg" alt=""></button>
             </div>
             <p class="modal-p">Дата рождения</p>
+            <div id="app"></div>
+                                <div>
+                                    <input class="input modal-input modal-date" type="date" onсlick="event.preventDefault()"  id="date" />
+                                </div>
             <button type="submit" class="modal-btn modal-btn-create" required>Создать</button>
             <p class="modal-p-p">Нажимая «Создать» вы принимаете следующие</p>
             <a class="modal-a-create" href=""><p>условия использования</p></a>
         </form>
-        <div class="restore modal-form">
+        <form class="restore modal-form">
             <span class="close">&times;</span>
             <P class="modal-p">Телефон или E-mail</P>
-            <input class="modal-input" type="text">
+            <input class="modal-input" type="text" required>
             <button id="btnrestore" type="submit"class="modal-btn modal-btn-restore">Восстановить</button>
-        </div>
+        </form>
         <form class="alert modal-form">
             <span class="close">&times;</span>
             <p class="modal-p">Мы отправили временный пароль на ваш телефон. 

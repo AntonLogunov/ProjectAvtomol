@@ -11,6 +11,13 @@ let restoreAccount = document.querySelector('.restore');
 let create = document.getElementById('createanaccount');
 let btnRestore = document.getElementById('btnrestore');
 let input = document.querySelectorAll('.modal-input');
+let tel = document.querySelectorAll('.modal-tel');
+var maskOptions = {
+  mask: '+{7}(000)000-00-00'
+};
+tel.forEach(function(t){
+	var mask = IMask(t, maskOptions);
+})
 btnPass.forEach(function (btn){
 	btn.onclick=function(){
 		btn.classList.toggle('active');
