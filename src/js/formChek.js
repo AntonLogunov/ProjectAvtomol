@@ -6,7 +6,8 @@ let result = {
     "time": false,
     "total": false
 };
-let signInBtn = document.getElementById("sign_in_btn");
+//let signInBtn = document.getElementById("sign_in_btn");
+let signInForm = document.getElementById("form-sign-in");
 let adressChoice = document.querySelector(".map-current");
 let dateChoice = document.getElementById("date");
 let timeChoice = document.getElementById("time_select_btn");
@@ -44,7 +45,8 @@ function formCheck(){
     return result;
 }
 
-signInBtn.addEventListener("click",(event)=>{
+signInForm.addEventListener("submit",(event)=>{
+    event.preventDefault();
     formCheck()
     modal.style.display = "block";
     authorization.style.display = "block";

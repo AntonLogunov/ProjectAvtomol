@@ -55,13 +55,13 @@ let castom = function () {
 }
 castom();
 
-function dataOutput(){
-    let nameForm = document.getElementById("name"),
-        phoneForm = document.getElementById("phone"),
-        markForm = document.getElementById("mark");
+// function dataOutput(){
+//     let nameForm = document.getElementById("name"),
+//         phoneForm = document.getElementById("phone"),
+//         markForm = document.getElementById("mark");
      
-    let nameInfo = nameForm.value,
-        phoneInfo = phoneForm.value,
-        markInfo = markForm.value;
-    console.log(nameInfo,phoneInfo,markInfo);
-}
+//     let nameInfo = nameForm.value,
+//         phoneInfo = phoneForm.value,
+//         markInfo = markForm.value;
+//     console.log(nameInfo,phoneInfo,markInfo);
+// }
