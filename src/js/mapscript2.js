@@ -39,26 +39,21 @@ ymaps.ready(init);
             myMap2.geoObjects.add(placemark);
             myMap2.geoObjects.add(placemark2);
 
-            var selectHeader = document.getElementById("div_current");
-            var selectBody = document.getElementById("select").querySelectorAll(".map-select-item");
+            var selectHeader = document.querySelector(".map-select-header");
+            var selectBody = document.querySelectorAll(".map-select-item");
 
             selectHeader.addEventListener("click", () => {
-                selectHeader.parentElement.classList.toggle("castom-is-active");
+                selectHeader.parentElement.classList.toggle("map-is-active");
             })
 
             selectBody.forEach(item => {
                 item.addEventListener("click", () => {
                 let text = item.innerText;
-                currentText = document.getElementById("current_text");
-                select = document.getElementById("select");
+                currentText = item.closest(".map-select").querySelector(".map-current");
+                select = item.closest(".map-select");
 
                 currentText.innerText = text;
-                select.classList.remove("castom-is-active");
-
-                path = document.getElementById('map_path');
-                currentText.classList.add('castom__current--click');
-                selectHeader.classList.add('castom__header--click--category');
-                path.classList.add('path');
+                select.classList.remove("map-is-active");
 
                 if(item.getAttribute("id") == "el"){                 
                     //myMap.panTo([55.164566989281276,61.52518889519932], 16);
