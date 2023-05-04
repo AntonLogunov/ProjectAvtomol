@@ -806,8 +806,6 @@
     border-radius: 50%;
     position: absolute;
     top: -4px;
-    left: -40px;
-    z-index: 1;
     
 }
 .radio__label::after{
@@ -820,8 +818,6 @@
     opacity: 0;
     position: absolute;
     top: 3px;
-    left: -32px;
-    z-index: 1;
     transition: opacity .1s linear;
 }
 .radio__input:checked + .radio__label:before{
@@ -865,7 +861,7 @@
     margin-top: 47px;
 }
 /* ================выбор времени(кастомный блок)=========================== */
-.castom.castom-is-active .castom__body{
+/*.castom.castom-is-active .castom__body{
     display: grid;
     grid-template-columns: repeat(3, 80px);
     column-gap: 47px;
@@ -892,10 +888,7 @@
 .castom__current--click{
     color: #fff;
 }
-.deployment__img{
-    position: relative;
-    left: 170px;
-}
+
 .path{
     stroke: #fff;
 }
@@ -929,7 +922,6 @@
     filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.25));
     margin-top: 7px;
     border-radius: 15px;
-    padding: 36px 49px 46px 49px;
     z-index: 1;
 }
 .castom__time, 
@@ -955,7 +947,7 @@
 .castom__body--auto{
     display: none;
     padding: 0;
-}
+}*/
 /* ====================== kalendar ==================================== */
 /*==== удаление иконки календаря у input type="date" ====*/
 input[type="date"]::-webkit-inner-spin-button,

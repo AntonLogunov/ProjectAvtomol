@@ -184,7 +184,7 @@
     margin-bottom: 78px;
 }
 .request__form1{
-    max-width: 623px;
+    max-width: 521px;
 }
 .request__form2{
     max-width: 485px;
@@ -198,7 +198,7 @@
     text-align: center;
 }
 .data{
-    width: 426px;
+    width: 100%;
     border: none;
     border-bottom: 1.75873px solid #F3930D;
     padding: 0 0 22px 0;
@@ -227,6 +227,7 @@
     font-size: 13px;
     color: #A8A8A8;
     cursor: pointer;
+    margin-left: 43px;
     
 }
 .radio__label::before{
@@ -239,8 +240,6 @@
     border-radius: 50%;
     position: absolute;
     top: -4px;
-    left: -40px;
-    z-index: 1;
     
 }
 .radio__label::after{
@@ -253,8 +252,6 @@
     opacity: 0;
     position: absolute;
     top: 3px;
-    left: -32px;
-    z-index: 1;
     transition: opacity .1s linear;
 }
 .radio__input:checked + .radio__label:before{
@@ -265,7 +262,7 @@
     opacity: 1;
 }
 .button{
-    width: 427px;
+    width: 100%;
     height: 72px;
     background-color:#F3930D;
     border: none;
@@ -299,10 +296,9 @@
 }
 /* ================выбор времени(кастомный блок)=========================== */
 .castom.castom-is-active .castom__body{
-    display: grid;
-    grid-template-columns: repeat(3, 80px);
-    column-gap: 47px;
-    row-gap: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .castom.castom-is-active .castom__body--auto{
     display: flex;
@@ -312,6 +308,13 @@
     filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.25));
     row-gap: 0;
     column-gap: 0;
+}
+.castom__block--item{
+    max-width: 330px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 47px;
+    row-gap: 26px;  
 }
 .castom.castom-is-active .deployment__img{
     rotate: 180deg;
@@ -326,14 +329,15 @@
     color: #fff;
 }
 .deployment__img{
-    position: relative;
-    left: 170px;
+    position: absolute;
+    right: 30px;
 }
 .path{
     stroke: #fff;
 }
 .castom__header--category,
 .castom__header--time{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -346,7 +350,6 @@
 }
 .castom__current,
 .castom__current--time{
-    position: absolute;
     text-align: center;
     font-weight: 500;
     font-size: 25px;
@@ -362,7 +365,7 @@
     filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.25));
     margin-top: 7px;
     border-radius: 15px;
-    padding: 36px 49px 46px 49px;
+    padding: 36px 78px;
     z-index: 1;
 }
 .castom__time, 
@@ -494,7 +497,28 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .qs-submit{
     display: none;
 }
-
 .footer2{
     margin-top: 100px;
+}
+
+/* ============================ Адаптация ============================*/
+
+@media(max-width:1080px){
+    .section{
+        margin: 100px 20px 0 20px;
+    }
+}
+@media(max-width:1000px){
+    .wrapper__request{
+        flex-direction: column;
+    }
+    .request__form1{
+        margin-top: 47px;
+    }
+}
+@media(max-width:470px){
+    .castom__header--time {
+        width: 100%;
+    }
+    
 }
