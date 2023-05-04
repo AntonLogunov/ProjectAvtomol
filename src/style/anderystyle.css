@@ -39,6 +39,7 @@
 
 .choise-div {
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
 
     margin-top: 43px;
@@ -116,6 +117,9 @@
     transition: 0.2s color ease-in-out;
 }
 /*-----------------*/
+.div_with_markimg {
+    display: flex;
+}
 /* .choise-button {
     width: 430px;
     height: 80px;
@@ -142,7 +146,7 @@
 .choise-img {
     width: 45px;
     height: 48px;
-    margin: auto 0px auto 150px;
+    margin: auto 0 auto 0;
 }
 
 .choise-p {
