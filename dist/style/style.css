@@ -281,7 +281,7 @@
     align-items: center;
 }
 
-.user_level_fh img {
+.lvl_img {
     margin-left: 33px;
 }
 
@@ -297,14 +297,11 @@
 }
 
 .user_level_fh p {
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 15.8263px;
     line-height: 19px;
     color: #8E8E8E; 
-    margin-left: 25px;
-    margin-right: 46px;
 }
 /**/
 .user_level_sh {
@@ -363,12 +360,13 @@
 }
 
 .user_points_fh_s {
-    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 30px;
 }
 
 .user_points_fh_s p {
-    margin-top: 60px;
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 15.8263px;
@@ -543,6 +541,27 @@
     font-size: 13.7025px;
     line-height: 17px;
     color: #FFFFFF;      
+}
+
+.info_svg {
+    position: relative;
+    top: 40px;
+    left: 260px;
+}
+
+.more_btn_div1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.more_btn_div2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin-top: 15px;
 }
 
 /*---------USER-ORDER-------------*/
