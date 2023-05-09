@@ -55,6 +55,12 @@ ymaps.ready(init);
                 currentText.innerText = text;
                 select.classList.remove("map-is-active");
 
+
+                selectHeader.classList.add("map-select-header_active");
+                currentText.classList.add("current_active");
+                const arrowDown = document.getElementById("arrowdown");
+                arrowDown.classList.add("arrowdown_path");
+
                 if(item.getAttribute("id") == "el"){                 
                     //myMap.panTo([55.164566989281276,61.52518889519932], 16);
                     myMap2.panTo([55.164566989281276,61.52518889519932], 15);

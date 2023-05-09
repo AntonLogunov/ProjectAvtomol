@@ -116,6 +116,20 @@
     color: #F3930D;
     transition: 0.2s color ease-in-out;
 }
+
+
+.map-select-header_active {
+    background-color: #F3930D; 
+}
+
+.arrowdown_path {
+    stroke: white;
+}
+
+.current_active {
+    color: white;
+}
+ 
 /*-----------------*/
 .div_with_markimg {
     display: flex;
