@@ -583,7 +583,7 @@
 }
 .advantages{
     display: grid;
-    grid-template-columns: repeat(3, 310px);
+    grid-template-columns: repeat(3, auto);
     column-gap: 74px;
     row-gap: 67px;
     max-width: 1078px;
@@ -2005,19 +2005,18 @@ a {
     display: flex;
     align-items: center;
     width: fit-content;
+    height: 65px;
     padding: 0px 36px;
-    margin-top: 44px;
+    margin: 18px 15px 0 0;
 
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: orange;
 
     color: white;
     font-size: 21px;
     line-height: 26px;
     text-align: left;
-    font-weight: bold;
 }
-
 .section-form__closeButton{
     width: fit-content;
     height: fit-content;
