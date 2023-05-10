@@ -81,6 +81,14 @@ ymaps.ready(init);
                     let lll = event.target.closest(".ymaps-2-1-79-balloon__content");
                     let p = lll.querySelector(".baloon-p1");
                     mapCurrentPoint.innerHTML = p.innerHTML;
+
+                    selectHeader.classList.add("map-select-header_active");
+
+                    currentText = event.target.closest(".map-container-choise").querySelector(".map-current");
+                    currentText.classList.add("current_active");
+
+                    const arrowDown = document.getElementById("arrowdown");
+                    arrowDown.classList.add("arrowdown_path");
                 }  
             })
 
