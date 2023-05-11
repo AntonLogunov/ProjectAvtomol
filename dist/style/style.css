@@ -1297,7 +1297,7 @@ a {
 
 /* Модальное окно */
 
-/* .modal {
+.modal-sectionFive {
     height: 485px;
     border-radius: 29.3156px;
     padding-left: 100px;
@@ -1315,7 +1315,7 @@ a {
                 opacity 0.3s ease-in-out;
 }
 
-.modal--open {
+.modal--open-sectionFive {
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -1401,7 +1401,7 @@ a {
 
 .modalButt:hover {
     opacity: 1;
-} */
+}
 
 /* секция 9 */
 .footer {
