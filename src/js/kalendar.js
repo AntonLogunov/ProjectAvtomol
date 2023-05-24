@@ -4,8 +4,8 @@ datepicker("#date", {
   showAllDates: true,
   disableMobile: true,
   maxDate: new Date(2099, 12, 31),
-  minDate: new Date(2023, 0, 1),
-  dateSelected: new Date(2023, 3, 5),
+  minDate: new Date(2023, 4, 1),
+  dateSelected: new Date(2023, 4, 5),
   overlayPlaceholder: "Введите год",
   customMonths: [
     "Январь",
@@ -27,5 +27,6 @@ datepicker("#date", {
     const dateValue = date.toISOString().substring(0, 10);
     dateInput.value = dateValue; // => '1/1/2099'
     console.log(dateValue);
+    
   }
 });

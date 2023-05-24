@@ -254,6 +254,7 @@
     opacity: 0;
     position: absolute;
     top: 3px;
+    left: -40px;
     transition: opacity .1s linear;
 }
 .radio__input:checked + .radio__label:before{
