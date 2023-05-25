@@ -1,5 +1,6 @@
 .section-wide-map {
     width: 100%;
+    margin-top: 180px;
 }
 .map-style {
     width: 100%;
@@ -15,10 +16,9 @@
     text-transform: uppercase;
     color: #8E8E8E;
     text-align: center;
-    margin-bottom: 87px;
+    margin-bottom: 50px;
 }
 
-/* туть */
 @media(max-width:1100px) {
     .map-select-header {
         margin-left: 15px;
@@ -212,7 +212,6 @@
 }
 
 /* user page style*/
-
 .user_wrapper {
     width: 1046px;
     margin: 100px auto 200px auto;
