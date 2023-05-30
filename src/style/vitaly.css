@@ -249,9 +249,8 @@
     width: inherit;
     padding: 24px 36px;
     max-height: 79px;
-    display: grid;
-    grid-template-columns: 430px 162px 150px 210px;
-    justify-items: center;
+    display: flex;
+    justify-content: space-around;
     appearance: auto;
     box-sizing:border-box;  
     border-bottom: solid 2px #F3930D;
@@ -275,11 +274,11 @@
     text-align: left;
 }
 .section-form__item{
-    width: inherit;
-    padding: 24px 36px;
-    max-height: 79px;
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
+    width: 100%;
+    padding: 10px 36px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     appearance: auto;
     box-sizing:border-box;
     
@@ -303,11 +302,11 @@
 
 }
 .section-form__item-chosen{
-    width: inherit;
-    padding: 24px 36px;
-    max-height: 79px;
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
+    width: 100%;
+    padding: 10px 36px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     appearance: auto;
     box-sizing:border-box;
     
@@ -334,8 +333,8 @@
     background-color:#E7E7E7;
 }
 
-.section-form__itemTxt{
-    max-width: 440px;
+.section-form__itemTxt:first-child{
+    width: 196px;
 }
 
 
@@ -433,4 +432,50 @@
     line-height: 22px;
     margin: 13px 0px 7px 0px;
     user-select: none;
+}
+/*======================================================================================*/
+@media(max-width:640px){
+    .section-form__item{
+        font-size: 16px;
+        padding: 10px 26px;
+    }
+    .section-form__item-chosen{
+        font-size: 16px;
+        padding: 10px 26px;
+    }
+    .section-form__menu{
+        font-size: 16px;
+    }
+    .section-form__menuItems{
+        padding: 10px 26px;
+    }
+    .section-form__block{
+        padding: 10px 26px;
+        height: 48px;
+    }
+}
+
+@media(max-width:450px){
+    .section-form__item{
+        font-size: 13px;
+        padding: 5px 13px;
+    }
+    .section-form__item-chosen{
+        font-size: 13px;
+        padding: 5px 13px;
+    }
+    .section-form__menu{
+        font-size: 13px;
+    }
+    .section-form__menuItems{
+        padding: 5px 13px;
+    }
+    .section-form__block{
+        font-size: 16px;
+        padding: 5px 13px;
+        height: 32px;
+    }
+    .section-form__itemTxt:first-child{
+        width: 120px;
+    }
 }
