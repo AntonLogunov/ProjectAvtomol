@@ -195,6 +195,7 @@ fetch('src/js/services.json')
     .then((json) => {
         let form = createForm(json);
         let selectedServicesDiv = document.querySelector(".selected--services");
+        let section = document.querySelector(".choose-service-form");
 
         let carTypeMenu = document.querySelector(".castom__body--auto");
         carTypeMenu.addEventListener("click",(event)=>{
@@ -209,5 +210,7 @@ fetch('src/js/services.json')
             form.innerHTML = "";
             jsonRefreshActiveServices(json);
             form = createForm(json);
+            section.style.display = "block";
+
         });
     });

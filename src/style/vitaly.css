@@ -184,6 +184,11 @@
     margin: 0 auto;
     margin-top: 100px;
 }
+
+.choose-service-form{
+    display: none;
+}
+
 .section-form-hidden{
     display: none;
 }
