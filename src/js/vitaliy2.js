@@ -193,7 +193,8 @@ time.innerHTML = timeValue;
 fetch('src/js/services.json')
     .then((response) => response.json())
     .then((json) => {
-        let form = createForm(json)
+        let form = createForm(json);
+        let selectedServicesDiv = document.querySelector(".selected--services");
 
         let carTypeMenu = document.querySelector(".castom__body--auto");
         carTypeMenu.addEventListener("click",(event)=>{
@@ -204,6 +205,7 @@ fetch('src/js/services.json')
             choiceInf["time"] = timeValue;
             price.innerHTML = priceValue;
             time.innerHTML = timeValue;
+            selectedServicesDiv.innerHTML ="";
             form.innerHTML = "";
             jsonRefreshActiveServices(json);
             form = createForm(json);
