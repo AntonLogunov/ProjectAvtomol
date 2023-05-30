@@ -202,7 +202,7 @@
     color: #8E8E8E;
 }
 .section-form__form{
-    width: 1048px;
+    max-width: 1048px;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -211,7 +211,7 @@
     justify-content: space-between;
     align-items: center;
 
-    width: inherit;
+    width: 100%;
     height: 79px;
     margin: 0 auto;
     margin-top: 26px;
