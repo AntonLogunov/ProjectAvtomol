@@ -122,8 +122,11 @@ function createBlock(nameGroup){
     let p = document.createElement("p");
     p.innerHTML = nameGroup["NameGroup"];
 
-    let arrow = createElementWithClass("p","section-form__arrow");
-    arrow.innerHTML = "V";
+    // let arrow = createElementWithClass("p","section-form__arrow");
+    // arrow.innerHTML = "V";
+
+    let arrow = arrowImgTemplate.cloneNode(true)
+    //arrowImgTemplate
 
     block.append(p);
     block.append(arrow);
@@ -138,12 +141,14 @@ function createForm(json){
         let isMenuCreated = false;
         block.addEventListener("click",(event) => {
             if(!event.currentTarget.classList.contains("section-form__active")){
-                event.currentTarget.querySelector(".section-form__arrow").innerHTML = "V";
+                //event.currentTarget.querySelector(".section-form__arrow").innerHTML = "V";
+                event.currentTarget.querySelector(".deployment__img").style.rotate = "0deg";
                 event.currentTarget.classList.add("section-form__active");
                 event.currentTarget.nextSibling.classList.add("section-form-hidden");
             }
             else{
-                event.currentTarget.querySelector(".section-form__arrow").innerHTML = "^";
+                //event.currentTarget.querySelector(".section-form__arrow").innerHTML = "^";
+                event.currentTarget.querySelector(".deployment__img").style.rotate = "180deg";
                 event.currentTarget.classList.remove("section-form__active");
                 if(isMenuCreated){
                     event.currentTarget.nextSibling.classList.remove("section-form-hidden");
@@ -188,6 +193,7 @@ const carTypeEqual = {
 
 const price = document.querySelector(".section-form__price");
 const time = document.querySelector(".section-form__time");
+const arrowImgTemplate = document.querySelector(".deployment__img").cloneNode(true);
 price.innerHTML = priceValue;
 time.innerHTML = timeValue;
 fetch('src/js/services.json')
