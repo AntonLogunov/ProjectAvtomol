@@ -76,7 +76,9 @@ signInForm.addEventListener("submit",(event)=>{
 btnclose.onclick=function(){
 	modal.style.display = "none";
     if(result.total == true){
-        checkInButtonPress()
+        let jsonResult = checkInButtonPress();
+        console.log(jsonResult);
+        console.log(JSON.parse(jsonResult));
         //location.reload();
     }
 }

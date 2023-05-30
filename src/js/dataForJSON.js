@@ -19,8 +19,9 @@ function checkInButtonPress(){
     }
     
     let result = JSON.stringify(data);
-    console.log(data);
-    console.log(result);
-    console.log(JSON.parse(result));
+    // console.log(data);
+    // console.log(result);
+    // console.log(JSON.parse(result));
+    return result
 }
 //checkInButtonPress()
