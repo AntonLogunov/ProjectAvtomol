@@ -2446,7 +2446,7 @@ p{
 }
 
 .section-form__time_and_price{
-    width: 1024px;
+    width: 100%;
     margin: 0 auto;
     margin-top: 44px;
 }
@@ -2457,7 +2457,7 @@ p{
     font-weight: bold;
 }
 .section-form__inftext{
-    width: 1024px;
+    width: 100%;
     margin: 0 auto;
     margin-top: 44px;
 }
