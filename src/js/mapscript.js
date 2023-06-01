@@ -40,4 +40,23 @@ ymaps.ready(init);
             myMap.geoObjects.add(placemark);
             myMap.geoObjects.add(placemark2);
 
+
+            let address_list = document.querySelectorAll(".address_list_item");
+
+            address_list.forEach(list_item => {
+               list_item.addEventListener('click', () => {
+                if(list_item.getAttribute("id") == "el"){                 
+                    myMap.panTo([55.164566989281276,61.52518889519932], 16);
+                    //myMap2.panTo([55.164566989281276,61.52518889519932], 15);
+                }
+                if(list_item.getAttribute("id") == "snt"){
+                    myMap.panTo([55.13012608675315,61.25751477307758], 16);
+                    //myMap2.panTo([55.13012608675315,61.25751477307758], 15);
+                }
+                if(list_item.getAttribute("id") == "template"){
+                    myMap.panTo([55.19831862068815,61.32016475065578], 16);
+                    //myMap2.panTo([55.13012608675315,61.25751477307758], 15);
+                }
+               })
+            });
         }
