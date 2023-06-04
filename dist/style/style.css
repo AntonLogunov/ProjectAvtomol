@@ -953,14 +953,7 @@
     
     margin-top: 10px;
 }
-.radio__label{
-    position: relative;
-    font-size: 13px;
-    color: #A8A8A8;
-    cursor: pointer;
-    margin-left: 43px;
-    
-}
+
 .radio__label::before{
     content: "";
     display: block;
@@ -1088,18 +1081,6 @@
     line-height: 26px;
     
 }
-
-.castom__body{
-    position: absolute;
-    display: none;
-    margin: 0;
-    background-color: #fff;
-    filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.25));
-    margin-top: 7px;
-    border-radius: 15px;
-    padding: 36px 78px;
-    z-index: 1;
-}
 .castom__time, 
 .castom__item--time{
     font-weight: 500;
@@ -1109,9 +1090,6 @@
     flex: none;
     text-align: center;
     cursor: pointer;
-}
-.castom__time--auto{
-    padding: 24px 129px 24px 129px;
 }
 .castom__time:hover{
     color: #F3930D;
