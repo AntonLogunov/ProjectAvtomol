@@ -1,12 +1,7 @@
 /* секция 1 */
-@media (max-width: 1100px){
-    .link-logo{
-        display: none;
-    }
-}
 
 .burger {
-    display: none;
+    /* display: none; */
     margin-right: 40px;
     width: 50px;
     height: 50px;
@@ -24,7 +19,7 @@
     height: 2px;
     position: absolute;
     left: 0;
-    background-color: #000;
+    background-color: rgb(101, 13, 243);
     opacity: 1;
     transition: 0.3s ease-in-out;
 }
@@ -46,15 +41,30 @@
 }
 
 .menuBurger{
-    display: none;
-    margin: -55px;
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 90;
+    padding-top: 100px;
+    background-color: #dccab3;
+    color: #FFFFFF;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    /* margin: -55px;
     transform: transition(-100%);
     transition: transform 0.3s ease;
     position: fixed;
     top: 1px;
     bottom: 295px;
     z-index: 90;
-    padding-top: 100px;
+    padding-top: 100px; */
 }
 .mainmenuBurger__list{
     list-style-type: none;
@@ -71,8 +81,9 @@
     opacity: 0;
     transition: opacity 0.2s ease 0s;
 }
-.menuBurger--open .menuBurger {
-    transform: translate(0%);
+.menuBurger--open 
+.menuBurger {
+    transform: translateY(0%);
     transition: transform 0.2s ease;
 }
 .menuBurger--open
@@ -80,24 +91,32 @@
     opacity: 1;
 }
 
-@media (max-width: 750px){
-    .link-logo{
+/* @media (max-width: 1100px){
+    .burger{
         display: block;
     }
+    .menuBurger{
+       
+    }
+    .menu{
+        display: none;
+    }
+    .menuBurger{
+        
+    }
+}
+
+
+@media (max-width: 750px){   
     .menu{
         display: none;
     }
     .burger{
         display: block;
     }
-    .menuBurger{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
     
-}
+    
+} */
 
 .header {
     position: fixed;
@@ -422,7 +441,10 @@
 }
 
 @media (max-width: 680px){
-    .footer-contacts:nth-child(3){
+    .footer-contacts{
         justify-content: center;
+    }
+    .footer-list{
+        margin: 10px;
     }
 }
