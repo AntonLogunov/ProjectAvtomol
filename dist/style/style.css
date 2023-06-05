@@ -1554,7 +1554,7 @@ a {
     transition: 0.2s color ease-in-out;
 }
 
-.menu__link__orange {
+.menu__link__orange, .menu__link__orange-burger {
     color: rgba(243, 147, 13, 1);
     transition: 0.2s color ease-in-out;
 }
