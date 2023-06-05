@@ -96,6 +96,10 @@
 }
 /*======================================================================================================*/
 
+.section-slider__slider .swiper-pagination{
+    z-index: 1;
+}
+
 .swiper-button-next, .swiper-button-prev{
     top: var(--swiper-navigation-top-offset,54%);
 }
