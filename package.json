@@ -450,6 +450,7 @@
     "supports-color": "^2.0.0",
     "supports-preserve-symlinks-flag": "^1.0.0",
     "sver-compat": "^1.5.0",
+    "swiper": "^9.3.2",
     "symbol-observable": "^1.0.1",
     "tapable": "^2.2.1",
     "terser": "^5.15.1",

@@ -37,7 +37,7 @@
     margin-bottom: 26px;
 }
 .advantages__svg4 svg{
-    margin-bottom: 24.57px;
+    margin-bottom: 24px;
 }
 .advantages__svg5 svg{
     margin-bottom: 18px;
@@ -139,8 +139,8 @@
     margin-bottom: 15px;
 }
 .avtomol__slider{
-    width: 26.56px;
-    height: 26.56px;
+    width: 26px;
+    height: 26px;
     border-radius: 50%;
     background: rgba(142, 142, 142, 0.47);
     position: absolute;
@@ -177,6 +177,7 @@
     border: 1.5px solid #F3930D;
     border-radius: 27px;
     padding: 0 46px;
+    width: 430px;
 }
 .request__text{
     font-weight: 700;
@@ -202,7 +203,7 @@
 .data{
     width: 100%;
     border: none;
-    border-bottom: 1.75873px solid #F3930D;
+    border-bottom: 1px solid #F3930D;
     padding: 0 0 22px 0;
     margin-top: 40px;
     font-weight: 500;
@@ -216,7 +217,7 @@
     color: #F3930D;
 }
 .radio{
-    margin-top: 37px;
+    margin: 37px 0 0 60px;
 }
 .radio__input{
     -webkit-appearance: none;
@@ -225,12 +226,11 @@
     margin-top: 10px;
 }
 .radio__label{
+    width: 300px;
     position: relative;
     font-size: 13px;
     color: #A8A8A8;
     cursor: pointer;
-    margin-left: 43px;
-    
 }
 .radio__label::before{
     content: "";
@@ -242,7 +242,7 @@
     border-radius: 50%;
     position: absolute;
     top: -4px;
-    
+    left: -40px;
 }
 .radio__label::after{
     content: "";
@@ -254,7 +254,7 @@
     opacity: 0;
     position: absolute;
     top: 3px;
-    left: -40px;
+    left: -34px;
     transition: opacity .1s linear;
 }
 .radio__input:checked + .radio__label:before{
@@ -283,7 +283,7 @@
 }
 .request__form2--text{
     font-weight: 700;
-    font-size: 31.6572px;
+    font-size: 31px;
     line-height: 39px;
     color: #8E8E8E;
     margin-bottom: 42px;
@@ -306,7 +306,6 @@
 .castom.castom-is-active .castom__body--auto{
     display: flex;
     flex-direction: column;
-    max-width: 432px;
     margin-top: 7px;
     filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.25));
     row-gap: 0;
@@ -316,7 +315,7 @@
     max-width: 330px;
     display: grid;
     grid-template-columns: repeat(3, auto);
-    column-gap: 47px;
+    column-gap: 35px;
     row-gap: 26px;  
 }
 .castom.castom-is-active .deployment__img{
@@ -359,17 +358,31 @@
     line-height: 26px;
     
 }
-
+.castom__body--auto{
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: none; 
+    z-index: 1;
+    border-radius: 15px;
+    overflow: hidden;
+    filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.25));
+}
 .castom__body{
     position: absolute;
     display: none;
-    margin: 0;
+    left: 0;
+    right: 0;
+    border-radius: 15px;
+    padding: 36px 0;
     background-color: #fff;
     filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.25));
     margin-top: 7px;
-    border-radius: 15px;
-    padding: 36px 78px;
+    overflow: hidden;
     z-index: 1;
+}
+.castom__body--auto{
+    margin: 0 auto;
 }
 .castom__time, 
 .castom__item--time{
@@ -382,7 +395,18 @@
     cursor: pointer;
 }
 .castom__time--auto{
-    padding: 24px 129px 24px 129px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 26px;
+    color: #8E8E8E;
+    background-color: #FFFFFF;
+    transition: 0.3s background-color ease-in-out,
+                0.3s color ease-in-out
 }
 .castom__time:hover{
     color: #F3930D;
@@ -390,10 +414,6 @@
 .castom--auto{
     max-width: 430px;
     margin-left: 0;
-}
-.castom__body--auto{
-    display: none;
-    padding: 0;
 }
 /* ====================== kalendar ==================================== */
 /*==== удаление иконки календаря у input type="date" ====*/
@@ -409,31 +429,31 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding-left: 100px; */
     width: 100%;
     height: 80px;
-    border-radius: 14.9492px;
+    border-radius: 15px;
     border: 1.5px solid #F3930D;
     color: #F3930D;
     background-color: #fff;
     text-align: center;
     font-weight: 500;
-    font-size: 21.1048px;
+    font-size: 21px;
     line-height: 26px;
 }
 .form__kalendar{
     width: 420px;
     height: 80px;
     font-weight: 500;
-    font-size: 21.1048px;
+    font-size: 21px;
     line-height: 26px;
     color: #F3930D;
     border: 1.5px solid #F3930D;
-    border-radius: 14.9492px;
+    border-radius: 15px;
     text-align: center;
 }
 .qs-datepicker-container{
     width: 433px;
     height: 460px;
     filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.25));
-    border-radius: 25.395px;
+    border-radius: 25px;
     border: none;
     margin-top: 7.1px;
 }
@@ -452,13 +472,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .qs-month{
     width: 100%;
     font-weight: 700;
-    font-size: 31.7437px;
+    font-size: 31px;
     line-height: 37px;
     color: #313131;
 }
 .qs-year{
     font-weight: 400;
-    font-size: 31.7437px;
+    font-size: 31px;
     line-height: 37px;
     color: #313131;
     margin-left: 25px;
@@ -488,7 +508,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 .qs-num{
     font-weight: 700;
-    font-size: 19.0462px;
+    font-size: 19px;
     line-height: 22px;
     color: #313131;
 }
@@ -507,6 +527,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* ============================ Адаптация ============================*/
 .castom{
     max-width: 430px;
+    position: relative;
 }
 .selected--services{
     display: flex;
@@ -540,10 +561,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 }
 @media(max-width:1000px){
-    .wrapper__request{
-        flex-direction: column;
-        margin: auto;
-    }
+    
     .select{
         margin: 0;
     }
@@ -553,6 +571,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
     .request__form2,
     .castom--auto{
+        margin: auto;
+    }
+}
+@media(max-width: 960px){
+    .wrapper__request{
+        flex-direction: column;
         margin: auto;
     }
 }
@@ -583,5 +607,22 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .select{
         width: 100%;
         margin: 0;
+    }
+    .data{
+        font-size: 16px;
+    }
+    .input, .map__current,
+    .castom__current,
+    .castom__current--time,
+    .castom__item--time,
+    .button
+    {
+        font-size: 21px;
+    }
+    .request{
+        width: 100%;
+    }
+    .request__form2--text{
+        font-size: 24px;
     }
 }

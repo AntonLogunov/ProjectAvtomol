@@ -1,7 +1,7 @@
 let castom = function () {
     // ====================== КАТЕГОРИЯ =======================================
     let castomHeaderCategory = document.querySelectorAll('.castom__header--category');
-    let castomItemCategory = document.querySelectorAll('.castom__time');
+    let castomItemCategory = document.querySelectorAll('.castom__time--auto');
     castomHeaderCategory.forEach(item => {
         item.addEventListener('click', ()=>{
             item.parentElement.classList.toggle('castom-is-active');
