@@ -498,7 +498,7 @@ a {
 /* секция 1 */
 
 .burger {
-    /* display: none; */
+    display: none;
     margin-right: 40px;
     width: 50px;
     height: 50px;
@@ -516,7 +516,7 @@ a {
     height: 2px;
     position: absolute;
     left: 0;
-    background-color: rgb(101, 13, 243);
+    background-color: rgb(0, 0, 0);
     opacity: 1;
     transition: 0.3s ease-in-out;
 }
@@ -524,21 +524,17 @@ a {
 .burger__line:nth-child(1){
     top: 0;
 }
-
 .burger__line:nth-child(2){
     top: 20px;
 }
-
 .burger__line:nth-child(3){
     top: 20px;
 }
-
 .burger__line:nth-child(4){
     top: 40px;
 }
 
 .menuBurger{
-    /* display: none; */
     position: fixed;
     top: 0;
     bottom: 0;
@@ -554,14 +550,6 @@ a {
         justify-content: center;
     transform: translateY(-100%);
     transition: transform 0.3s ease;
-    /* margin: -55px;
-    transform: transition(-100%);
-    transition: transform 0.3s ease;
-    position: fixed;
-    top: 1px;
-    bottom: 295px;
-    z-index: 90;
-    padding-top: 100px; */
 }
 .mainmenuBurger__list{
     list-style-type: none;
@@ -578,8 +566,7 @@ a {
     opacity: 0;
     transition: opacity 0.2s ease 0s;
 }
-.menuBurger--open 
-.menuBurger {
+.menuBurger--open {
     transform: translateY(0%);
     transition: transform 0.2s ease;
 }
@@ -588,21 +575,36 @@ a {
     opacity: 1;
 }
 
-/* @media (max-width: 1100px){
+.menuBurger--open .burger__line:nth-child(1) {
+    transform: scaleX(0);
+}
+.menuBurger--open .burger__line:nth-child(2) {
+    transform: rotate(45deg);
+}
+.menuBurger--open .burger__line:nth-child(3) {
+    transform: rotate(-45deg);
+}
+.menuBurger--open .burger__line:nth-child(4) {
+    transform: scaleX(0);
+}
+
+@media (min-width: 1100px){
+    .menuBurger{
+        display: none;
+    }
+}
+
+@media (max-width: 1100px){
     .burger{
         display: block;
     }
     .menuBurger{
-       
+       display: block;
     }
     .menu{
         display: none;
     }
-    .menuBurger{
-        
-    }
 }
-
 
 @media (max-width: 750px){   
     .menu{
@@ -613,7 +615,7 @@ a {
     }
     
     
-} */
+}
 
 .header {
     position: fixed;
