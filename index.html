@@ -22,6 +22,8 @@
     <script defer src="src/js/kalendar.js"></script>
     <script src="https://unpkg.com/imask"></script>
     <link rel="stylesheet" href="src/mini/datepicker.min.css">
+    <link rel="stylesheet" href="src/style/anton.css">
+    <link rel="stylesheet" href="src/style/Semen.css">
 </head>
 
 <body> <!-- id="top" ??????????-->
@@ -780,7 +782,7 @@
             </div>
         </section>
     <div id="Modal" class="modal">
-        <form class="authorization modal-form">
+        <form class="authorization modal-form" action="user_page.html">
             <span class="close">&times;</span>
             <p class="modal-p">Телефон</p>
             <input class="modal-input  modal-tel" type="tel" id="phone-mask" placeholder="+7(000)000-00-00" required>
@@ -790,7 +792,7 @@
                 <button type="button" class="password-eye" data-target="#password3"><img class="password-eye-img" src="src/img/closedeye.svg" alt=""></button>
             </div>
             <div class="authorization-2">
-                <button type="submit" class="modal-btn modal-btn-auth" onclick="window.location.href = 'user_page.html'">Вход</button>
+                <button type="submit" class="modal-btn modal-btn-auth" >Вход</button>
                 <div class="checkbox"><input class="checkbox-input" type="checkbox" id="remember-id" name="remember-name" value="remember-value"><label class="modal-label" for="remember-id">запомнить</label></div>
             </div>
                 <div class="authorization-2-a"><a id="restoreaccess" class="modal-a-auth">Восстановить доступ</a><a id="createanaccount" class="modal-a-auth">Создать аккаунт</a>
@@ -817,7 +819,7 @@
             <p class="modal-p">Дата рождения</p>
             <div id="app"></div>
                                 <div>
-                                    <input class="input modal-input modal-date" type="date" onсlick="event.preventDefault()"  id="date" />
+                                    <input class="input modal-input" type="date" onсlick="event.preventDefault()"  id="date" />
                                 </div>
             <button type="submit" class="modal-btn modal-btn-create" required>Создать</button>
             <p class="modal-p-p">Нажимая «Создать» вы принимаете следующие</p>

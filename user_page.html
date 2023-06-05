@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/style/style.css">
     <title>AutoMallUserPage</title>
+    <script defer src="src/js/semen.js"></script>
+    <link rel="stylesheet" href="src/style/Semen.css">
+    <script src="https://unpkg.com/imask"></script>
 </head>
 <body>
     <header class="header">
@@ -165,6 +168,25 @@
             </div>
         </div>
     </section>
+    <div id="Modal" class="modal">
+        <form class="modal-profile modal-form">
+            <span class="close">&times;</span>
+            <div class="modal-profile-content">
+                <div><img class="user_photo" src="src/img/profile_photo.png" alt=""></div>
+                <div>
+                    <p class="modal-p">Имя</p>
+                    <input class="modal-input" placeholder="Виталий" required>
+                    <p class="modal-p">E-mail</p>
+                    <input class="modal-input" placeholder="Ваш E-mail" required>
+                    <p class="modal-p">Телефон</p>
+                    <input class="modal-input  modal-tel" type="tel" id="phone-mask" placeholder="+7(000)000-00-00" required>
+                    <p class="modal-p">VIN код</p>
+                    <input class="modal-input" placeholder="Ваш VIN-код" required>
+                    <button type="submit" class="modal-btn" required>Сохранить</button>
+                </div>
+            </div>
+        </form>
+    </div>
     <footer class="footer">
         <!-- 9 секция (подвал) -->
         <section id="adress_link" class="section footer-menu">
