@@ -10,7 +10,8 @@ let btnopenBurger = document.querySelector('.menu__link__orange-burger');
 // let input = document.querySelectorAll('.modal-input');
 
 burgerBtn.addEventListener('click', ()=>{
-    menu.classList.toggle('menuBurger--open')
+    menu.classList.toggle('menuBurger--open');
+    burgerBtn.classList.toggle('menuBurger--open');
     btnopenBurger.onclick = function() {
         console.log(btnopen);
         modal.style.display = "block";
