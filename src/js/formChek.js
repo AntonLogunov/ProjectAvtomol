@@ -79,6 +79,6 @@ btnclose.onclick=function(){
         let jsonResult = checkInButtonPress();
         console.log(jsonResult);
         console.log(JSON.parse(jsonResult));
-        //location.reload();
+        location.reload();
     }
 }
