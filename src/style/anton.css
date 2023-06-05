@@ -427,7 +427,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     /* display: flex;
     justify-content: center;
     padding-left: 100px; */
-    content: "дд.мм.гггг";
     width: 100%;
     height: 80px;
     border-radius: 15px;
