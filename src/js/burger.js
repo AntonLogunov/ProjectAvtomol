@@ -4,5 +4,5 @@ const burgerBtn = document.querySelector('.burger');
 
 burgerBtn.addEventListener('click', ()=>{
     menu.classList.toggle('menuBurger--open');
-
+    burgerBtn.classList.toggle('menuBurger--open');
 });
