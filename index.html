@@ -10,9 +10,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="src/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="src/icons/favicon-16x16.png">
     <link rel="manifest" href="src/icons/site.webmanifest">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="dist/style/style.css">
     <link defer rel="stylesheet" href="js/main.js">
-    <script defer src="src/js/vitaly.js"></script>
+    <script defer type="module" src="src/js/vitaly.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=um=constructor%3Aef276d26e94014049c7aec200e8c68065a4708447feadcd033084cba9bf9fe08&lang=ru_RU" type="text/javascript">
     </script>
     <script defer src="src/js/danilScroll.js"></script>
@@ -24,6 +28,7 @@
     <script defer src="src/js/danilModal.js"></script>
     <link rel="stylesheet" href="src/style/anton.css">
     <script defer src="src/js/burger.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -249,53 +254,19 @@
             <div class="link-hide"  id="slider_link"></div>            
             <div class="wrapper section-slider__wrapper">
                 <div class="section-slider__slider">
-                    <div class="section-slider__wrapper-for-slider">
-                        <div class="section-slider__list">
-                            <div class="section-slider__slider-item slide1">
-                                <p class="section-slider__text-in-slider">акции <span
-                                        class="section-slider__bigFont">1+1</span></p>
-                            </div>
-                            <div class="section-slider__slider-item slide2">
-                                <p class="section-slider__text-in-slider">акции <span
-                                        class="section-slider__bigFont">1+2</span></p>
-                            </div>
-                            <div class="section-slider__slider-item slide3">
-                                <p class="section-slider__text-in-slider">акции <span
-                                        class="section-slider__bigFont">1+3</span></p>
-                            </div>
-                            <div class="section-slider__slider-item slide4">
-                                <p class="section-slider__text-in-slider">акции <span
-                                        class="section-slider__bigFont">1+4</span></p>
-                            </div>
+
+                    <div class="section-slider__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="section-slider__swiper-slide swiper-slide"><p class="section-slider__text-in-slider">акции <span class="section-slider__bigFont">1+1</span></p></div>
+                            <div class="section-slider__swiper-slide swiper-slide"><p class="section-slider__text-in-slider">акции <span class="section-slider__bigFont">1+2</span></p></div>
+                            <div class="section-slider__swiper-slide swiper-slide"><p class="section-slider__text-in-slider">акции <span class="section-slider__bigFont">1+3</span></p></div>
+                            <div class="section-slider__swiper-slide swiper-slide"><p class="section-slider__text-in-slider">акции <span class="section-slider__bigFont">1+4</span></p></div>
                         </div>
+                        <div class="section-slider__swiper-button-prev swiper-button-prev"></div>
+                        <div class="section-slider__swiper-button-next swiper-button-next"></div>
                     </div>
-                    <label for="slider-radio2" class="slider-label slider-label-next">
-                        <button class="slider-buton buton-next section-slider__slider-buton-next">
-                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1.22392e-06 14C1.89987e-06 6.26801 6.26802 -1.89987e-06 14 -1.22392e-06C21.732 -5.47967e-07 28 6.26801 28 14C28 21.732 21.732 28 14 28C6.26801 28 5.47967e-07 21.732 1.22392e-06 14Z"
-                                    fill="#8E8E8E" fill-opacity="0.47" />
-                                <path d="M11 9.41L15.3266 14L11 18.59L12.332 20L18 14L12.332 8L11 9.41Z" fill="white" />
-                            </svg>
-                        </button>
-                    </label>
-                    <label for="slider-radio3" class="slider-label slider-label-prev">
-                        <button class="slider-buton buton-prev section-slider__slider-buton-prev">
-                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M28 14C28 21.732 21.732 28 14 28C6.26801 28 0 21.732 0 14C0 6.26801 6.26801 0 14 0C21.732 0 28 6.26801 28 14Z"
-                                    fill="#8E8E8E" fill-opacity="0.47" />
-                                <path d="M17 18.59L12.6734 14L17 9.41L15.668 8L10 14L15.668 20L17 18.59Z"
-                                    fill="white" />
-                            </svg>
-                        </button>
-                    </label>
-                    <input checked disabled type="radio" class="slider-radio slider-radio--1" id="slider-radio1">
-                    <input disabled type="radio" class="slider-radio slider-radio--2" id="slider-radio2">
-                    <input disabled type="radio" class="slider-radio slider-radio--3" id="slider-radio3">
-                    <input disabled type="radio" class="slider-radio slider-radio--4" id="slider-radio4">
+                    <div class="swiper-pagination outside"></div>
+
                 </div>
             </div>
         </section>         
@@ -581,50 +552,75 @@
                         <p class="info__text2">Более 15 000 довольных клиентов</p>
                     </div>
                 </div>
-                <div class="info__grid">
-                    <div class="info__grid__block">
-                        <div class="info__grid__block__img"></div>
-                        <p class="info__grid__block__text1">1 МЕСТО</p>
-                        <p class="info__grid__block__text2">«Лучшие автосервисы Челябинска»</p>
-                        <p class="info__grid__block__text3">2022</p>
-                    </div>
-                    <div class="info__grid__block">
-                        <div class="info__grid__block__img"></div>
-                        <p class="info__grid__block__text1">2 МЕСТО</p>
-                        <p class="info__grid__block__text2">«Лучшие автосервисы Южного Урала»</p>
-                        <p class="info__grid__block__text3">2019</p>
-                    </div>
-                    <div class="info__grid__block">
-                        <div class="info__grid__block__img"></div>
-                        <p class="info__grid__block__text1">3 МЕСТО</p>
-                        <p class="info__grid__block__text2">«Выставка автосервис КТ»</p>
-                        <p class="info__grid__block__text3">2017</p>
-                    </div>
-                    <div class="info__grid__block">
-                        <div class="info__grid__block__img"></div>
-                        <p class="info__grid__block__text1">4 МЕСТО</p>
-                        <p class="info__grid__block__text2">«Лучшие автосервисы Челябинска»</p>
-                        <p class="info__grid__block__text3">2020</p>
-                    </div>
-                    <div class="info__grid__block">
-                        <div class="info__grid__block__img"></div>
-                        <p class="info__grid__block__text1">4 МЕСТО</p>
-                        <p class="info__grid__block__text2">«Лучшие автосервисы Челябинска»</p>
-                        <p class="info__grid__block__text3">2020</p>
+                <!-- Для корректной работы слайдера нужно *2 слайдов чем отображается или отключить loop -->
+                <div class="info__grid-swiper-container">
+                    <div class="info__grid-swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide info__grid__block">
+                                <div class="info__grid__block__img"></div>
+                                <p class="info__grid__block__text1">1 МЕСТО</p>
+                                <p class="info__grid__block__text2">«Лучшие автосервисы Челябинска»</p>
+                                <p class="info__grid__block__text3">2022</p>
+                            </div>
+                            <div class="swiper-slide info__grid__block">
+                                <div class="info__grid__block__img"></div>
+                                <p class="info__grid__block__text1">2 МЕСТО</p>
+                                <p class="info__grid__block__text2">«Лучшие автосервисы Южного Урала»</p>
+                                <p class="info__grid__block__text3">2019</p>
+                            </div>
+                            <div class="swiper-slide info__grid__block">
+                                <div class="info__grid__block__img"></div>
+                                <p class="info__grid__block__text1">3 МЕСТО</p>
+                                <p class="info__grid__block__text2">«Выставка автосервис КТ»</p>
+                                <p class="info__grid__block__text3">2017</p>
+                            </div>
+                            <div class="swiper-slide info__grid__block">
+                                <div class="info__grid__block__img"></div>
+                                <p class="info__grid__block__text1">4 МЕСТО</p>
+                                <p class="info__grid__block__text2">«Лучшие автосервисы Челябинска»</p>
+                                <p class="info__grid__block__text3">2020</p>
+                            </div>
+                            <div class="swiper-slide info__grid__block">
+                                <div class="info__grid__block__img"></div>
+                                <p class="info__grid__block__text1">5 МЕСТО</p>
+                                <p class="info__grid__block__text2">«Лучшие автосервисы Челябинска»</p>
+                                <p class="info__grid__block__text3">2020</p>
+                            </div>
+                            <div class="swiper-slide info__grid__block">
+                                <div class="info__grid__block__img"></div>
+                                <p class="info__grid__block__text1">6 МЕСТО</p>
+                                <p class="info__grid__block__text2">«Лучшие автосервисы Челябинска»</p>
+                                <p class="info__grid__block__text3">2020</p>
+                            </div>
+                            <div class="swiper-slide info__grid__block">
+                                <div class="info__grid__block__img"></div>
+                                <p class="info__grid__block__text1">7 МЕСТО</p>
+                                <p class="info__grid__block__text2">«Лучшие автосервисы Челябинска»</p>
+                                <p class="info__grid__block__text3">2020</p>
+                            </div>
+                            <div class="swiper-slide info__grid__block">
+                                <div class="info__grid__block__img"></div>
+                                <p class="info__grid__block__text1">8 МЕСТО</p>
+                                <p class="info__grid__block__text2">«Лучшие автосервисы Челябинска»</p>
+                                <p class="info__grid__block__text3">2020</p>
+                            </div>
+                            <div class="swiper-slide info__grid__block">
+                                <div class="info__grid__block__img"></div>
+                                <p class="info__grid__block__text1">9 МЕСТО</p>
+                                <p class="info__grid__block__text2">«Лучшие автосервисы Челябинска»</p>
+                                <p class="info__grid__block__text3">2020</p>
+                            </div>
+                            <div class="swiper-slide info__grid__block">
+                                <div class="info__grid__block__img"></div>
+                                <p class="info__grid__block__text1">10 МЕСТО</p>
+                                <p class="info__grid__block__text2">«Лучшие автосервисы Челябинска»</p>
+                                <p class="info__grid__block__text3">2020</p>
+                            </div>
+                        </div>
+                        <div class="info__grid-swiper-button-prev swiper-button-prev"></div>
+                        <div class="info__grid-swiper-button-next swiper-button-next"></div>
                     </div>
                 </div>
-                <button class="slider__info--prev">
-                    <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M26.5571 13.9343C26.5571 21.268 20.6121 27.213 13.2784 27.213C5.94483 27.213 -0.000244141 21.268 -0.000244141 13.9343C-0.000244141 6.60071 5.94483 0.65564 13.2784 0.65564C20.6121 0.65564 26.5571 6.60071 26.5571 13.9343Z" fill="#8E8E8E" fill-opacity="0.47"/>
-                    <path d="M15.1753 18.677L10.4328 13.9345L15.1753 9.19197" stroke="white" stroke-width="1.77049" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    </button>
-                <button class="slider__info--next">
-                    <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.442628 13.9342C0.442629 6.60059 6.3877 0.655516 13.7213 0.655516C21.0549 0.655517 27 6.60059 27 13.9342C27 21.2678 21.0549 27.2129 13.7213 27.2129C6.3877 27.2129 0.442627 21.2678 0.442628 13.9342Z" fill="#8E8E8E" fill-opacity="0.47"/>
-                        <path d="M11.8242 9.19156L16.5667 13.9341L11.8242 18.6766" stroke="white" stroke-width="1.77049" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>                            
-                </button>
 
             </div>
         </section>
@@ -634,9 +630,10 @@
             <div class="wrapper section_clients_reviews__wrapper">
                 <h2 class="section_clients_reviews__header">Отызвы клиентов</h2>
                 <div class="section_clients_reviews__slider">
-                    <div class="section_clients_reviews__wrapper-for-slider">
-                        <div class="section_clients_reviews__list">
-                            <div class="section_clients_reviews__slider-item slide1">
+
+                    <div class="section_clients_reviews-swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="section_clients_reviews__slider-item swiper-slide">
                                 <div class="section_clients_reviews__item-content">
                                     <p class="review-date">11.11.11</p>
                                     <h3 class="reviewer-name">Олег</h3>
@@ -678,9 +675,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="section_clients_reviews__slider-item slide1">
+                            <div class="section_clients_reviews__slider-item swiper-slide">
                                 <div class="section_clients_reviews__item-content">
-                                    <p class="review-date">11.11.11</p>
+                                    <p class="review-date">11.11.12</p>
                                     <h3 class="reviewer-name">Олег</h3>
                                     <p class="client_car">СНТ Вишневый, 1264</p>
                                     <p class="client-review">Амивлмвалтмбвтловимвтмивломтваьтми воимлвиорв о рплокр
@@ -720,9 +717,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="section_clients_reviews__slider-item slide1">
+                            <div class="section_clients_reviews__slider-item swiper-slide">
                                 <div class="section_clients_reviews__item-content">
-                                    <p class="review-date">11.11.11</p>
+                                    <p class="review-date">11.11.13</p>
                                     <h3 class="reviewer-name">Олег</h3>
                                     <p class="client_car">СНТ Вишневый, 1264</p>
                                     <p class="client-review">Амивлмвалтмбвтловимвтмивломтваьтми воимлвиорв о рплокр
@@ -762,9 +759,93 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="section_clients_reviews__slider-item slide1">
+                            <div class="section_clients_reviews__slider-item swiper-slide">
                                 <div class="section_clients_reviews__item-content">
-                                    <p class="review-date">11.11.11</p>
+                                    <p class="review-date">11.11.14</p>
+                                    <h3 class="reviewer-name">Олег</h3>
+                                    <p class="client_car">СНТ Вишневый, 1264</p>
+                                    <p class="client-review">Амивлмвалтмбвтловимвтмивломтваьтми воимлвиорв о рплокр
+                                        плурпл оурклп руклопрул рук рулкрлурпло муг упрул рлурпурпу щпр ушкпрушкпдуклрп
+                                        рщудшркпд рущш рудшкшре ушдкл рушдкр шдуркп жудшкр удркпдукр</p>
+                                    <div class="stars">
+                                        <svg width="32" height="29" viewBox="0 0 32 29" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 0L19.5922 11.0557H31.2169L21.8123 17.8885L25.4046 28.9443L16 22.1115L6.59544 28.9443L10.1877 17.8885L0.783095 11.0557H12.4078L16 0Z"
+                                                fill="#F3930D" />
+                                        </svg>
+                                        <svg width="32" height="29" viewBox="0 0 32 29" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 0L19.5922 11.0557H31.2169L21.8123 17.8885L25.4046 28.9443L16 22.1115L6.59544 28.9443L10.1877 17.8885L0.783095 11.0557H12.4078L16 0Z"
+                                                fill="#F3930D" />
+                                        </svg>
+                                        <svg width="32" height="29" viewBox="0 0 32 29" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 0L19.5922 11.0557H31.2169L21.8123 17.8885L25.4046 28.9443L16 22.1115L6.59544 28.9443L10.1877 17.8885L0.783095 11.0557H12.4078L16 0Z"
+                                                fill="#D9D9D9" />
+                                        </svg>
+                                        <svg width="32" height="29" viewBox="0 0 32 29" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 0L19.5922 11.0557H31.2169L21.8123 17.8885L25.4046 28.9443L16 22.1115L6.59544 28.9443L10.1877 17.8885L0.783095 11.0557H12.4078L16 0Z"
+                                                fill="#D9D9D9" />
+                                        </svg>
+                                        <svg width="32" height="29" viewBox="0 0 32 29" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 0L19.5922 11.0557H31.2169L21.8123 17.8885L25.4046 28.9443L16 22.1115L6.59544 28.9443L10.1877 17.8885L0.783095 11.0557H12.4078L16 0Z"
+                                                fill="#D9D9D9" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section_clients_reviews__slider-item swiper-slide">
+                                <div class="section_clients_reviews__item-content">
+                                    <p class="review-date">11.11.15</p>
+                                    <h3 class="reviewer-name">Олег</h3>
+                                    <p class="client_car">СНТ Вишневый, 1264</p>
+                                    <p class="client-review">Амивлмвалтмбвтловимвтмивломтваьтми воимлвиорв о рплокр
+                                        плурпл оурклп руклопрул рук рулкрлурпло муг упрул рлурпурпу щпр ушкпрушкпдуклрп
+                                        рщудшркпд рущш рудшкшре ушдкл рушдкр шдуркп жудшкр удркпдукр</p>
+                                    <div class="stars">
+                                        <svg width="32" height="29" viewBox="0 0 32 29" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 0L19.5922 11.0557H31.2169L21.8123 17.8885L25.4046 28.9443L16 22.1115L6.59544 28.9443L10.1877 17.8885L0.783095 11.0557H12.4078L16 0Z"
+                                                fill="#F3930D" />
+                                        </svg>
+                                        <svg width="32" height="29" viewBox="0 0 32 29" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 0L19.5922 11.0557H31.2169L21.8123 17.8885L25.4046 28.9443L16 22.1115L6.59544 28.9443L10.1877 17.8885L0.783095 11.0557H12.4078L16 0Z"
+                                                fill="#F3930D" />
+                                        </svg>
+                                        <svg width="32" height="29" viewBox="0 0 32 29" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 0L19.5922 11.0557H31.2169L21.8123 17.8885L25.4046 28.9443L16 22.1115L6.59544 28.9443L10.1877 17.8885L0.783095 11.0557H12.4078L16 0Z"
+                                                fill="#D9D9D9" />
+                                        </svg>
+                                        <svg width="32" height="29" viewBox="0 0 32 29" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 0L19.5922 11.0557H31.2169L21.8123 17.8885L25.4046 28.9443L16 22.1115L6.59544 28.9443L10.1877 17.8885L0.783095 11.0557H12.4078L16 0Z"
+                                                fill="#D9D9D9" />
+                                        </svg>
+                                        <svg width="32" height="29" viewBox="0 0 32 29" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 0L19.5922 11.0557H31.2169L21.8123 17.8885L25.4046 28.9443L16 22.1115L6.59544 28.9443L10.1877 17.8885L0.783095 11.0557H12.4078L16 0Z"
+                                                fill="#D9D9D9" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section_clients_reviews__slider-item swiper-slide">
+                                <div class="section_clients_reviews__item-content">
+                                    <p class="review-date">11.11.16</p>
                                     <h3 class="reviewer-name">Олег</h3>
                                     <p class="client_car">СНТ Вишневый, 1264</p>
                                     <p class="client-review">Амивлмвалтмбвтловимвтмивломтваьтми воимлвиорв о рплокр
@@ -805,30 +886,10 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="section_clients_reviews__button-prev swiper-button-prev"></div>
+                        <div class="section_clients_reviews__button-next swiper-button-next"></div>
                     </div>
-                    <label for="slider-radio2" class="slider-label slider-label-next">
-                        <button class="slider-buton buton-next section_clients_reviews__slider-buton-next">
-                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1.22392e-06 14C1.89987e-06 6.26801 6.26802 -1.89987e-06 14 -1.22392e-06C21.732 -5.47967e-07 28 6.26801 28 14C28 21.732 21.732 28 14 28C6.26801 28 5.47967e-07 21.732 1.22392e-06 14Z"
-                                    fill="#8E8E8E" fill-opacity="0.47" />
-                                <path d="M11 9.41L15.3266 14L11 18.59L12.332 20L18 14L12.332 8L11 9.41Z" fill="white" />
-                            </svg>
-                        </button>
-                    </label>
-                    <label for="slider-radio3" class="slider-label slider-label-prev">
-                        <button class="slider-buton buton-prev section_clients_reviews__slider-buton-prev">
-                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M28 14C28 21.732 21.732 28 14 28C6.26801 28 0 21.732 0 14C0 6.26801 6.26801 0 14 0C21.732 0 28 6.26801 28 14Z"
-                                    fill="#8E8E8E" fill-opacity="0.47" />
-                                <path d="M17 18.59L12.6734 14L17 9.41L15.668 8L10 14L15.668 20L17 18.59Z"
-                                    fill="white" />
-                            </svg>
-                        </button>
-                    </label>
+                    
                 </div>
                 <button class="section_clients_reviews__button" type="submit">Оставить отзыв</button>
             </div>

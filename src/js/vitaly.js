@@ -1,132 +1,84 @@
-function createSliderRadio(
-    sliderElement,
-    sliderList,
-    slideWidth,
-    btnNext,
-    btnPrev
-    ) {
-        let currentRadioNumber = 1;
-        let nextRadioNumber = 2;
-        let prevRadioNumber = 0;
-        let current = 0;
-        // if(isRadio == false){
-        //     btnPrev.style.display = "block"
-        // }
-        btnNext.addEventListener("click",function(){
-            if(nextRadioNumber > 4){
-                nextRadioNumber = 4;
-                currentRadioNumber = 3;
-                prevRadioNumber = 2;
-            } 
-            current++;
-            let dist = current*slideWidth;
-            let currentRadio = sliderElement.querySelector(".slider-radio--"+currentRadioNumber)
-            let currentRadioNext = sliderElement.querySelector(".slider-radio--"+nextRadioNumber)
-            sliderList.style.transform = "translate("+ (-dist) +"px)";
-            currentRadio.removeAttribute("checked")
-            currentRadioNumber++;
-            currentRadioNext.setAttribute("checked","checked")
-            nextRadioNumber++;
-            prevRadioNumber++;
-            if(current == 3){
-                btnNext.style.display = "none";
-            }
-            if(current != 0){
-                btnPrev.style.display = "block";
-            }
-        });
-        btnPrev.addEventListener("click",function(){
-            if(nextRadioNumber < 2){
-                nextRadioNumber = 2;
-                currentRadioNumber = 1;
-                prevRadioNumber = -1;
-            } 
-            current--;
-            let dist = current*slideWidth;
-            let currentRadio = sliderElement.querySelector(".slider-radio--"+currentRadioNumber)
-            let currentRadioPrev = sliderElement.querySelector(".slider-radio--"+prevRadioNumber)
-            sliderList.style.transform = "translate("+ (-dist) +"px)";
-            currentRadio.removeAttribute("checked")
-            currentRadioNumber--;
-            currentRadioPrev.setAttribute("checked","checked")
-            prevRadioNumber--;
-            nextRadioNumber--;
-            if(current == 0){
-                btnPrev.style.display = "none"
-            }
-            if(current != 3){
-                btnNext.style.display = "block"
-            }
-        });
-}
-function createSlider(
-    sliderList,
-    slidesAmount,
-    slideWidth,
-    btnNext,
-    btnPrev
-    ) {
-        let currentSlideNumber = 1;
-        let nextSlideNumber = 2;
-        let prevSlideNumber = 0;
-        let current = 0;
+const swiper = new Swiper('.section-slider__swiper', {
+    direction: 'horizontal',
+    loop: true,
+    spaceBetween: 30,
+    speed: 1000,
+    grabCursor: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + "</span>";
+        },
+      },
+  
+    navigation: {
+      nextEl: '.section-slider__swiper-button-next',
+      prevEl: '.section-slider__swiper-button-prev',
+    },
+  });
 
-        //btnPrev.style.display = "block"
+  const swiper2 = new Swiper('.info__grid-swiper', {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    // breakpoints:{
+    //   670:{
+    //     slidesPerView: 2,
+    //     spaceBetween: 10,
+    //   },
+    //   990:{
+    //     slidesPerView: 3,
+    //     spaceBetween: 10,
+    //   },
+    //   1260:{
+    //     slidesPerView: 4,
+    //     spaceBetween: 10,
+    //   },
+    // },
+    speed: 1000,
+    grabCursor: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+  
+    navigation: {
+      nextEl: '.info__grid-swiper-button-next',
+      prevEl: '.info__grid-swiper-button-prev',
+    },
+  });
 
-        btnNext.addEventListener("click",function(){
-            current++;
-            let dist = current*slideWidth;
-            sliderList.style.transform = "translate("+ (-dist) +"px)";
-            nextSlideNumber++;
-            currentSlideNumber++;
-            prevSlideNumber++;
-            console.log(prevSlideNumber +" "+ currentSlideNumber +" "+ nextSlideNumber);
-            if(currentSlideNumber == slidesAmount){
-                btnNext.style.display = "none"
-
-                // nextSlideNumber = slidesAmount;
-                // currentSlideNumber = slidesAmount - 1;
-                // prevSlideNumber = slidesAmount - 2;
-            } 
-            else{
-                btnPrev.style.display = "block"
-            }
-        });
-        btnPrev.addEventListener("click",function(){
-            current--;
-            let dist = current*slideWidth;
-            sliderList.style.transform = "translate("+ (-dist) +"px)";
-            prevSlideNumber--;
-            currentSlideNumber--;
-            nextSlideNumber--;
-            console.log(prevSlideNumber +" "+ currentSlideNumber +" "+ nextSlideNumber);
-            if(currentSlideNumber == 1){
-                btnPrev.style.display = "none"
-                
-                // nextSlideNumber = 2;
-                // currentSlideNumber = 1;
-                // prevSlideNumber = 0;
-            }
-            else{
-                btnNext.style.display = "block"
-            }
-        });
-}
-const slider = document.querySelector(".section-slider__slider")
-const list = document.querySelector(".section-slider__list")
-const widthSLide = 1233;
-const btnNext = document.querySelector(".section-slider__slider-buton-next")
-const btnPrev = document.querySelector(".section-slider__slider-buton-prev")
-
-//const reviewsSlider = document.querySelector(".section_clients_reviews__slider")
-const reviewsList = document.querySelector(".section_clients_reviews__list")
-const reviewsSlidesAmount = 4;
-//const reviewsWidthSLide = 1233;
-const reviewsWidthSLide = 354;
-const reviewsBtnNext = document.querySelector(".section_clients_reviews__slider-buton-next")
-const reviewsBtnPrev = document.querySelector(".section_clients_reviews__slider-buton-prev")
-//const reviewsRadio = false
-
-createSliderRadio(slider,list,widthSLide,btnNext,btnPrev);
-
-createSlider(reviewsList,reviewsSlidesAmount,reviewsWidthSLide,reviewsBtnNext,reviewsBtnPrev);
+  const swiper3 = new Swiper('.section_clients_reviews-swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 15,
+    breakpoints:{
+      990:{
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      1260:{
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+    },
+    speed: 10000,
+    grabCursor: true,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: false,
+    },
+  
+    navigation: {
+      nextEl: '.section_clients_reviews__button-next',
+      prevEl: '.section_clients_reviews__button-prev',
+    },
+  });
