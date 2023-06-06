@@ -15,7 +15,7 @@
     height: 413px;
     border-radius: 20px;
     background: url('../../src/img/sec-2-car.png')no-repeat;
-    background-position: right;
+    background-position: center;
 }
 .sec2_p{
     width: 543px;
@@ -343,3 +343,9 @@
         margin: 0;
     }
 }
+
+/* @media (max-width : 1270px){
+    .sec2{
+        margin: 216px 20px 0 20px;
+    }
+} */
