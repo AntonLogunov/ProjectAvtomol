@@ -1322,7 +1322,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 @media(max-width:500px){
     .advantages{
-        grid-template-columns: repeat(1, auto);
+        column-gap: 30px;
+    }
+    .advantages__block svg{
+        height: 120px;
+        margin: 0;
     }
 }
 @media(max-width:470px){

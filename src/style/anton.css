@@ -592,9 +592,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 }
 @media(max-width:500px){
-    .advantages{
-        grid-template-columns: repeat(1, auto);
-    }
+    
 }
 @media(max-width:470px){
     .castom__header--time,
