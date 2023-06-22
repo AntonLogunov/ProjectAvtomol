@@ -456,6 +456,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border-radius: 25px;
     border: none;
     margin-top: 7.1px;
+    z-index: 1;
+    font-family: "MontserratMedium", "Arial", sans-serif;
 }
 .qs-datepicker{
     padding: 49.61px 44.44px 44.44px 44.44px;
@@ -463,8 +465,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .qs-month-year{
     display: flex;
     justify-content: space-between;
-    max-width: 205px;
-    margin-right: 75px;
+    width: auto;
 }
 .qs-arrow{
     margin-top: 4px;
@@ -622,5 +623,22 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
     .request__form2--text{
         font-size: 24px;
+    }
+    .qs-datepicker-container{
+        width: 100%;
+    }
+    .qs-datepicker{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 49.61px 24.44px;
+    }
+}
+@media(max-width:385px){
+    .qs-month-year{
+        margin: 0;
+        flex-wrap: wrap;
     }
 }
