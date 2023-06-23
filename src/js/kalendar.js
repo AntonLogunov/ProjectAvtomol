@@ -1,7 +1,7 @@
 const dateInput = document.getElementById("date");
 datepicker("#date", {
   startDay: 1,
-  showAllDates: true,
+  showAllDates: false,
   disableMobile: false,
   maxDate: new Date(2099, 12, 31),
   minDate: new Date(2023, 4, 1),

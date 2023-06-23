@@ -17,8 +17,8 @@
     <script src="https://api-maps.yandex.ru/2.1/?apikey=um=constructor%3Aef276d26e94014049c7aec200e8c68065a4708447feadcd033084cba9bf9fe08&lang=ru_RU" type="text/javascript">
     </script>
     <script defer src="src/js/mapscript2.js"></script>
-    <script defer src="src/js/anton.js"></script>
-    <script defer src="src/js/vitaliy2.js"></script>
+    <script defer src="src/js/castomBlocks.js"></script>
+    <script defer src="src/js/services.js"></script>
     <script defer src="src/mini/datepicker.min.js"></script>
     <script defer src="src/js/kalendar.js"></script>
     <script defer src="src/js/formChek.js"></script>
@@ -138,7 +138,7 @@
                                 <p class="request__form2--text" for="meeting-time">4. Выберите дату</p>
                                 <div id="app"></div>
                                 <div>
-                                    <input name="date" class="input" type="date" id="date" placeholder="дд.мм.гггг"/>
+                                    <input name="date" class="input" type="date" id="date" placeholder="дд.мм.гггг" onClick="event.preventDefault()"/>
                                 </div>
                             </div>
                             <div class="select__form">
